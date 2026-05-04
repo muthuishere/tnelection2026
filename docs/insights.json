@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-05-04T15:44:13.069Z",
+  "generatedAt": "2026-05-04T15:46:12.836Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
-    "declared": 191,
-    "inProgress": 43
+    "declared": 193,
+    "inProgress": 41
   },
   "partyResults": [
     {
       "party": "Tamilaga Vettri Kazhagam",
-      "won": 89,
-      "leading": 18,
+      "won": 90,
+      "leading": 17,
       "leadingUnder1k": 4,
       "trailingUnder1k": 6,
       "total": 107
@@ -25,8 +25,8 @@
     },
     {
       "party": "All India Anna Dravida Munnetra Kazhagam",
-      "won": 40,
-      "leading": 7,
+      "won": 41,
+      "leading": 6,
       "leadingUnder1k": 4,
       "trailingUnder1k": 3,
       "total": 47
@@ -110,10 +110,10 @@
       "parties": [
         "Tamilaga Vettri Kazhagam"
       ],
-      "won": 89,
-      "leading": 18,
+      "won": 90,
+      "leading": 17,
       "total": 107,
-      "cushionVotes": 2439542,
+      "cushionVotes": 2439661,
       "gapVotes": 789065,
       "flippableUnder1k": 6,
       "flippableUnder5k": 29,
@@ -134,7 +134,7 @@
       "leading": 16,
       "total": 74,
       "cushionVotes": 682764,
-      "gapVotes": 2252677,
+      "gapVotes": 2252796,
       "flippableUnder1k": 5,
       "flippableUnder5k": 14,
       "vulnerableUnder1k": 4
@@ -147,8 +147,8 @@
         "Bharatiya Janata Party",
         "Pattali Makkal Katchi"
       ],
-      "won": 44,
-      "leading": 9,
+      "won": 45,
+      "leading": 8,
       "total": 53,
       "cushionVotes": 804114,
       "gapVotes": 786568,
@@ -1582,7 +1582,7 @@
       "trailingParty": "Dravida Munnetra Kazhagam",
       "margin": 19105,
       "round": "30/30",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "MODAKKURICHI": {
       "constituency": "MODAKKURICHI",
@@ -1659,7 +1659,7 @@
       "trailingParty": "All India Anna Dravida Munnetra Kazhagam",
       "margin": 11008,
       "round": "23/23",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "NANGUNERI": {
       "constituency": "NANGUNERI",
@@ -2603,8 +2603,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "S. INIGO IRUDAYARAJ",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 27297,
-      "round": "27/28",
+      "margin": 27416,
+      "round": "28/28",
       "status": "Result in Progress"
     },
     "TIRUCHIRAPPALLI (WEST)": {
@@ -3027,10 +3027,10 @@
     }
   },
   "countingProgress": {
-    "roundsDone": 5561,
+    "roundsDone": 5562,
     "roundsTotal": 5590,
     "pct": 99.5,
-    "constituenciesComplete": 219
+    "constituenciesComplete": 220
   },
   "superlatives": {
     "biggestMargin": {
