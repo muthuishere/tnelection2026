@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-04T17:06:11.968Z",
+  "generatedAt": "2026-05-04T17:08:11.681Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
-    "declared": 222,
-    "inProgress": 12
+    "declared": 224,
+    "inProgress": 10
   },
   "partyResults": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "party": "Dravida Munnetra Kazhagam",
-      "won": 56,
-      "leading": 4,
+      "won": 57,
+      "leading": 3,
       "leadingUnder1k": 4,
       "trailingUnder1k": 4,
       "total": 60
@@ -41,8 +41,8 @@
     },
     {
       "party": "Pattali Makkal Katchi",
-      "won": 2,
-      "leading": 2,
+      "won": 3,
+      "leading": 1,
       "leadingUnder1k": 1,
       "trailingUnder1k": 0,
       "total": 4
@@ -130,8 +130,8 @@
         "Indian Union Muslim League",
         "Viduthalai Chiruthaigal Katchi"
       ],
-      "won": 70,
-      "leading": 4,
+      "won": 71,
+      "leading": 3,
       "total": 74,
       "cushionVotes": 679683,
       "gapVotes": 2254700,
@@ -147,8 +147,8 @@
         "Bharatiya Janata Party",
         "Pattali Makkal Katchi"
       ],
-      "won": 49,
-      "leading": 4,
+      "won": 50,
+      "leading": 3,
       "total": 53,
       "cushionVotes": 803744,
       "gapVotes": 786695,
@@ -346,17 +346,6 @@
       "status": "Result in Progress"
     },
     {
-      "constituency": "PERAVURANI",
-      "constNo": "177",
-      "leadingCandidate": "ASHOKKUMAR. N",
-      "leadingParty": "Dravida Munnetra Kazhagam",
-      "trailingCandidate": "GOVI.ELANGO",
-      "trailingParty": "All India Anna Dravida Munnetra Kazhagam",
-      "margin": 3162,
-      "round": "21/21",
-      "status": "Result in Progress"
-    },
-    {
       "constituency": "SHOLINGUR",
       "constNo": "39",
       "leadingCandidate": "G.KAPIL",
@@ -365,17 +354,6 @@
       "trailingParty": "Pattali Makkal Katchi",
       "margin": 3163,
       "round": "23/25",
-      "status": "Result in Progress"
-    },
-    {
-      "constituency": "GINGEE",
-      "constNo": "70",
-      "leadingCandidate": "GANESHKUMAR A",
-      "leadingParty": "Pattali Makkal Katchi",
-      "trailingCandidate": "GINGEE MASTHAN K S",
-      "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 12645,
-      "round": "24/24",
       "status": "Result in Progress"
     },
     {
@@ -404,10 +382,10 @@
   "closestSummary": [
     {
       "alliance": "DMK-led INDIA Alliance",
-      "couldLose": 4,
-      "couldGain": 5,
-      "loseVotes": 7924,
-      "gainVotes": 146488,
+      "couldLose": 3,
+      "couldGain": 4,
+      "loseVotes": 4762,
+      "gainVotes": 133843,
       "net": 1
     },
     {
@@ -420,10 +398,10 @@
     },
     {
       "alliance": "AIADMK-led NDA",
-      "couldLose": 4,
-      "couldGain": 3,
-      "loseVotes": 15590,
-      "gainVotes": 8602,
+      "couldLose": 3,
+      "couldGain": 2,
+      "loseVotes": 2945,
+      "gainVotes": 5440,
       "net": -1
     }
   ],
@@ -966,7 +944,7 @@
       "trailingParty": "Dravida Munnetra Kazhagam",
       "margin": 12645,
       "round": "24/24",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "GOBICHETTIPALAYAM": {
       "constituency": "GOBICHETTIPALAYAM",
@@ -1901,7 +1879,7 @@
       "trailingParty": "All India Anna Dravida Munnetra Kazhagam",
       "margin": 3162,
       "round": "21/21",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "PERIYAKULAM": {
       "constituency": "PERIYAKULAM",
