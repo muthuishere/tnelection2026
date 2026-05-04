@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T11:27:27.399Z",
+  "generatedAt": "2026-05-04T11:27:45.811Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
@@ -113,7 +113,7 @@
       "won": 9,
       "leading": 100,
       "total": 109,
-      "cushionVotes": 1926746,
+      "cushionVotes": 1926901,
       "gapVotes": 651766,
       "flippableUnder1k": 2,
       "flippableUnder5k": 27,
@@ -133,8 +133,8 @@
       "won": 7,
       "leading": 65,
       "total": 72,
-      "cushionVotes": 586304,
-      "gapVotes": 1853175,
+      "cushionVotes": 587462,
+      "gapVotes": 1852961,
       "flippableUnder1k": 4,
       "flippableUnder5k": 21,
       "vulnerableUnder1k": 4
@@ -151,7 +151,7 @@
       "leading": 53,
       "total": 53,
       "cushionVotes": 711095,
-      "gapVotes": 622733,
+      "gapVotes": 624260,
       "flippableUnder1k": 3,
       "flippableUnder5k": 23,
       "vulnerableUnder1k": 2
@@ -2231,7 +2231,7 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "S. ARAVIND RAMESH",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 49790,
+      "margin": 49576,
       "round": "16/30",
       "status": "Result in Progress"
     },
@@ -2264,8 +2264,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "SENTHILNATHAN PR",
       "trailingParty": "All India Anna Dravida Munnetra Kazhagam",
-      "margin": 13027,
-      "round": "20/29",
+      "margin": 13396,
+      "round": "21/29",
       "status": "Result in Progress"
     },
     "SIVAKASI": {
@@ -2352,8 +2352,8 @@
       "leadingParty": "Dravida Munnetra Kazhagam",
       "trailingCandidate": "S.SELVA MOHANDAS PANDIAN",
       "trailingParty": "All India Anna Dravida Munnetra Kazhagam",
-      "margin": 5503,
-      "round": "17/26",
+      "margin": 6661,
+      "round": "18/26",
       "status": "Result in Progress"
     },
     "THALLI": {
@@ -3029,9 +3029,9 @@
     }
   },
   "countingProgress": {
-    "roundsDone": 4262,
+    "roundsDone": 4264,
     "roundsTotal": 5435,
-    "pct": 78.4,
+    "pct": 78.5,
     "constituenciesComplete": 32
   },
   "superlatives": {
