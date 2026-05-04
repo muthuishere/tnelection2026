@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T16:02:08.946Z",
+  "generatedAt": "2026-05-04T16:04:10.395Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
@@ -114,7 +114,7 @@
       "leading": 12,
       "total": 107,
       "cushionVotes": 2442060,
-      "gapVotes": 788204,
+      "gapVotes": 788149,
       "flippableUnder1k": 7,
       "flippableUnder5k": 29,
       "vulnerableUnder1k": 3
@@ -133,7 +133,7 @@
       "won": 63,
       "leading": 11,
       "total": 74,
-      "cushionVotes": 681497,
+      "cushionVotes": 681442,
       "gapVotes": 2255147,
       "flippableUnder1k": 4,
       "flippableUnder5k": 14,
@@ -524,8 +524,8 @@
       "leadingParty": "Dravida Munnetra Kazhagam",
       "trailingCandidate": "IMTHIYAZ PANDARATTUDU ABDU",
       "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 7327,
-      "round": "22/24",
+      "margin": 7272,
+      "round": "23/24",
       "status": "Result in Progress"
     },
     "ANAIKATTU": {
@@ -3027,7 +3027,7 @@
     }
   },
   "countingProgress": {
-    "roundsDone": 5576,
+    "roundsDone": 5577,
     "roundsTotal": 5600,
     "pct": 99.6,
     "constituenciesComplete": 224
