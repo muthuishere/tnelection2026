@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-05-04T18:34:09.874Z",
+  "generatedAt": "2026-05-04T18:36:09.142Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
-    "declared": 232,
-    "inProgress": 2
+    "declared": 233,
+    "inProgress": 1
   },
   "partyResults": [
     {
       "party": "Tamilaga Vettri Kazhagam",
-      "won": 106,
-      "leading": 1,
+      "won": 107,
+      "leading": 0,
       "leadingUnder1k": 4,
       "trailingUnder1k": 7,
       "total": 107
@@ -110,8 +110,8 @@
       "parties": [
         "Tamilaga Vettri Kazhagam"
       ],
-      "won": 106,
-      "leading": 1,
+      "won": 107,
+      "leading": 0,
       "total": 107,
       "cushionVotes": 2444115,
       "gapVotes": 785514,
@@ -278,35 +278,24 @@
       "margin": 30,
       "round": "29/30",
       "status": "Result in Progress"
-    },
-    {
-      "constituency": "SHOZHINGANALLUR",
-      "constNo": "27",
-      "leadingCandidate": "ECR P SARAVANAN",
-      "leadingParty": "Tamilaga Vettri Kazhagam",
-      "trailingCandidate": "S. ARAVIND RAMESH",
-      "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 96780,
-      "round": "33/33",
-      "status": "Result in Progress"
     }
   ],
   "closestSummary": [
     {
-      "alliance": "DMK-led INDIA Alliance",
-      "couldLose": 1,
+      "alliance": "TVK",
+      "couldLose": 0,
       "couldGain": 1,
-      "loseVotes": 30,
-      "gainVotes": 96780,
-      "net": 0
+      "loseVotes": 0,
+      "gainVotes": 30,
+      "net": 1
     },
     {
-      "alliance": "TVK",
+      "alliance": "DMK-led INDIA Alliance",
       "couldLose": 1,
-      "couldGain": 1,
-      "loseVotes": 96780,
-      "gainVotes": 30,
-      "net": 0
+      "couldGain": 0,
+      "loseVotes": 30,
+      "gainVotes": 0,
+      "net": -1
     }
   ],
   "razorActiveCount": 1,
@@ -2080,7 +2069,7 @@
       "trailingParty": "Dravida Munnetra Kazhagam",
       "margin": 96780,
       "round": "33/33",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "SINGANALLUR": {
       "constituency": "SINGANALLUR",
