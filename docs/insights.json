@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T17:46:11.601Z",
+  "generatedAt": "2026-05-04T17:48:14.786Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
@@ -113,7 +113,7 @@
       "won": 105,
       "leading": 2,
       "total": 107,
-      "cushionVotes": 2443959,
+      "cushionVotes": 2444115,
       "gapVotes": 785514,
       "flippableUnder1k": 7,
       "flippableUnder5k": 29,
@@ -151,7 +151,7 @@
       "leading": 1,
       "total": 53,
       "cushionVotes": 803744,
-      "gapVotes": 789062,
+      "gapVotes": 789218,
       "flippableUnder1k": 3,
       "flippableUnder5k": 18,
       "vulnerableUnder1k": 6
@@ -297,8 +297,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "K.SARAVANAN",
       "trailingParty": "Pattali Makkal Katchi",
-      "margin": 5530,
-      "round": "25/26",
+      "margin": 5686,
+      "round": "26/26",
       "status": "Result in Progress"
     },
     {
@@ -327,14 +327,14 @@
       "couldLose": 1,
       "couldGain": 1,
       "loseVotes": 214,
-      "gainVotes": 5530,
+      "gainVotes": 5686,
       "net": 0
     },
     {
       "alliance": "TVK",
       "couldLose": 2,
       "couldGain": 1,
-      "loseVotes": 102310,
+      "loseVotes": 102466,
       "gainVotes": 30,
       "net": -1
     }
@@ -2097,8 +2097,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "K.SARAVANAN",
       "trailingParty": "Pattali Makkal Katchi",
-      "margin": 5530,
-      "round": "25/26",
+      "margin": 5686,
+      "round": "26/26",
       "status": "Result in Progress"
     },
     "SHOZHINGANALLUR": {
@@ -2906,10 +2906,10 @@
     }
   },
   "countingProgress": {
-    "roundsDone": 5599,
+    "roundsDone": 5600,
     "roundsTotal": 5601,
     "pct": 100,
-    "constituenciesComplete": 232
+    "constituenciesComplete": 233
   },
   "superlatives": {
     "biggestMargin": {
