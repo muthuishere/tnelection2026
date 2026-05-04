@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T16:22:10.074Z",
+  "generatedAt": "2026-05-04T16:24:17.291Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
@@ -114,7 +114,7 @@
       "leading": 11,
       "total": 107,
       "cushionVotes": 2441883,
-      "gapVotes": 786674,
+      "gapVotes": 786955,
       "flippableUnder1k": 7,
       "flippableUnder5k": 29,
       "vulnerableUnder1k": 4
@@ -150,7 +150,7 @@
       "won": 47,
       "leading": 6,
       "total": 53,
-      "cushionVotes": 803495,
+      "cushionVotes": 803776,
       "gapVotes": 786695,
       "flippableUnder1k": 3,
       "flippableUnder5k": 19,
@@ -352,8 +352,8 @@
       "leadingParty": "All India Anna Dravida Munnetra Kazhagam",
       "trailingCandidate": "MATHIYALAGAN V.P",
       "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 1607,
-      "round": "19/21",
+      "margin": 1888,
+      "round": "20/21",
       "status": "Result in Progress"
     },
     {
@@ -440,14 +440,14 @@
       "couldLose": 4,
       "couldGain": 8,
       "loseVotes": 8729,
-      "gainVotes": 16737,
+      "gainVotes": 17018,
       "net": 4
     },
     {
       "alliance": "AIADMK-led NDA",
       "couldLose": 4,
       "couldGain": 4,
-      "loseVotes": 2981,
+      "loseVotes": 3262,
       "gainVotes": 12105,
       "net": 0
     },
@@ -1184,8 +1184,8 @@
       "leadingParty": "All India Anna Dravida Munnetra Kazhagam",
       "trailingCandidate": "MATHIYALAGAN V.P",
       "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 1607,
-      "round": "19/21",
+      "margin": 1888,
+      "round": "20/21",
       "status": "Result in Progress"
     },
     "KATPADI": {
@@ -3027,7 +3027,7 @@
     }
   },
   "countingProgress": {
-    "roundsDone": 5582,
+    "roundsDone": 5583,
     "roundsTotal": 5600,
     "pct": 99.7,
     "constituenciesComplete": 226
