@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-05-04T16:52:09.149Z",
+  "generatedAt": "2026-05-04T16:54:18.540Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
-    "declared": 217,
-    "inProgress": 17
+    "declared": 219,
+    "inProgress": 15
   },
   "partyResults": [
     {
       "party": "Tamilaga Vettri Kazhagam",
-      "won": 98,
-      "leading": 9,
+      "won": 100,
+      "leading": 7,
       "leadingUnder1k": 4,
       "trailingUnder1k": 7,
       "total": 107
@@ -110,10 +110,10 @@
       "parties": [
         "Tamilaga Vettri Kazhagam"
       ],
-      "won": 98,
-      "leading": 9,
+      "won": 100,
+      "leading": 7,
       "total": 107,
-      "cushionVotes": 2441389,
+      "cushionVotes": 2441182,
       "gapVotes": 785514,
       "flippableUnder1k": 7,
       "flippableUnder5k": 29,
@@ -134,7 +134,7 @@
       "leading": 4,
       "total": 74,
       "cushionVotes": 679683,
-      "gapVotes": 2254497,
+      "gapVotes": 2254290,
       "flippableUnder1k": 5,
       "flippableUnder5k": 14,
       "vulnerableUnder1k": 5
@@ -297,8 +297,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "SARAVANAN. P",
       "trailingParty": "Desiya Murpokku Dravida Kazhagam",
-      "margin": 520,
-      "round": "21/22",
+      "margin": 227,
+      "round": "22/22",
       "status": "Result in Progress"
     },
     {
@@ -390,17 +390,6 @@
       "status": "Result in Progress"
     },
     {
-      "constituency": "GANDHARVAKOTTAI",
-      "constNo": "178",
-      "leadingCandidate": "N. SUBRAMANIAN",
-      "leadingParty": "Tamilaga Vettri Kazhagam",
-      "trailingCandidate": "C. UTHAYAKUMAR",
-      "trailingParty": "Bharatiya Janata Party",
-      "margin": 11039,
-      "round": "18/18",
-      "status": "Result in Progress"
-    },
-    {
       "constituency": "GINGEE",
       "constNo": "70",
       "leadingCandidate": "GANESHKUMAR A",
@@ -429,33 +418,44 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "KARTHIKDHANDAPANI",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 35555,
-      "round": "39/40",
+      "margin": 35641,
+      "round": "40/40",
+      "status": "Result in Progress"
+    },
+    {
+      "constituency": "SHOZHINGANALLUR",
+      "constNo": "27",
+      "leadingCandidate": "ECR P SARAVANAN",
+      "leadingParty": "Tamilaga Vettri Kazhagam",
+      "trailingCandidate": "S. ARAVIND RAMESH",
+      "trailingParty": "Dravida Munnetra Kazhagam",
+      "margin": 96370,
+      "round": "33/33",
       "status": "Result in Progress"
     }
   ],
   "closestSummary": [
     {
-      "alliance": "AIADMK-led NDA",
+      "alliance": "DMK-led INDIA Alliance",
       "couldLose": 4,
       "couldGain": 6,
-      "loseVotes": 15590,
-      "gainVotes": 38225,
+      "loseVotes": 7924,
+      "gainVotes": 146305,
       "net": 2
     },
     {
-      "alliance": "DMK-led INDIA Alliance",
+      "alliance": "AIADMK-led NDA",
       "couldLose": 4,
       "couldGain": 5,
-      "loseVotes": 7924,
-      "gainVotes": 50142,
+      "loseVotes": 15590,
+      "gainVotes": 27186,
       "net": 1
     },
     {
       "alliance": "TVK",
       "couldLose": 7,
       "couldGain": 4,
-      "loseVotes": 70069,
+      "loseVotes": 155193,
       "gainVotes": 5216,
       "net": -3
     }
@@ -755,8 +755,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "KARTHIKDHANDAPANI",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 35555,
-      "round": "39/40",
+      "margin": 35641,
+      "round": "40/40",
       "status": "Result in Progress"
     },
     "CHENGAM": {
@@ -977,7 +977,7 @@
       "trailingParty": "Bharatiya Janata Party",
       "margin": 11039,
       "round": "18/18",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "GANGAVALLI": {
       "constituency": "GANGAVALLI",
@@ -1976,8 +1976,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "SARAVANAN. P",
       "trailingParty": "Desiya Murpokku Dravida Kazhagam",
-      "margin": 520,
-      "round": "21/22",
+      "margin": 227,
+      "round": "22/22",
       "status": "Result in Progress"
     },
     "PONNERI": {
@@ -2671,7 +2671,7 @@
       "trailingParty": "All India Anna Dravida Munnetra Kazhagam",
       "margin": 69992,
       "round": "34/34",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "TIRUPPUR (SOUTH)": {
       "constituency": "TIRUPPUR (SOUTH)",
@@ -3027,10 +3027,10 @@
     }
   },
   "countingProgress": {
-    "roundsDone": 5595,
+    "roundsDone": 5597,
     "roundsTotal": 5600,
     "pct": 99.9,
-    "constituenciesComplete": 230
+    "constituenciesComplete": 232
   },
   "superlatives": {
     "biggestMargin": {
