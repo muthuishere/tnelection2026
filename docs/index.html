@@ -890,9 +890,12 @@
       }
     }
 
+    const REFRESH_MIN = 10;
     Promise.all([load(), renderVips()]).catch(e => {
       document.body.innerHTML = `<pre style="color:#ff6b6b;padding:20px;font-family:monospace">Failed to load: ${e.message}</pre>`;
     });
+    // Auto-reload the page every REFRESH_MIN minutes so visitors always see fresh data.
+    setTimeout(() => location.reload(), REFRESH_MIN * 60 * 1000);
   </script>
 </body>
 </html>
