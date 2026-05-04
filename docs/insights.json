@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T16:06:10.052Z",
+  "generatedAt": "2026-05-04T16:08:13.309Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
@@ -134,7 +134,7 @@
       "leading": 10,
       "total": 74,
       "cushionVotes": 681442,
-      "gapVotes": 2255147,
+      "gapVotes": 2255377,
       "flippableUnder1k": 4,
       "flippableUnder5k": 14,
       "vulnerableUnder1k": 5
@@ -150,7 +150,7 @@
       "won": 46,
       "leading": 7,
       "total": 53,
-      "cushionVotes": 804333,
+      "cushionVotes": 804563,
       "gapVotes": 786638,
       "flippableUnder1k": 3,
       "flippableUnder5k": 19,
@@ -997,8 +997,8 @@
       "leadingParty": "Pattali Makkal Katchi",
       "trailingCandidate": "GINGEE MASTHAN K S",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 12415,
-      "round": "23/24",
+      "margin": 12645,
+      "round": "24/24",
       "status": "Result in Progress"
     },
     "GOBICHETTIPALAYAM": {
@@ -3027,10 +3027,10 @@
     }
   },
   "countingProgress": {
-    "roundsDone": 5578,
+    "roundsDone": 5579,
     "roundsTotal": 5600,
     "pct": 99.6,
-    "constituenciesComplete": 224
+    "constituenciesComplete": 225
   },
   "superlatives": {
     "biggestMargin": {
