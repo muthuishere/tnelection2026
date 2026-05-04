@@ -1,19 +1,19 @@
 {
-  "generatedAt": "2026-05-04T15:08:09.535Z",
+  "generatedAt": "2026-05-04T15:10:08.399Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
-    "declared": 168,
-    "inProgress": 66
+    "declared": 169,
+    "inProgress": 65
   },
   "partyResults": [
     {
       "party": "Tamilaga Vettri Kazhagam",
-      "won": 79,
+      "won": 80,
       "leading": 27,
-      "leadingUnder1k": 5,
-      "trailingUnder1k": 7,
-      "total": 106
+      "leadingUnder1k": 6,
+      "trailingUnder1k": 6,
+      "total": 107
     },
     {
       "party": "Dravida Munnetra Kazhagam",
@@ -56,14 +56,6 @@
       "total": 2
     },
     {
-      "party": "Desiya Murpokku Dravida Kazhagam",
-      "won": 1,
-      "leading": 1,
-      "leadingUnder1k": 1,
-      "trailingUnder1k": 0,
-      "total": 2
-    },
-    {
       "party": "Communist Party of India (Marxist)",
       "won": 2,
       "leading": 0,
@@ -96,6 +88,14 @@
       "total": 1
     },
     {
+      "party": "Desiya Murpokku Dravida Kazhagam",
+      "won": 1,
+      "leading": 0,
+      "leadingUnder1k": 0,
+      "trailingUnder1k": 1,
+      "total": 1
+    },
+    {
       "party": "Amma Makkal Munnettra Kazagam",
       "won": 1,
       "leading": 0,
@@ -110,14 +110,14 @@
       "parties": [
         "Tamilaga Vettri Kazhagam"
       ],
-      "won": 79,
+      "won": 80,
       "leading": 27,
-      "total": 106,
-      "cushionVotes": 2432685,
-      "gapVotes": 787249,
-      "flippableUnder1k": 7,
-      "flippableUnder5k": 30,
-      "vulnerableUnder1k": 5
+      "total": 107,
+      "cushionVotes": 2433099,
+      "gapVotes": 787234,
+      "flippableUnder1k": 6,
+      "flippableUnder5k": 29,
+      "vulnerableUnder1k": 6
     },
     {
       "alliance": "DMK-led INDIA Alliance",
@@ -131,13 +131,13 @@
         "Viduthalai Chiruthaigal Katchi"
       ],
       "won": 52,
-      "leading": 23,
-      "total": 75,
-      "cushionVotes": 680233,
-      "gapVotes": 2251290,
-      "flippableUnder1k": 4,
-      "flippableUnder5k": 13,
-      "vulnerableUnder1k": 5
+      "leading": 22,
+      "total": 74,
+      "cushionVotes": 680218,
+      "gapVotes": 2251807,
+      "flippableUnder1k": 5,
+      "flippableUnder5k": 14,
+      "vulnerableUnder1k": 4
     },
     {
       "alliance": "AIADMK-led NDA",
@@ -151,7 +151,7 @@
       "leading": 16,
       "total": 53,
       "cushionVotes": 806390,
-      "gapVotes": 782659,
+      "gapVotes": 782556,
       "flippableUnder1k": 4,
       "flippableUnder5k": 20,
       "vulnerableUnder1k": 5
@@ -174,15 +174,14 @@
       "label": "< 1,000",
       "count": 15,
       "byAlliance": {
-        "TVK": 5,
-        "DMK-led INDIA Alliance": 5,
+        "TVK": 6,
+        "DMK-led INDIA Alliance": 4,
         "AIADMK-led NDA": 5
       },
       "byParty": {
-        "Tamilaga Vettri Kazhagam": 5,
+        "Tamilaga Vettri Kazhagam": 6,
         "Dravida Munnetra Kazhagam": 3,
         "All India Anna Dravida Munnetra Kazhagam": 3,
-        "Desiya Murpokku Dravida Kazhagam": 1,
         "Viduthalai Chiruthaigal Katchi": 1,
         "Bharatiya Janata Party": 1,
         "Pattali Makkal Katchi": 1
@@ -270,17 +269,6 @@
   ],
   "closestContests": [
     {
-      "constituency": "POLUR",
-      "constNo": "66",
-      "leadingCandidate": "SARAVANAN. P",
-      "leadingParty": "Desiya Murpokku Dravida Kazhagam",
-      "trailingCandidate": "ABISHEK. R",
-      "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 15,
-      "round": "15/22",
-      "status": "Result in Progress"
-    },
-    {
       "constituency": "KULITHALAI",
       "constNo": "137",
       "leadingCandidate": "SURIYANUR. A. CHANDRAN",
@@ -311,6 +299,17 @@
       "trailingParty": "Dravida Munnetra Kazhagam",
       "margin": 319,
       "round": "20/21",
+      "status": "Result in Progress"
+    },
+    {
+      "constituency": "POLUR",
+      "constNo": "66",
+      "leadingCandidate": "ABISHEK. R",
+      "leadingParty": "Tamilaga Vettri Kazhagam",
+      "trailingCandidate": "SARAVANAN. P",
+      "trailingParty": "Desiya Murpokku Dravida Kazhagam",
+      "margin": 344,
+      "round": "16/22",
       "status": "Result in Progress"
     },
     {
@@ -437,20 +436,20 @@
   ],
   "closestSummary": [
     {
-      "alliance": "TVK",
+      "alliance": "DMK-led INDIA Alliance",
       "couldLose": 4,
-      "couldGain": 8,
-      "loseVotes": 3187,
-      "gainVotes": 6060,
-      "net": 4
+      "couldGain": 6,
+      "loseVotes": 3586,
+      "gainVotes": 5017,
+      "net": 2
     },
     {
-      "alliance": "DMK-led INDIA Alliance",
+      "alliance": "TVK",
       "couldLose": 5,
-      "couldGain": 5,
-      "loseVotes": 3601,
-      "gainVotes": 4673,
-      "net": 0
+      "couldGain": 7,
+      "loseVotes": 3531,
+      "gainVotes": 6045,
+      "net": 2
     },
     {
       "alliance": "AIADMK-led NDA",
@@ -1922,8 +1921,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "R.D. SHEKAR",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 53542,
-      "round": "22/23",
+      "margin": 53715,
+      "round": "23/23",
       "status": "Result in Progress"
     },
     "PERAVURANI": {
@@ -1973,12 +1972,12 @@
     "POLUR": {
       "constituency": "POLUR",
       "constNo": "66",
-      "leadingCandidate": "SARAVANAN. P",
-      "leadingParty": "Desiya Murpokku Dravida Kazhagam",
-      "trailingCandidate": "ABISHEK. R",
-      "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 15,
-      "round": "15/22",
+      "leadingCandidate": "ABISHEK. R",
+      "leadingParty": "Tamilaga Vettri Kazhagam",
+      "trailingCandidate": "SARAVANAN. P",
+      "trailingParty": "Desiya Murpokku Dravida Kazhagam",
+      "margin": 344,
+      "round": "16/22",
       "status": "Result in Progress"
     },
     "PONNERI": {
@@ -2263,8 +2262,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "SENTHILNATHAN PR",
       "trailingParty": "All India Anna Dravida Munnetra Kazhagam",
-      "margin": 15120,
-      "round": "29/31",
+      "margin": 15017,
+      "round": "30/31",
       "status": "Result in Progress"
     },
     "SIVAKASI": {
@@ -2287,7 +2286,7 @@
       "trailingParty": "Indian National Congress",
       "margin": 54246,
       "round": "33/33",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "SRIRANGAM": {
       "constituency": "SRIRANGAM",
@@ -3028,10 +3027,10 @@
     }
   },
   "countingProgress": {
-    "roundsDone": 5517,
+    "roundsDone": 5520,
     "roundsTotal": 5588,
-    "pct": 98.7,
-    "constituenciesComplete": 203
+    "pct": 98.8,
+    "constituenciesComplete": 204
   },
   "superlatives": {
     "biggestMargin": {
@@ -3046,15 +3045,15 @@
       "status": "Result Declared"
     },
     "smallestMargin": {
-      "constituency": "POLUR",
-      "constNo": "66",
-      "leadingCandidate": "SARAVANAN. P",
-      "leadingParty": "Desiya Murpokku Dravida Kazhagam",
-      "trailingCandidate": "ABISHEK. R",
-      "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 15,
-      "round": "15/22",
-      "status": "Result in Progress"
+      "constituency": "VEPPANAHALLI",
+      "constNo": "54",
+      "leadingCandidate": "SRINIVASAN.P.S",
+      "leadingParty": "Dravida Munnetra Kazhagam",
+      "trailingCandidate": "MUNUSAMY.K.P",
+      "trailingParty": "All India Anna Dravida Munnetra Kazhagam",
+      "margin": 138,
+      "round": "27/27",
+      "status": "Result Declared"
     }
   }
 }
