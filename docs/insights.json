@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-04T17:42:13.275Z",
+  "generatedAt": "2026-05-04T17:44:15.488Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
-    "declared": 229,
-    "inProgress": 5
+    "declared": 230,
+    "inProgress": 4
   },
   "partyResults": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "party": "Dravida Munnetra Kazhagam",
-      "won": 58,
-      "leading": 2,
+      "won": 59,
+      "leading": 1,
       "leadingUnder1k": 4,
       "trailingUnder1k": 4,
       "total": 60
@@ -113,7 +113,7 @@
       "won": 105,
       "leading": 2,
       "total": 107,
-      "cushionVotes": 2443903,
+      "cushionVotes": 2443959,
       "gapVotes": 785514,
       "flippableUnder1k": 7,
       "flippableUnder5k": 29,
@@ -130,8 +130,8 @@
         "Indian Union Muslim League",
         "Viduthalai Chiruthaigal Katchi"
       ],
-      "won": 72,
-      "leading": 2,
+      "won": 73,
+      "leading": 1,
       "total": 74,
       "cushionVotes": 679683,
       "gapVotes": 2254700,
@@ -151,7 +151,7 @@
       "leading": 1,
       "total": 53,
       "cushionVotes": 803744,
-      "gapVotes": 789006,
+      "gapVotes": 789062,
       "flippableUnder1k": 3,
       "flippableUnder5k": 18,
       "vulnerableUnder1k": 6
@@ -291,25 +291,14 @@
       "status": "Result in Progress"
     },
     {
-      "constituency": "TIRUVANNAMALAI",
-      "constNo": "63",
-      "leadingCandidate": "VELU. E.V",
-      "leadingParty": "Dravida Munnetra Kazhagam",
-      "trailingCandidate": "ARUL ARUMUGAM",
-      "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 2455,
-      "round": "23/23",
-      "status": "Result in Progress"
-    },
-    {
       "constituency": "SHOLINGUR",
       "constNo": "39",
       "leadingCandidate": "G.KAPIL",
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "K.SARAVANAN",
       "trailingParty": "Pattali Makkal Katchi",
-      "margin": 5474,
-      "round": "24/25",
+      "margin": 5530,
+      "round": "25/26",
       "status": "Result in Progress"
     },
     {
@@ -327,27 +316,27 @@
   "closestSummary": [
     {
       "alliance": "DMK-led INDIA Alliance",
-      "couldLose": 2,
+      "couldLose": 1,
       "couldGain": 2,
-      "loseVotes": 2485,
+      "loseVotes": 30,
       "gainVotes": 96994,
-      "net": 0
-    },
-    {
-      "alliance": "TVK",
-      "couldLose": 2,
-      "couldGain": 2,
-      "loseVotes": 102254,
-      "gainVotes": 2485,
-      "net": 0
+      "net": 1
     },
     {
       "alliance": "AIADMK-led NDA",
       "couldLose": 1,
       "couldGain": 1,
       "loseVotes": 214,
-      "gainVotes": 5474,
+      "gainVotes": 5530,
       "net": 0
+    },
+    {
+      "alliance": "TVK",
+      "couldLose": 2,
+      "couldGain": 1,
+      "loseVotes": 102310,
+      "gainVotes": 30,
+      "net": -1
     }
   ],
   "razorActiveCount": 2,
@@ -2108,8 +2097,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "K.SARAVANAN",
       "trailingParty": "Pattali Makkal Katchi",
-      "margin": 5474,
-      "round": "24/25",
+      "margin": 5530,
+      "round": "25/26",
       "status": "Result in Progress"
     },
     "SHOZHINGANALLUR": {
@@ -2605,7 +2594,7 @@
       "trailingParty": "Tamilaga Vettri Kazhagam",
       "margin": 2455,
       "round": "23/23",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "TITTAKUDI": {
       "constituency": "TITTAKUDI",
@@ -2917,8 +2906,8 @@
     }
   },
   "countingProgress": {
-    "roundsDone": 5598,
-    "roundsTotal": 5600,
+    "roundsDone": 5599,
+    "roundsTotal": 5601,
     "pct": 100,
     "constituenciesComplete": 232
   },
