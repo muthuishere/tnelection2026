@@ -167,18 +167,29 @@
     @media (max-width: 720px) { .highlights { grid-template-columns: 1fr; } }
     .hcard { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 28px; }
     .hcard h3 { font-family: 'Fraunces', serif; font-size: 24px; font-weight: 400; margin-bottom: 18px; letter-spacing: -0.02em; }
-    .vip { padding: 18px 0; border-bottom: 1px solid var(--line); }
+    .vip { padding: 16px 0; border-bottom: 1px solid var(--line); }
     .vip:last-child { border-bottom: none; padding-bottom: 0; }
     .vip:first-child { padding-top: 0; }
-    .vip .who { font-weight: 600; font-size: 17px; }
-    .vip .role { color: var(--muted); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; margin-top: 4px; }
-    .vip .live { display: inline-flex; align-items: baseline; gap: 8px; margin-top: 10px; padding: 6px 12px; border-radius: 6px; font-size: 13px; font-weight: 500; }
-    .vip .live .label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; opacity: 0.85; }
-    .vip .live .at { color: var(--muted); font-weight: 400; margin-left: auto; font-size: 11px; }
+    .vip-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; cursor: pointer; }
+    .vip .who { font-weight: 600; font-size: 16px; }
+    .vip .role { color: var(--muted); font-size: 12px; margin-top: 3px; line-height: 1.4; }
+    .vip .toggle { color: var(--dim); font-size: 12px; transition: transform 0.2s; flex-shrink: 0; padding-top: 2px; }
+    .vip.open .toggle { transform: rotate(90deg); }
+    .vip .live { display: inline-flex; align-items: baseline; gap: 8px; margin-top: 10px; padding: 5px 10px; border-radius: 5px; font-size: 12px; font-weight: 500; }
+    .vip .live .label { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.8; }
+    .vip .live .at { color: var(--muted); font-weight: 400; margin-left: 6px; font-size: 11px; }
     .vip .live.lead { background: rgba(0, 210, 122, 0.12); color: #5dd498; }
     .vip .live.trail { background: rgba(255, 68, 68, 0.12); color: #ff7070; }
     .vip .live.won { background: rgba(0, 210, 122, 0.18); color: #5dd498; font-weight: 700; }
-    .vip .news { font-size: 14px; margin-top: 10px; color: #c5c5cf; line-height: 1.5; font-style: italic; }
+    .vip .details { display: none; margin-top: 14px; padding-left: 14px; border-left: 2px solid var(--line); }
+    .vip.open .details { display: block; }
+    .vip .det-block { margin-bottom: 14px; }
+    .vip .det-block:last-child { margin-bottom: 0; }
+    .vip .det-block h4 { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; font-weight: 600; }
+    .vip .det-block ul { list-style: none; }
+    .vip .det-block li { font-size: 13px; line-height: 1.5; color: #c5c5cf; padding: 4px 0; }
+    .vip .det-block.quotes li { font-style: italic; padding: 6px 0 6px 12px; border-left: 2px solid var(--dim); }
+    .vip .det-block.news li::before { content: '→ '; color: var(--tvk); }
     .trivia-stage { position: relative; min-height: 110px; display: flex; align-items: center; }
     .trivia-item {
       position: absolute; inset: 0; display: flex; align-items: center;
@@ -476,49 +487,50 @@
 
     async function loadHighlights() {
       const container = document.getElementById("highlights");
-      let h, contests = {};
+      let vipsData, contests = {}, liveNews = [];
       try {
-        const [hRes, iRes] = await Promise.all([
-          fetch("./highlights.json", { cache: "no-store" }),
+        const [vRes, iRes, nRes] = await Promise.all([
+          fetch("./vips.json", { cache: "no-store" }),
           fetch("./insights.json", { cache: "no-store" }),
+          fetch("./live_news.json", { cache: "no-store" }).catch(() => null),
         ]);
-        if (!hRes.ok) throw new Error(`HTTP ${hRes.status}`);
-        h = await hRes.json();
+        if (!vRes.ok) throw new Error(`HTTP ${vRes.status}`);
+        vipsData = await vRes.json();
         if (iRes.ok) {
           const i = await iRes.json();
           contests = i.contests || {};
         }
-      } catch {
+        if (nRes && nRes.ok) {
+          const n = await nRes.json();
+          liveNews = n.items || [];
+        }
+      } catch (e) {
         container.parentElement.querySelector(".sec-head:has(+ #highlights)")?.remove();
         container.remove();
         return;
       }
 
       function liveStatusFor(v) {
-        const c = contests[v.constituency.toUpperCase()];
+        const constKey = v.constituency.split("(")[0].trim().toUpperCase();
+        const c = contests[constKey];
         if (!c) return el("div", { class: "live" },
           el("span", { class: "label" }, "Status"),
           el("span", {}, "—"));
-        // Determine if VIP is leading or trailing by matching candidate name (loose)
-        const vipName = v.candidate.toUpperCase().replace(/[.\s]/g, "");
-        const leadName = c.leadingCandidate.toUpperCase().replace(/[.\s]/g, "");
-        const trailName = c.trailingCandidate.toUpperCase().replace(/[.\s]/g, "");
-        const leadMatch = leadName.includes(vipName.slice(-8)) || vipName.includes(leadName.slice(-8));
-        const trailMatch = trailName.includes(vipName.slice(-8)) || vipName.includes(trailName.slice(-8));
+        const norm = (s) => s.toUpperCase().replace(/[.,()\s]/g, "");
+        const vipNorm = norm(v.name.split("(")[0]);
+        const leadNorm = norm(c.leadingCandidate);
+        const trailNorm = norm(c.trailingCandidate);
+        const tail = (s) => s.length >= 6 ? s.slice(-6) : s;
+        const leadMatch = leadNorm.includes(tail(vipNorm)) || vipNorm.includes(tail(leadNorm));
+        const trailMatch = trailNorm.includes(tail(vipNorm)) || vipNorm.includes(tail(trailNorm));
         const isWon = c.status === "Result Declared";
-        let cls, label, value;
+        let cls = "", label = "Margin", value = `${fmt(c.margin)} votes`;
         if (leadMatch) {
           cls = isWon ? "won" : "lead";
           label = isWon ? "Won by" : "Leading by";
-          value = `${fmt(c.margin)} votes`;
         } else if (trailMatch) {
           cls = "trail";
           label = isWon ? "Lost by" : "Trailing by";
-          value = `${fmt(c.margin)} votes`;
-        } else {
-          cls = "";
-          label = "Margin";
-          value = `${fmt(c.margin)} votes`;
         }
         return el("div", { class: `live ${cls}` },
           el("span", { class: "label" }, label),
@@ -527,18 +539,54 @@
         );
       }
 
-      const vipCard = el("div", { class: "hcard" }, el("h3", {}, "VIP contests"));
-      for (const v of h.vipContests || []) {
-        vipCard.append(el("div", { class: "vip" },
-          el("div", { class: "who" }, v.candidate),
-          el("div", { class: "role" }, v.role || `${v.constituency} · ${v.party}`),
-          liveStatusFor(v),
-          v.news ? el("div", { class: "news" }, v.news) : null,
-        ));
+      const vipCard = el("div", { class: "hcard" }, el("h3", {}, `VIP contests · ${(vipsData.vips || []).length}`));
+      for (const v of vipsData.vips || []) {
+        const head = el("div", { class: "vip-head" },
+          el("div", {},
+            el("div", { class: "who" }, v.name),
+            el("div", { class: "role" }, v.famous_for || `${v.constituency} · ${v.party}`),
+            liveStatusFor(v),
+          ),
+          el("div", { class: "toggle" }, "▶"),
+        );
+        const details = el("div", { class: "details" });
+        if (v.recent_news_2025_2026?.length) {
+          const block = el("div", { class: "det-block news" }, el("h4", {}, "Recent"));
+          const ul = el("ul", {});
+          for (const n of v.recent_news_2025_2026) ul.append(el("li", {}, n));
+          block.append(ul); details.append(block);
+        }
+        if (v.trivia?.length) {
+          const block = el("div", { class: "det-block" }, el("h4", {}, "Trivia"));
+          const ul = el("ul", {});
+          for (const t of v.trivia) ul.append(el("li", {}, t));
+          block.append(ul); details.append(block);
+        }
+        if (v.famous_quotes?.length) {
+          const block = el("div", { class: "det-block quotes" }, el("h4", {}, "In their words"));
+          const ul = el("ul", {});
+          for (const q of v.famous_quotes) ul.append(el("li", {}, `"${q}"`));
+          block.append(ul); details.append(block);
+        }
+        const card = el("div", { class: "vip" }, head, details);
+        head.addEventListener("click", () => card.classList.toggle("open"));
+        vipCard.append(card);
       }
+
+      // Trivia ticker = live news (newest first) + scattered VIP trivia
       const trivCard = el("div", { class: "hcard" }, el("h3", {}, "Worth knowing"));
+      const triviaPool = [];
+      for (const n of liveNews) triviaPool.push({ text: n.text || n, source: "live", time: n.time });
+      const allVipTrivia = (vipsData.vips || []).flatMap(v => (v.trivia || []).map(t => `${v.name.split("(")[0].trim()}: ${t}`));
+      // shuffle vip trivia
+      for (let k = allVipTrivia.length - 1; k > 0; k--) {
+        const j = Math.floor(Math.random() * (k + 1));
+        [allVipTrivia[k], allVipTrivia[j]] = [allVipTrivia[j], allVipTrivia[k]];
+      }
+      for (const t of allVipTrivia.slice(0, 12)) triviaPool.push({ text: t });
+
       const stage = el("div", { class: "trivia-stage" });
-      const items = (h.trivia || []).map((t, i) => el("div", { class: `trivia-item${i === 0 ? " active" : ""}` }, t));
+      const items = triviaPool.map((t, i) => el("div", { class: `trivia-item${i === 0 ? " active" : ""}` }, t.text));
       items.forEach(i => stage.append(i));
       const dots = el("div", { class: "trivia-dots" });
       const dotEls = items.map((_, i) => el("span", { class: i === 0 ? "active" : "" }));
