@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-05-04T16:42:10.375Z",
+  "generatedAt": "2026-05-04T16:44:09.562Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
-    "declared": 214,
-    "inProgress": 20
+    "declared": 216,
+    "inProgress": 18
   },
   "partyResults": [
     {
       "party": "Tamilaga Vettri Kazhagam",
-      "won": 96,
-      "leading": 11,
+      "won": 97,
+      "leading": 10,
       "leadingUnder1k": 4,
       "trailingUnder1k": 7,
       "total": 107
@@ -25,8 +25,8 @@
     },
     {
       "party": "All India Anna Dravida Munnetra Kazhagam",
-      "won": 44,
-      "leading": 3,
+      "won": 45,
+      "leading": 2,
       "leadingUnder1k": 4,
       "trailingUnder1k": 3,
       "total": 47
@@ -110,8 +110,8 @@
       "parties": [
         "Tamilaga Vettri Kazhagam"
       ],
-      "won": 96,
-      "leading": 11,
+      "won": 97,
+      "leading": 10,
       "total": 107,
       "cushionVotes": 2441504,
       "gapVotes": 786229,
@@ -147,8 +147,8 @@
         "Bharatiya Janata Party",
         "Pattali Makkal Katchi"
       ],
-      "won": 48,
-      "leading": 5,
+      "won": 49,
+      "leading": 4,
       "total": 53,
       "cushionVotes": 803811,
       "gapVotes": 786695,
@@ -291,17 +291,6 @@
       "status": "Result in Progress"
     },
     {
-      "constituency": "TIRUKKOYILUR",
-      "constNo": "76",
-      "leadingCandidate": "PALANISAMY S",
-      "leadingParty": "All India Anna Dravida Munnetra Kazhagam",
-      "trailingCandidate": "VIJAY R BARANIBALAAJI",
-      "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 285,
-      "round": "24/24",
-      "status": "Result in Progress"
-    },
-    {
       "constituency": "POLUR",
       "constNo": "66",
       "leadingCandidate": "ABISHEK. R",
@@ -432,35 +421,46 @@
       "margin": 15081,
       "round": "31/31",
       "status": "Result in Progress"
+    },
+    {
+      "constituency": "CHENGALPATTU",
+      "constNo": "32",
+      "leadingCandidate": "S. THIYAGARAJAN",
+      "leadingParty": "Tamilaga Vettri Kazhagam",
+      "trailingCandidate": "KARTHIKDHANDAPANI",
+      "trailingParty": "Dravida Munnetra Kazhagam",
+      "margin": 35670,
+      "round": "37/40",
+      "status": "Result in Progress"
     }
   ],
   "closestSummary": [
     {
       "alliance": "AIADMK-led NDA",
-      "couldLose": 5,
+      "couldLose": 4,
       "couldGain": 6,
-      "loseVotes": 15942,
+      "loseVotes": 15657,
       "gainVotes": 38225,
-      "net": 1
+      "net": 2
     },
     {
       "alliance": "DMK-led INDIA Alliance",
       "couldLose": 4,
-      "couldGain": 4,
+      "couldGain": 5,
       "loseVotes": 8572,
-      "gainVotes": 14587,
-      "net": 0
+      "gainVotes": 50257,
+      "net": 1
     },
     {
       "alliance": "TVK",
-      "couldLose": 6,
-      "couldGain": 5,
-      "loseVotes": 34514,
-      "gainVotes": 6216,
-      "net": -1
+      "couldLose": 7,
+      "couldGain": 4,
+      "loseVotes": 70184,
+      "gainVotes": 5931,
+      "net": -3
     }
   ],
-  "razorActiveCount": 5,
+  "razorActiveCount": 4,
   "contests": {
     "ALANDUR": {
       "constituency": "ALANDUR",
@@ -1175,7 +1175,7 @@
       "trailingParty": "Indian National Congress",
       "margin": 46074,
       "round": "30/30",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "KARUR": {
       "constituency": "KARUR",
@@ -2638,7 +2638,7 @@
       "trailingParty": "Tamilaga Vettri Kazhagam",
       "margin": 285,
       "round": "24/24",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "TIRUNELVELI": {
       "constituency": "TIRUNELVELI",
