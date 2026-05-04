@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T16:30:18.568Z",
+  "generatedAt": "2026-05-04T16:32:13.117Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
@@ -113,8 +113,8 @@
       "won": 96,
       "leading": 11,
       "total": 107,
-      "cushionVotes": 2441829,
-      "gapVotes": 786729,
+      "cushionVotes": 2441760,
+      "gapVotes": 786632,
       "flippableUnder1k": 7,
       "flippableUnder5k": 29,
       "vulnerableUnder1k": 4
@@ -133,8 +133,8 @@
       "won": 68,
       "leading": 6,
       "total": 74,
-      "cushionVotes": 680866,
-      "gapVotes": 2254937,
+      "cushionVotes": 680769,
+      "gapVotes": 2254868,
       "flippableUnder1k": 5,
       "flippableUnder5k": 14,
       "vulnerableUnder1k": 5
@@ -275,8 +275,8 @@
       "leadingParty": "Dravida Munnetra Kazhagam",
       "trailingCandidate": "SEENIVASA SETHUPATHY. R",
       "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 127,
-      "round": "28/30",
+      "margin": 30,
+      "round": "29/30",
       "status": "Result in Progress"
     },
     {
@@ -319,7 +319,7 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "SARAVANAN. P",
       "trailingParty": "Desiya Murpokku Dravida Kazhagam",
-      "margin": 801,
+      "margin": 732,
       "round": "20/22",
       "status": "Result in Progress"
     },
@@ -439,8 +439,8 @@
       "alliance": "TVK",
       "couldLose": 5,
       "couldGain": 7,
-      "loseVotes": 19714,
-      "gainVotes": 14426,
+      "loseVotes": 19645,
+      "gainVotes": 14329,
       "net": 2
     },
     {
@@ -455,8 +455,8 @@
       "alliance": "DMK-led INDIA Alliance",
       "couldLose": 6,
       "couldGain": 3,
-      "loseVotes": 16817,
-      "gainVotes": 2223,
+      "loseVotes": 16720,
+      "gainVotes": 2154,
       "net": -3
     }
   ],
@@ -1976,7 +1976,7 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "SARAVANAN. P",
       "trailingParty": "Desiya Murpokku Dravida Kazhagam",
-      "margin": 801,
+      "margin": 732,
       "round": "20/22",
       "status": "Result in Progress"
     },
@@ -2658,8 +2658,8 @@
       "leadingParty": "Dravida Munnetra Kazhagam",
       "trailingCandidate": "SEENIVASA SETHUPATHY. R",
       "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 127,
-      "round": "28/30",
+      "margin": 30,
+      "round": "29/30",
       "status": "Result in Progress"
     },
     "TIRUPPUR (NORTH)": {
@@ -3027,7 +3027,7 @@
     }
   },
   "countingProgress": {
-    "roundsDone": 5586,
+    "roundsDone": 5587,
     "roundsTotal": 5600,
     "pct": 99.8,
     "constituenciesComplete": 227
@@ -3051,8 +3051,8 @@
       "leadingParty": "Dravida Munnetra Kazhagam",
       "trailingCandidate": "SEENIVASA SETHUPATHY. R",
       "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 127,
-      "round": "28/30",
+      "margin": 30,
+      "round": "29/30",
       "status": "Result in Progress"
     }
   }
