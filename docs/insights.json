@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-04T15:10:08.399Z",
+  "generatedAt": "2026-05-04T15:12:07.639Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
-    "declared": 169,
-    "inProgress": 65
+    "declared": 170,
+    "inProgress": 64
   },
   "partyResults": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "party": "Dravida Munnetra Kazhagam",
-      "won": 42,
-      "leading": 18,
+      "won": 43,
+      "leading": 17,
       "leadingUnder1k": 3,
       "trailingUnder1k": 4,
       "total": 60
@@ -130,11 +130,11 @@
         "Indian Union Muslim League",
         "Viduthalai Chiruthaigal Katchi"
       ],
-      "won": 52,
-      "leading": 22,
+      "won": 53,
+      "leading": 21,
       "total": 74,
-      "cushionVotes": 680218,
-      "gapVotes": 2251807,
+      "cushionVotes": 680302,
+      "gapVotes": 2251923,
       "flippableUnder1k": 5,
       "flippableUnder5k": 14,
       "vulnerableUnder1k": 4
@@ -150,8 +150,8 @@
       "won": 37,
       "leading": 16,
       "total": 53,
-      "cushionVotes": 806390,
-      "gapVotes": 782556,
+      "cushionVotes": 806506,
+      "gapVotes": 782640,
       "flippableUnder1k": 4,
       "flippableUnder5k": 20,
       "vulnerableUnder1k": 5
@@ -614,7 +614,7 @@
       "trailingParty": "Tamilaga Vettri Kazhagam",
       "margin": 19382,
       "round": "22/22",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "ARCOT": {
       "constituency": "ARCOT",
@@ -997,7 +997,7 @@
       "leadingParty": "Pattali Makkal Katchi",
       "trailingCandidate": "GINGEE MASTHAN K S",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 13274,
+      "margin": 13390,
       "round": "21/23",
       "status": "Result in Progress"
     },
@@ -2757,8 +2757,8 @@
       "leadingParty": "Dravida Munnetra Kazhagam",
       "trailingCandidate": "KUMARAGURU R",
       "trailingParty": "All India Anna Dravida Munnetra Kazhagam",
-      "margin": 2267,
-      "round": "27/29",
+      "margin": 2351,
+      "round": "28/29",
       "status": "Result in Progress"
     },
     "USILAMPATTI": {
@@ -3027,7 +3027,7 @@
     }
   },
   "countingProgress": {
-    "roundsDone": 5520,
+    "roundsDone": 5521,
     "roundsTotal": 5588,
     "pct": 98.8,
     "constituenciesComplete": 204
