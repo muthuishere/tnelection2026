@@ -1,0 +1,17 @@
+{
+  "_comment": "Auto-updated every 2 minutes by /loop. Holds the freshest news headlines for the trivia ticker. Capped at 20 items, newest first.",
+  "items": [
+    {
+      "text": "TVK leading 107 of 234 seats — Vijay's debut party is 11 seats short of the 118-mark for an outright majority.",
+      "time": "2026-05-04T16:14:00+05:30"
+    },
+    {
+      "text": "VK Ramkumar (TVK) wins Anna Nagar with 71,375 votes, defeating DMK's N. Chitrarasu by 21,363.",
+      "time": "2026-05-04T16:14:00+05:30"
+    },
+    {
+      "text": "CM M.K. Stalin continues to trail in his own seat Kolathur to TVK newcomer V.S. Babu.",
+      "time": "2026-05-04T16:14:00+05:30"
+    }
+  ]
+}
