@@ -3,7 +3,7 @@
 
 const ALLIANCES: Record<string, { name: string; parties: string[] }> = {
   DMK_FRONT: {
-    name: "DMK-led SPA",
+    name: "DMK-led INDIA Alliance",
     parties: [
       "Dravida Munnetra Kazhagam",
       "Indian National Congress",
