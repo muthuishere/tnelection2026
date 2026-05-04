@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-04T16:16:08.758Z",
+  "generatedAt": "2026-05-04T16:18:13.319Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
-    "declared": 208,
-    "inProgress": 26
+    "declared": 209,
+    "inProgress": 25
   },
   "partyResults": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "party": "Dravida Munnetra Kazhagam",
-      "won": 52,
-      "leading": 8,
+      "won": 53,
+      "leading": 7,
       "leadingUnder1k": 4,
       "trailingUnder1k": 4,
       "total": 60
@@ -130,8 +130,8 @@
         "Indian Union Muslim League",
         "Viduthalai Chiruthaigal Katchi"
       ],
-      "won": 65,
-      "leading": 9,
+      "won": 66,
+      "leading": 8,
       "total": 74,
       "cushionVotes": 681499,
       "gapVotes": 2254991,
@@ -2000,7 +2000,7 @@
       "trailingParty": "All India Anna Dravida Munnetra Kazhagam",
       "margin": 8260,
       "round": "25/25",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "POONAMALLEE": {
       "constituency": "POONAMALLEE",
