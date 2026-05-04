@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-05-04T18:00:13.158Z",
+  "generatedAt": "2026-05-04T18:02:13.614Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
-    "declared": 230,
-    "inProgress": 4
+    "declared": 231,
+    "inProgress": 3
   },
   "partyResults": [
     {
       "party": "Tamilaga Vettri Kazhagam",
-      "won": 105,
-      "leading": 2,
+      "won": 106,
+      "leading": 1,
       "leadingUnder1k": 4,
       "trailingUnder1k": 7,
       "total": 107
@@ -110,8 +110,8 @@
       "parties": [
         "Tamilaga Vettri Kazhagam"
       ],
-      "won": 105,
-      "leading": 2,
+      "won": 106,
+      "leading": 1,
       "total": 107,
       "cushionVotes": 2444115,
       "gapVotes": 785514,
@@ -291,17 +291,6 @@
       "status": "Result in Progress"
     },
     {
-      "constituency": "SHOLINGUR",
-      "constNo": "39",
-      "leadingCandidate": "G.KAPIL",
-      "leadingParty": "Tamilaga Vettri Kazhagam",
-      "trailingCandidate": "K.SARAVANAN",
-      "trailingParty": "Pattali Makkal Katchi",
-      "margin": 5686,
-      "round": "26/26",
-      "status": "Result in Progress"
-    },
-    {
       "constituency": "SHOZHINGANALLUR",
       "constNo": "27",
       "leadingCandidate": "ECR P SARAVANAN",
@@ -323,19 +312,19 @@
       "net": 1
     },
     {
-      "alliance": "AIADMK-led NDA",
+      "alliance": "TVK",
       "couldLose": 1,
       "couldGain": 1,
-      "loseVotes": 214,
-      "gainVotes": 5686,
+      "loseVotes": 96780,
+      "gainVotes": 30,
       "net": 0
     },
     {
-      "alliance": "TVK",
-      "couldLose": 2,
-      "couldGain": 1,
-      "loseVotes": 102466,
-      "gainVotes": 30,
+      "alliance": "AIADMK-led NDA",
+      "couldLose": 1,
+      "couldGain": 0,
+      "loseVotes": 214,
+      "gainVotes": 0,
       "net": -1
     }
   ],
@@ -2099,7 +2088,7 @@
       "trailingParty": "Pattali Makkal Katchi",
       "margin": 5686,
       "round": "26/26",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "SHOZHINGANALLUR": {
       "constituency": "SHOZHINGANALLUR",
