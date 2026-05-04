@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T16:00:21.796Z",
+  "generatedAt": "2026-05-04T16:02:08.946Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
@@ -134,7 +134,7 @@
       "leading": 11,
       "total": 74,
       "cushionVotes": 681497,
-      "gapVotes": 2255073,
+      "gapVotes": 2255147,
       "flippableUnder1k": 4,
       "flippableUnder5k": 14,
       "vulnerableUnder1k": 5
@@ -150,7 +150,7 @@
       "won": 46,
       "leading": 7,
       "total": 53,
-      "cushionVotes": 804259,
+      "cushionVotes": 804333,
       "gapVotes": 786429,
       "flippableUnder1k": 3,
       "flippableUnder5k": 19,
@@ -275,8 +275,8 @@
       "leadingParty": "All India Anna Dravida Munnetra Kazhagam",
       "trailingCandidate": "MAHESH.R",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 140,
-      "round": "33/34",
+      "margin": 214,
+      "round": "34/34",
       "status": "Result in Progress"
     },
     {
@@ -447,7 +447,7 @@
       "alliance": "AIADMK-led NDA",
       "couldLose": 5,
       "couldGain": 4,
-      "loseVotes": 3215,
+      "loseVotes": 3289,
       "gainVotes": 11839,
       "net": -1
     },
@@ -456,7 +456,7 @@
       "couldLose": 6,
       "couldGain": 4,
       "loseVotes": 12042,
-      "gainVotes": 2897,
+      "gainVotes": 2971,
       "net": -2
     }
   ],
@@ -1162,8 +1162,8 @@
       "leadingParty": "All India Anna Dravida Munnetra Kazhagam",
       "trailingCandidate": "MAHESH.R",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 140,
-      "round": "33/34",
+      "margin": 214,
+      "round": "34/34",
       "status": "Result in Progress"
     },
     "KARAIKUDI": {
@@ -3027,10 +3027,10 @@
     }
   },
   "countingProgress": {
-    "roundsDone": 5575,
+    "roundsDone": 5576,
     "roundsTotal": 5600,
     "pct": 99.6,
-    "constituenciesComplete": 223
+    "constituenciesComplete": 224
   },
   "superlatives": {
     "biggestMargin": {
