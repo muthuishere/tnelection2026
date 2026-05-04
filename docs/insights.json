@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T11:15:12.382Z",
+  "generatedAt": "2026-05-04T11:17:23.194Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
@@ -113,8 +113,8 @@
       "won": 8,
       "leading": 101,
       "total": 109,
-      "cushionVotes": 1866121,
-      "gapVotes": 636548,
+      "cushionVotes": 1878935,
+      "gapVotes": 636618,
       "flippableUnder1k": 3,
       "flippableUnder5k": 29,
       "vulnerableUnder1k": 3
@@ -133,10 +133,10 @@
       "won": 7,
       "leading": 65,
       "total": 72,
-      "cushionVotes": 563584,
-      "gapVotes": 1798462,
+      "cushionVotes": 565236,
+      "gapVotes": 1811717,
       "flippableUnder1k": 5,
-      "flippableUnder5k": 21,
+      "flippableUnder5k": 20,
       "vulnerableUnder1k": 5
     },
     {
@@ -150,8 +150,8 @@
       "won": 0,
       "leading": 53,
       "total": 53,
-      "cushionVotes": 691836,
-      "gapVotes": 593912,
+      "cushionVotes": 697287,
+      "gapVotes": 600504,
       "flippableUnder1k": 3,
       "flippableUnder5k": 27,
       "vulnerableUnder1k": 3
@@ -189,15 +189,15 @@
     },
     {
       "label": "1,000 – 5,000",
-      "count": 66,
+      "count": 65,
       "byAlliance": {
         "DMK-led INDIA Alliance": 28,
-        "AIADMK-led NDA": 14,
+        "AIADMK-led NDA": 13,
         "TVK": 24
       },
       "byParty": {
         "Dravida Munnetra Kazhagam": 22,
-        "All India Anna Dravida Munnetra Kazhagam": 10,
+        "All India Anna Dravida Munnetra Kazhagam": 9,
         "Tamilaga Vettri Kazhagam": 24,
         "Indian National Congress": 3,
         "Communist Party of India (Marxist)": 1,
@@ -210,15 +210,15 @@
     },
     {
       "label": "5,000 – 10,000",
-      "count": 46,
+      "count": 47,
       "byAlliance": {
         "DMK-led INDIA Alliance": 20,
-        "AIADMK-led NDA": 13,
+        "AIADMK-led NDA": 14,
         "TVK": 13
       },
       "byParty": {
         "Dravida Munnetra Kazhagam": 18,
-        "All India Anna Dravida Munnetra Kazhagam": 12,
+        "All India Anna Dravida Munnetra Kazhagam": 13,
         "Tamilaga Vettri Kazhagam": 13,
         "Pattali Makkal Katchi": 1,
         "Indian National Congress": 1,
@@ -227,14 +227,14 @@
     },
     {
       "label": "10,000 – 25,000",
-      "count": 79,
+      "count": 78,
       "byAlliance": {
-        "TVK": 46,
+        "TVK": 45,
         "AIADMK-led NDA": 16,
         "DMK-led INDIA Alliance": 17
       },
       "byParty": {
-        "Tamilaga Vettri Kazhagam": 46,
+        "Tamilaga Vettri Kazhagam": 45,
         "All India Anna Dravida Munnetra Kazhagam": 14,
         "Dravida Munnetra Kazhagam": 13,
         "Pattali Makkal Katchi": 2,
@@ -246,14 +246,14 @@
     },
     {
       "label": "25,000 – 50,000",
-      "count": 28,
+      "count": 29,
       "byAlliance": {
-        "TVK": 20,
+        "TVK": 21,
         "AIADMK-led NDA": 6,
         "DMK-led INDIA Alliance": 2
       },
       "byParty": {
-        "Tamilaga Vettri Kazhagam": 20,
+        "Tamilaga Vettri Kazhagam": 21,
         "All India Anna Dravida Munnetra Kazhagam": 6,
         "Dravida Munnetra Kazhagam": 2
       }
@@ -378,8 +378,8 @@
       "leadingParty": "Bharatiya Janata Party",
       "trailingCandidate": "KADARKARAIRAJ. A",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 741,
-      "round": "8/21",
+      "margin": 777,
+      "round": "9/21",
       "status": "Result in Progress"
     },
     {
@@ -451,7 +451,7 @@
       "alliance": "AIADMK-led NDA",
       "couldLose": 4,
       "couldGain": 4,
-      "loseVotes": 2556,
+      "loseVotes": 2592,
       "gainVotes": 2550,
       "net": 0
     },
@@ -460,7 +460,7 @@
       "couldLose": 8,
       "couldGain": 5,
       "loseVotes": 5334,
-      "gainVotes": 2417,
+      "gainVotes": 2453,
       "net": -3
     }
   ],
@@ -891,7 +891,7 @@
       "trailingCandidate": "INDIRANI.T",
       "trailingParty": "Dravida Munnetra Kazhagam",
       "margin": 15442,
-      "round": "22/23",
+      "round": "22/24",
       "status": "Result in Progress"
     },
     "DHARMAPURI": {
@@ -978,8 +978,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "C. UTHAYAKUMAR",
       "trailingParty": "Bharatiya Janata Party",
-      "margin": 7935,
-      "round": "12/18",
+      "margin": 7970,
+      "round": "13/18",
       "status": "Result in Progress"
     },
     "GANGAVALLI": {
@@ -1165,8 +1165,8 @@
       "leadingParty": "All India Anna Dravida Munnetra Kazhagam",
       "trailingCandidate": "MAHESH.R",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 4874,
-      "round": "17/26",
+      "margin": 5147,
+      "round": "18/26",
       "status": "Result in Progress"
     },
     "KARAIKUDI": {
@@ -1209,8 +1209,8 @@
       "leadingParty": "Viduthalai Chiruthaigal Katchi",
       "trailingCandidate": "A. SOZHAN",
       "trailingParty": "Pattali Makkal Katchi",
-      "margin": 19630,
-      "round": "14/21",
+      "margin": 21992,
+      "round": "15/21",
       "status": "Result in Progress"
     },
     "KAVUNDAMPALAYAM": {
@@ -1220,7 +1220,7 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "ARUNKUMAR PRG",
       "trailingParty": "All India Anna Dravida Munnetra Kazhagam",
-      "margin": 41613,
+      "margin": 41054,
       "round": "26/28",
       "status": "Result in Progress"
     },
@@ -1242,8 +1242,8 @@
       "leadingParty": "All India Anna Dravida Munnetra Kazhagam",
       "trailingCandidate": "PITCHANDI.K",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 28382,
-      "round": "18/22",
+      "margin": 29935,
+      "round": "19/22",
       "status": "Result in Progress"
     },
     "KILVAITHINANKUPPAM": {
@@ -1264,8 +1264,8 @@
       "leadingParty": "Communist Party of India (Marxist)",
       "trailingCandidate": "SENTHIL PANDIAN. P",
       "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 1679,
-      "round": "13/16",
+      "margin": 1322,
+      "round": "14/16",
       "status": "Result in Progress"
     },
     "KINATHUKADAVU": {
@@ -1297,8 +1297,8 @@
       "leadingParty": "Dravida Munnetra Kazhagam",
       "trailingCandidate": "BALASUBRAMANIAN.S",
       "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 2862,
-      "round": "17/23",
+      "margin": 1968,
+      "round": "18/23",
       "status": "Result in Progress"
     },
     "KRISHNAGIRI": {
@@ -1429,8 +1429,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "MOORTHY P",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 11523,
-      "round": "23/29",
+      "margin": 14048,
+      "round": "24/29",
       "status": "Result in Progress"
     },
     "MADURAI NORTH": {
@@ -1550,8 +1550,8 @@
       "leadingParty": "Indian National Congress",
       "trailingCandidate": "PALANISAMY. A M.COM.",
       "trailingParty": "Pattali Makkal Katchi",
-      "margin": 8336,
-      "round": "17/22",
+      "margin": 8541,
+      "round": "18/22",
       "status": "Result in Progress"
     },
     "MELUR": {
@@ -1682,8 +1682,8 @@
       "leadingParty": "All India Anna Dravida Munnetra Kazhagam",
       "trailingCandidate": "MOHAMED MUBARAK",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 34574,
-      "round": "21/25",
+      "margin": 36538,
+      "round": "22/25",
       "status": "Result in Progress"
     },
     "NATHAM": {
@@ -1737,8 +1737,8 @@
       "leadingParty": "All India Anna Dravida Munnetra Kazhagam",
       "trailingCandidate": "ADHIYAMAAN. R.V",
       "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 15797,
-      "round": "21/26",
+      "margin": 15482,
+      "round": "22/26",
       "status": "Result in Progress"
     },
     "ORATHANADU": {
@@ -1825,8 +1825,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "D.MURUGESAN",
       "trailingParty": "Desiya Murpokku Dravida Kazhagam",
-      "margin": 31435,
-      "round": "19/34",
+      "margin": 33381,
+      "round": "20/34",
       "status": "Result in Progress"
     },
     "PANRUTI": {
@@ -1913,8 +1913,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "DR. JAYALAKSHMI. S.T",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 11310,
-      "round": "23/28",
+      "margin": 12826,
+      "round": "24/28",
       "status": "Result in Progress"
     },
     "PERAMBUR": {
@@ -2013,7 +2013,7 @@
       "trailingCandidate": "KRISHNASWAMY.A",
       "trailingParty": "Dravida Munnetra Kazhagam",
       "margin": 63006,
-      "round": "20/23",
+      "round": "20/25",
       "status": "Result in Progress"
     },
     "PUDUKKOTTAI": {
@@ -2078,8 +2078,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "PREMKUMAR S D",
       "trailingParty": "Bharatiya Janata Party",
-      "margin": 14196,
-      "round": "18/21",
+      "margin": 14212,
+      "round": "19/21",
       "status": "Result in Progress"
     },
     "RISHIVANDIYAM": {
@@ -2089,8 +2089,8 @@
       "leadingParty": "Dravida Munnetra Kazhagam",
       "trailingCandidate": "ASHOK KUMAR G",
       "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 3368,
-      "round": "14/25",
+      "margin": 3064,
+      "round": "15/25",
       "status": "Result in Progress"
     },
     "ROYAPURAM": {
@@ -2122,8 +2122,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "RAJENDRAN. R",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 7752,
-      "round": "16/21",
+      "margin": 9067,
+      "round": "17/21",
       "status": "Result in Progress"
     },
     "SALEM (SOUTH)": {
@@ -2177,8 +2177,8 @@
       "leadingParty": "All India Anna Dravida Munnetra Kazhagam",
       "trailingCandidate": "SENTHILKUMAR. K",
       "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 6282,
-      "round": "21/25",
+      "margin": 7176,
+      "round": "22/25",
       "status": "Result in Progress"
     },
     "SATTUR": {
@@ -2188,8 +2188,8 @@
       "leadingParty": "Bharatiya Janata Party",
       "trailingCandidate": "KADARKARAIRAJ. A",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 741,
-      "round": "8/21",
+      "margin": 777,
+      "round": "9/21",
       "status": "Result in Progress"
     },
     "SENTHAMANGALAM": {
@@ -2199,8 +2199,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "C CHANDRASEKARAN",
       "trailingParty": "All India Anna Dravida Munnetra Kazhagam",
-      "margin": 1466,
-      "round": "21/23",
+      "margin": 2655,
+      "round": "23/23",
       "status": "Result in Progress"
     },
     "SHOLAVANDAN": {
@@ -2419,8 +2419,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "KIRUTHIGA THANGAPANDI",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 24910,
-      "round": "16/26",
+      "margin": 26575,
+      "round": "17/26",
       "status": "Result in Progress"
     },
     "THIRUPORUR": {
@@ -2463,8 +2463,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "V.G. RAAJENDRAN",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 19228,
-      "round": "19/24",
+      "margin": 19690,
+      "round": "20/24",
       "status": "Result in Progress"
     },
     "THIRUVARUR": {
@@ -2595,8 +2595,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "SRMT SEKAR (A) CHANDRASEKAR R",
       "trailingParty": "All India Anna Dravida Munnetra Kazhagam",
-      "margin": 14188,
-      "round": "13/21",
+      "margin": 16892,
+      "round": "14/21",
       "status": "Result in Progress"
     },
     "TIRUCHIRAPPALLI (EAST)": {
@@ -2694,8 +2694,8 @@
       "leadingParty": "All India Anna Dravida Munnetra Kazhagam",
       "trailingCandidate": "M.SATHYA KUMAR",
       "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 8642,
-      "round": "14/25",
+      "margin": 9688,
+      "round": "15/25",
       "status": "Result in Progress"
     },
     "TIRUVADANAI": {
@@ -2870,8 +2870,8 @@
       "leadingParty": "Dravida Munnetra Kazhagam",
       "trailingCandidate": "PARAMASIVAM. V.P.B.",
       "trailingParty": "All India Anna Dravida Munnetra Kazhagam",
-      "margin": 9353,
-      "round": "19/24",
+      "margin": 9993,
+      "round": "20/24",
       "status": "Result in Progress"
     },
     "VEERAPANDI": {
@@ -3030,10 +3030,10 @@
     }
   },
   "countingProgress": {
-    "roundsDone": 4150,
-    "roundsTotal": 5429,
-    "pct": 76.4,
-    "constituenciesComplete": 26
+    "roundsDone": 4174,
+    "roundsTotal": 5432,
+    "pct": 76.8,
+    "constituenciesComplete": 27
   },
   "superlatives": {
     "biggestMargin": {
