@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-05-04T17:20:09.386Z",
+  "generatedAt": "2026-05-04T17:22:11.463Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
-    "declared": 228,
-    "inProgress": 6
+    "declared": 229,
+    "inProgress": 5
   },
   "partyResults": [
     {
       "party": "Tamilaga Vettri Kazhagam",
-      "won": 104,
-      "leading": 3,
+      "won": 105,
+      "leading": 2,
       "leadingUnder1k": 4,
       "trailingUnder1k": 7,
       "total": 107
@@ -110,8 +110,8 @@
       "parties": [
         "Tamilaga Vettri Kazhagam"
       ],
-      "won": 104,
-      "leading": 3,
+      "won": 105,
+      "leading": 2,
       "total": 107,
       "cushionVotes": 2441592,
       "gapVotes": 785514,
@@ -291,17 +291,6 @@
       "status": "Result in Progress"
     },
     {
-      "constituency": "MANAMADURAI",
-      "constNo": "187",
-      "leadingCandidate": "ELANGOVAN.D",
-      "leadingParty": "Tamilaga Vettri Kazhagam",
-      "trailingCandidate": "TAMILARASI.A",
-      "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 1208,
-      "round": "27/27",
-      "status": "Result in Progress"
-    },
-    {
       "constituency": "TIRUVANNAMALAI",
       "constNo": "63",
       "leadingCandidate": "VELU. E.V",
@@ -339,10 +328,18 @@
     {
       "alliance": "DMK-led INDIA Alliance",
       "couldLose": 2,
-      "couldGain": 3,
+      "couldGain": 2,
       "loseVotes": 2485,
-      "gainVotes": 98202,
-      "net": 1
+      "gainVotes": 96994,
+      "net": 0
+    },
+    {
+      "alliance": "TVK",
+      "couldLose": 2,
+      "couldGain": 2,
+      "loseVotes": 99943,
+      "gainVotes": 2485,
+      "net": 0
     },
     {
       "alliance": "AIADMK-led NDA",
@@ -351,14 +348,6 @@
       "loseVotes": 214,
       "gainVotes": 3163,
       "net": 0
-    },
-    {
-      "alliance": "TVK",
-      "couldLose": 3,
-      "couldGain": 2,
-      "loseVotes": 101151,
-      "gainVotes": 2485,
-      "net": -1
     }
   ],
   "razorActiveCount": 2,
@@ -1417,7 +1406,7 @@
       "trailingParty": "Dravida Munnetra Kazhagam",
       "margin": 1208,
       "round": "27/27",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "MANAPPARAI": {
       "constituency": "MANAPPARAI",
