@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-05-04T16:58:08.208Z",
+  "generatedAt": "2026-05-04T17:00:08.290Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
-    "declared": 220,
-    "inProgress": 14
+    "declared": 221,
+    "inProgress": 13
   },
   "partyResults": [
     {
       "party": "Tamilaga Vettri Kazhagam",
-      "won": 101,
-      "leading": 6,
+      "won": 102,
+      "leading": 5,
       "leadingUnder1k": 4,
       "trailingUnder1k": 7,
       "total": 107
@@ -110,8 +110,8 @@
       "parties": [
         "Tamilaga Vettri Kazhagam"
       ],
-      "won": 101,
-      "leading": 6,
+      "won": 102,
+      "leading": 5,
       "total": 107,
       "cushionVotes": 2441182,
       "gapVotes": 785514,
@@ -390,17 +390,6 @@
       "status": "Result in Progress"
     },
     {
-      "constituency": "SIVAGANGA",
-      "constNo": "186",
-      "leadingCandidate": "KULANTHAI RANI A",
-      "leadingParty": "Tamilaga Vettri Kazhagam",
-      "trailingCandidate": "SENTHILNATHAN PR",
-      "trailingParty": "All India Anna Dravida Munnetra Kazhagam",
-      "margin": 15081,
-      "round": "31/31",
-      "status": "Result in Progress"
-    },
-    {
       "constituency": "CHENGALPATTU",
       "constNo": "32",
       "leadingCandidate": "S. THIYAGARAJAN",
@@ -433,20 +422,20 @@
       "net": 2
     },
     {
-      "alliance": "AIADMK-led NDA",
-      "couldLose": 4,
+      "alliance": "TVK",
+      "couldLose": 5,
       "couldGain": 4,
-      "loseVotes": 15590,
-      "gainVotes": 23683,
-      "net": 0
+      "loseVotes": 136609,
+      "gainVotes": 5216,
+      "net": -1
     },
     {
-      "alliance": "TVK",
-      "couldLose": 6,
-      "couldGain": 4,
-      "loseVotes": 151690,
-      "gainVotes": 5216,
-      "net": -2
+      "alliance": "AIADMK-led NDA",
+      "couldLose": 4,
+      "couldGain": 3,
+      "loseVotes": 15590,
+      "gainVotes": 8602,
+      "net": -1
     }
   ],
   "razorActiveCount": 4,
@@ -2253,7 +2242,7 @@
       "trailingParty": "All India Anna Dravida Munnetra Kazhagam",
       "margin": 15081,
       "round": "31/31",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "SIVAKASI": {
       "constituency": "SIVAKASI",
