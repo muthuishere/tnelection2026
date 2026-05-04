@@ -1,9 +1,9 @@
 State,Constituency,Const. No.,Leading Candidate,Leading Party,Trailing Candidate,Trailing Party,Margin,Current Round,Total Rounds,Status
-Tamil Nadu,ALANDUR,28,M.HARISH,Tamilaga Vettri Kazhagam,T.M.ANBARASAN,Dravida Munnetra Kazhagam,27928,29,31,Result in Progress
+Tamil Nadu,ALANDUR,28,M.HARISH,Tamilaga Vettri Kazhagam,T.M.ANBARASAN,Dravida Munnetra Kazhagam,28863,30,31,Result in Progress
 Tamil Nadu,ALANGUDI,182,SIVA.V.MEYYANATHAN,Dravida Munnetra Kazhagam,KANDASAMY,Tamilaga Vettri Kazhagam,12977,21,21,Result Declared
 Tamil Nadu,ALANGULAM,223,PAUL MANOJ PANDIAN,Dravida Munnetra Kazhagam,K R P PRABAKARAN,All India Anna Dravida Munnetra Kazhagam,7798,25,25,Result Declared
 Tamil Nadu,AMBASAMUDRAM,225,DR.ESAKKI SUBAYA,All India Anna Dravida Munnetra Kazhagam,V.P.DURAI,Indian National Congress,10245,23,23,Result Declared
-Tamil Nadu,AMBATTUR,8,BALAMURUGAN.G,Tamilaga Vettri Kazhagam,DR A.P. POORNIMA,Dravida Munnetra Kazhagam,58781,28,28,Result in Progress
+Tamil Nadu,AMBATTUR,8,BALAMURUGAN.G,Tamilaga Vettri Kazhagam,DR A.P. POORNIMA,Dravida Munnetra Kazhagam,58781,28,28,Result Declared
 Tamil Nadu,AMBUR,48,VILWANATHAN. A.C.,Dravida Munnetra Kazhagam,IMTHIYAZ PANDARATTUDU ABDU,Tamilaga Vettri Kazhagam,7327,22,22,Result in Progress
 Tamil Nadu,ANAIKATTU,44,D.VELAZHAGAN,All India Anna Dravida Munnetra Kazhagam,A.P.NANDAKUMAR,Dravida Munnetra Kazhagam,7081,23,23,Result Declared
 Tamil Nadu,ANDIPATTI,198,MAHARAJAN.A,Dravida Munnetra Kazhagam,PANDI.V,Tamilaga Vettri Kazhagam,9554,25,25,Result Declared
@@ -25,7 +25,7 @@ Tamil Nadu,BHAVANI,104,KARUPPANAN. K.C,All India Anna Dravida Munnetra Kazhagam,
 Tamil Nadu,BHAVANISAGAR,107,V.P.TAMILSELVI,Tamilaga Vettri Kazhagam,A.BANNARI,All India Anna Dravida Munnetra Kazhagam,4569,24,24,Result Declared
 Tamil Nadu,BHUVANAGIRI,157,ARUNMOZHITHEVAN . A,All India Anna Dravida Munnetra Kazhagam,SARAVANAN. DURAI . K,Dravida Munnetra Kazhagam,2487,26,26,Result in Progress
 Tamil Nadu,BODINAYAKANUR,200,PANNEERSELVAM.O,Dravida Munnetra Kazhagam,PRAKASH.S,Tamilaga Vettri Kazhagam,6805,25,25,Result in Progress
-Tamil Nadu,CHENGALPATTU,32,S. THIYAGARAJAN,Tamilaga Vettri Kazhagam,KARTHIKDHANDAPANI,Dravida Munnetra Kazhagam,34344,32,36,Result in Progress
+Tamil Nadu,CHENGALPATTU,32,S. THIYAGARAJAN,Tamilaga Vettri Kazhagam,KARTHIKDHANDAPANI,Dravida Munnetra Kazhagam,34441,33,36,Result in Progress
 Tamil Nadu,CHENGAM,62,S.VELU,All India Anna Dravida Munnetra Kazhagam,K BHARATHIDHASAN,Tamilaga Vettri Kazhagam,14562,23,25,Result in Progress
 Tamil Nadu,CHEPAUK-THIRUVALLIKENI,19,UDHAYANIDHI STALIN,Dravida Munnetra Kazhagam,SELVAM. D,Tamilaga Vettri Kazhagam,7140,17,17,Result Declared
 Tamil Nadu,CHEYYAR,68,MUKKUR N. SUBRAMANIAN,All India Anna Dravida Munnetra Kazhagam,DUSI K MOHAN,Tamilaga Vettri Kazhagam,21081,24,24,Result Declared
@@ -160,14 +160,14 @@ Tamil Nadu,SENTHAMANGALAM,93,P CHANDRASEKAR,Tamilaga Vettri Kazhagam,C CHANDRASE
 Tamil Nadu,SHOLAVANDAN,190,KARUPPAIAH.M.V,Tamilaga Vettri Kazhagam,VENKATESAN.A,Dravida Munnetra Kazhagam,2678,19,19,Result Declared
 Tamil Nadu,SHOLINGUR,39,G.KAPIL,Tamilaga Vettri Kazhagam,K.SARAVANAN,Pattali Makkal Katchi,2954,22,25,Result in Progress
 Tamil Nadu,SHOZHINGANALLUR,27,ECR P SARAVANAN,Tamilaga Vettri Kazhagam,S. ARAVIND RAMESH,Dravida Munnetra Kazhagam,95820,30,31,Result in Progress
-Tamil Nadu,SINGANALLUR,121,K.S.SRI GIRI PRASATH,Tamilaga Vettri Kazhagam,V.SRINIDHI,Indian National Congress,19139,27,27,Result in Progress
+Tamil Nadu,SINGANALLUR,121,K.S.SRI GIRI PRASATH,Tamilaga Vettri Kazhagam,V.SRINIDHI,Indian National Congress,19139,27,27,Result Declared
 Tamil Nadu,SIRKAZHI,160,SENTHILSELVAN.R,Dravida Munnetra Kazhagam,SAKTHI.M,All India Anna Dravida Munnetra Kazhagam,11417,23,23,Result Declared
-Tamil Nadu,SIVAGANGA,186,KULANTHAI RANI A,Tamilaga Vettri Kazhagam,SENTHILNATHAN PR,All India Anna Dravida Munnetra Kazhagam,15017,30,31,Result in Progress
+Tamil Nadu,SIVAGANGA,186,KULANTHAI RANI A,Tamilaga Vettri Kazhagam,SENTHILNATHAN PR,All India Anna Dravida Munnetra Kazhagam,15081,31,31,Result in Progress
 Tamil Nadu,SIVAKASI,205,KEERTHANA S,Tamilaga Vettri Kazhagam,ASHOKAN G,Indian National Congress,11670,22,22,Result Declared
 Tamil Nadu,SRIPERUMBUDUR,29,THENNARASU.K,Tamilaga Vettri Kazhagam,K. SELVAPERUNTHAGAI,Indian National Congress,54246,33,33,Result Declared
 Tamil Nadu,SRIRANGAM,139,RAMESH,Tamilaga Vettri Kazhagam,S. DURAIRAJ,Dravida Munnetra Kazhagam,33590,28,28,Result in Progress
 Tamil Nadu,SRIVAIKUNTAM,216,SARAVANAN. G,Tamilaga Vettri Kazhagam,SHANMUGANATHAN. S. P,All India Anna Dravida Munnetra Kazhagam,1186,21,21,Result Declared
-Tamil Nadu,SRIVILLIPUTHUR,203,KARTHIK.A,Tamilaga Vettri Kazhagam,MAHALINGAM.P,Communist Party of India,8664,22,24,Result in Progress
+Tamil Nadu,SRIVILLIPUTHUR,203,KARTHIK.A,Tamilaga Vettri Kazhagam,MAHALINGAM.P,Communist Party of India,8643,23,24,Result in Progress
 Tamil Nadu,SULUR,116,NM.SUKUMAR,Tamilaga Vettri Kazhagam,V.P.KANDASAMY,All India Anna Dravida Munnetra Kazhagam,4790,30,30,Result Declared
 Tamil Nadu,TAMBARAM,31,D.SARATHKUMAR,Tamilaga Vettri Kazhagam,R.S.KIRUTHIKA DEVI,Dravida Munnetra Kazhagam,35621,39,39,Result Declared
 Tamil Nadu,TENKASI,222,DR.KALAI KATHIRAVAN,Dravida Munnetra Kazhagam,S.SELVA MOHANDAS PANDIAN,All India Anna Dravida Munnetra Kazhagam,10299,26,26,Result Declared
@@ -193,14 +193,14 @@ Tamil Nadu,THURAIYUR,146,RAVISANKAR.M,Tamilaga Vettri Kazhagam,E.SAROJA,All Indi
 Tamil Nadu,TINDIVANAM,72,VANNI ARASU,Viduthalai Chiruthaigal Katchi,ARJUNAN. P,All India Anna Dravida Munnetra Kazhagam,734,23,23,Result in Progress
 Tamil Nadu,TIRUCHENDUR,215,ANITHA R. RADHAKRISHNAN,Dravida Munnetra Kazhagam,J. MURUGAN,Tamilaga Vettri Kazhagam,5872,22,22,Result Declared
 Tamil Nadu,TIRUCHENGODU,96,ARUNRAJ K G,Tamilaga Vettri Kazhagam,SRMT SEKAR (A) CHANDRASEKAR R,All India Anna Dravida Munnetra Kazhagam,28172,22,22,Result Declared
-Tamil Nadu,TIRUCHIRAPPALLI (EAST),141,C. JOSEPH VIJAY,Tamilaga Vettri Kazhagam,S. INIGO IRUDAYARAJ,Dravida Munnetra Kazhagam,26685,22,28,Result in Progress
+Tamil Nadu,TIRUCHIRAPPALLI (EAST),141,C. JOSEPH VIJAY,Tamilaga Vettri Kazhagam,S. INIGO IRUDAYARAJ,Dravida Munnetra Kazhagam,26586,23,28,Result in Progress
 Tamil Nadu,TIRUCHIRAPPALLI (WEST),140,K.N.NEHRU,Dravida Munnetra Kazhagam,G.RAMAMOORTHI,Tamilaga Vettri Kazhagam,4786,24,24,Result Declared
 Tamil Nadu,TIRUCHULI,208,THANGAM THENARASU,Dravida Munnetra Kazhagam,SAMAYAN.S,Tamilaga Vettri Kazhagam,13485,23,23,Result in Progress
 Tamil Nadu,TIRUKKOYILUR,76,PALANISAMY S,All India Anna Dravida Munnetra Kazhagam,VIJAY R BARANIBALAAJI,Tamilaga Vettri Kazhagam,285,24,24,Result in Progress
 Tamil Nadu,TIRUNELVELI,224,MURUGHAN.R.S.,Tamilaga Vettri Kazhagam,SUBRAMANIAN.S,Dravida Munnetra Kazhagam,11414,28,28,Result Declared
 Tamil Nadu,TIRUPPATTUR,50,DR.THIRUPATHI. N,Tamilaga Vettri Kazhagam,NALLATHAMBI. A,Dravida Munnetra Kazhagam,47959,22,23,Result in Progress
 Tamil Nadu,TIRUPPATTUR,185,PERIAKARUPPAN. KR,Dravida Munnetra Kazhagam,SEENIVASA SETHUPATHY. R,Tamilaga Vettri Kazhagam,1127,25,27,Result in Progress
-Tamil Nadu,TIRUPPUR (NORTH),113,V.SATHYABAMA,Tamilaga Vettri Kazhagam,M.S.M.ANANDAN,All India Anna Dravida Munnetra Kazhagam,69860,33,34,Result in Progress
+Tamil Nadu,TIRUPPUR (NORTH),113,V.SATHYABAMA,Tamilaga Vettri Kazhagam,M.S.M.ANANDAN,All India Anna Dravida Munnetra Kazhagam,69992,34,34,Result in Progress
 Tamil Nadu,TIRUPPUR (SOUTH),114,BALAMURUGAN. S,Tamilaga Vettri Kazhagam,DINESHKUMAR. N,Dravida Munnetra Kazhagam,12901,21,21,Result Declared
 Tamil Nadu,TIRUTTANI,3,G.HARI,All India Anna Dravida Munnetra Kazhagam,M.SATHYA KUMAR,Tamilaga Vettri Kazhagam,5793,27,27,Result Declared
 Tamil Nadu,TIRUVADANAI,210,RAJEEV,Tamilaga Vettri Kazhagam,RM. KARUMANICKAM,Indian National Congress,2513,28,28,Result Declared

@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-05-04T15:18:08.798Z",
+  "generatedAt": "2026-05-04T15:20:11.644Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
-    "declared": 174,
-    "inProgress": 60
+    "declared": 176,
+    "inProgress": 58
   },
   "partyResults": [
     {
       "party": "Tamilaga Vettri Kazhagam",
-      "won": 82,
-      "leading": 25,
+      "won": 84,
+      "leading": 23,
       "leadingUnder1k": 4,
       "trailingUnder1k": 6,
       "total": 107
@@ -110,10 +110,10 @@
       "parties": [
         "Tamilaga Vettri Kazhagam"
       ],
-      "won": 82,
-      "leading": 25,
+      "won": 84,
+      "leading": 23,
       "total": 107,
-      "cushionVotes": 2435757,
+      "cushionVotes": 2436865,
       "gapVotes": 788463,
       "flippableUnder1k": 6,
       "flippableUnder5k": 29,
@@ -134,7 +134,7 @@
       "leading": 20,
       "total": 74,
       "cushionVotes": 681307,
-      "gapVotes": 2252230,
+      "gapVotes": 2253142,
       "flippableUnder1k": 4,
       "flippableUnder5k": 14,
       "vulnerableUnder1k": 4
@@ -151,7 +151,7 @@
       "leading": 15,
       "total": 53,
       "cushionVotes": 806730,
-      "gapVotes": 784991,
+      "gapVotes": 785187,
       "flippableUnder1k": 3,
       "flippableUnder5k": 20,
       "vulnerableUnder1k": 5
@@ -469,8 +469,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "T.M.ANBARASAN",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 27928,
-      "round": "29/31",
+      "margin": 28863,
+      "round": "30/31",
       "status": "Result in Progress"
     },
     "ALANGUDI": {
@@ -515,7 +515,7 @@
       "trailingParty": "Dravida Munnetra Kazhagam",
       "margin": 58781,
       "round": "28/28",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "AMBUR": {
       "constituency": "AMBUR",
@@ -755,8 +755,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "KARTHIKDHANDAPANI",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 34344,
-      "round": "32/36",
+      "margin": 34441,
+      "round": "33/36",
       "status": "Result in Progress"
     },
     "CHENGAM": {
@@ -2242,7 +2242,7 @@
       "trailingParty": "Indian National Congress",
       "margin": 19139,
       "round": "27/27",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "SIRKAZHI": {
       "constituency": "SIRKAZHI",
@@ -2262,8 +2262,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "SENTHILNATHAN PR",
       "trailingParty": "All India Anna Dravida Munnetra Kazhagam",
-      "margin": 15017,
-      "round": "30/31",
+      "margin": 15081,
+      "round": "31/31",
       "status": "Result in Progress"
     },
     "SIVAKASI": {
@@ -2317,8 +2317,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "MAHALINGAM.P",
       "trailingParty": "Communist Party of India",
-      "margin": 8664,
-      "round": "22/24",
+      "margin": 8643,
+      "round": "23/24",
       "status": "Result in Progress"
     },
     "SULUR": {
@@ -2603,8 +2603,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "S. INIGO IRUDAYARAJ",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 26685,
-      "round": "22/28",
+      "margin": 26586,
+      "round": "23/28",
       "status": "Result in Progress"
     },
     "TIRUCHIRAPPALLI (WEST)": {
@@ -2669,8 +2669,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "M.S.M.ANANDAN",
       "trailingParty": "All India Anna Dravida Munnetra Kazhagam",
-      "margin": 69860,
-      "round": "33/34",
+      "margin": 69992,
+      "round": "34/34",
       "status": "Result in Progress"
     },
     "TIRUPPUR (SOUTH)": {
@@ -3027,10 +3027,10 @@
     }
   },
   "countingProgress": {
-    "roundsDone": 5530,
+    "roundsDone": 5536,
     "roundsTotal": 5588,
-    "pct": 99,
-    "constituenciesComplete": 209
+    "pct": 99.1,
+    "constituenciesComplete": 211
   },
   "superlatives": {
     "biggestMargin": {
