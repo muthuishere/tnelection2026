@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tamil Nadu 2026 — Election Insights</title>
+  <style>
+    :root {
+      --bg: #0f1115;
+      --panel: #181b22;
+      --panel-2: #20242d;
+      --border: #2a2f3a;
+      --text: #e7eaf0;
+      --muted: #8b93a3;
+      --accent: #6ea8fe;
+      --tvk: #d63384;
+      --dmk: #d92d2d;
+      --aiadmk: #1fa251;
+      --other: #8b93a3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 28px 20px 80px; }
+    header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 12px; margin-bottom: 24px; }
+    h1 { font-size: 22px; margin: 0; font-weight: 600; }
+    h1 .state { color: var(--muted); font-weight: 400; }
+    .updated { color: var(--muted); font-size: 13px; }
+    h2 { font-size: 14px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 32px 0 12px; }
+    .totals { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+    .stat { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+    .stat .n { font-size: 28px; font-weight: 600; }
+    .stat .l { color: var(--muted); font-size: 13px; }
+    .alliances { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+    .alliance { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 16px; border-top: 3px solid var(--other); }
+    .alliance.tvk { border-top-color: var(--tvk); }
+    .alliance.dmk { border-top-color: var(--dmk); }
+    .alliance.aiadmk { border-top-color: var(--aiadmk); }
+    .alliance .name { font-weight: 600; margin-bottom: 4px; }
+    .alliance .total { font-size: 36px; font-weight: 700; line-height: 1; }
+    .alliance .total-l { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 2px; }
+    .alliance .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border); }
+    .alliance .stats .k { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; }
+    .alliance .stats .v { font-size: 16px; font-weight: 600; font-variant-numeric: tabular-nums; margin-top: 2px; }
+    .alliance .stats .sub { color: var(--muted); font-size: 11px; }
+    .alliance .stats .v.cushion { color: #5dd498; }
+    .alliance .stats .v.gap { color: #ff8b6b; }
+    .alliance .parties { color: var(--muted); font-size: 12px; margin-top: 12px; line-height: 1.4; padding-top: 10px; border-top: 1px solid var(--border); }
+    .highlights { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 700px) { .highlights { grid-template-columns: 1fr; } }
+    .hcard { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
+    .hcard h3 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin: 0 0 10px; font-weight: 600; }
+    .vip { padding: 8px 0; border-bottom: 1px solid var(--border); }
+    .vip:last-child { border-bottom: none; }
+    .vip .who { font-weight: 600; }
+    .vip .where { color: var(--muted); font-size: 12px; }
+    .vip .note { font-size: 13px; margin-top: 4px; }
+    .trivia li { margin-bottom: 8px; line-height: 1.5; }
+    .trivia { padding-left: 20px; margin: 0; }
+    table { width: 100%; border-collapse: collapse; background: var(--panel); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+    th, td { padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--border); font-size: 14px; }
+    th { background: var(--panel-2); font-weight: 600; color: var(--muted); text-transform: uppercase; font-size: 12px; letter-spacing: 0.04em; }
+    td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+    tbody tr:last-child td { border-bottom: none; }
+    .bars { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 16px; }
+    .bar-row { display: grid; grid-template-columns: 140px 1fr 60px; align-items: center; gap: 12px; padding: 6px 0; }
+    .bar-row .label { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
+    .bar-row .track { background: var(--panel-2); height: 18px; border-radius: 4px; overflow: hidden; }
+    .bar-row .fill { background: var(--accent); height: 100%; border-radius: 4px; transition: width 0.4s; }
+    .bar-row .count { text-align: right; font-variant-numeric: tabular-nums; font-weight: 500; }
+    .pill { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 11px; font-weight: 500; background: var(--panel-2); color: var(--muted); }
+    .pill.tvk { background: rgba(214, 51, 132, 0.15); color: #f06ba8; }
+    .pill.dmk { background: rgba(217, 45, 45, 0.15); color: #ff6b6b; }
+    .pill.aiadmk { background: rgba(31, 162, 81, 0.15); color: #5dd498; }
+    footer { color: var(--muted); font-size: 12px; margin-top: 40px; text-align: center; }
+    @media (max-width: 600px) {
+      .bar-row { grid-template-columns: 100px 1fr 40px; }
+      th, td { padding: 8px 10px; font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Election Insights <span class="state" id="state"></span></h1>
+      <div class="updated" id="updated"></div>
+    </header>
+
+    <div class="totals" id="totals"></div>
+
+    <h2>Alliance Scoreboard</h2>
+    <div class="alliances" id="alliances"></div>
+
+    <h2>Highlights &amp; Trivia</h2>
+    <div class="highlights" id="highlights"></div>
+
+    <h2>Party-wise Results</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Party</th>
+          <th>Alliance</th>
+          <th class="num">Won</th>
+          <th class="num">Leading</th>
+          <th class="num">Total</th>
+        </tr>
+      </thead>
+      <tbody id="parties"></tbody>
+    </table>
+
+    <h2>Margin of Victory Distribution</h2>
+    <div class="bars" id="margins"></div>
+
+    <h2>Closest Contests</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Constituency</th>
+          <th>Leading</th>
+          <th>Trailing</th>
+          <th class="num">Margin</th>
+          <th class="num">Round</th>
+        </tr>
+      </thead>
+      <tbody id="closest"></tbody>
+    </table>
+
+    <footer>Data: results.eci.gov.in &middot; Insights generated from results.csv</footer>
+  </div>
+
+  <script>
+    const ALLIANCE_CLASS = {
+      "TVK": "tvk",
+      "DMK-led SPA": "dmk",
+      "AIADMK-led NDA": "aiadmk",
+    };
+
+    function fmt(n) { return n.toLocaleString("en-IN"); }
+    function el(tag, attrs = {}, ...children) {
+      const node = document.createElement(tag);
+      for (const [k, v] of Object.entries(attrs)) {
+        if (k === "class") node.className = v;
+        else if (k === "html") node.innerHTML = v;
+        else node.setAttribute(k, v);
+      }
+      for (const c of children) {
+        if (c == null) continue;
+        node.append(c.nodeType ? c : document.createTextNode(c));
+      }
+      return node;
+    }
+
+    async function load() {
+      const res = await fetch("./insights.json", { cache: "no-store" });
+      const d = await res.json();
+
+      document.getElementById("state").textContent = d.state ? `· ${d.state}` : "";
+      document.getElementById("updated").textContent =
+        "Generated " + new Date(d.generatedAt).toLocaleString("en-IN");
+
+      // Totals
+      const totals = document.getElementById("totals");
+      const stats = [
+        ["Constituencies", d.totals.constituencies],
+        ["Declared", d.totals.declared],
+        ["In Progress", d.totals.inProgress],
+        ["Parties Leading", d.partyResults.length],
+      ];
+      for (const [l, n] of stats)
+        totals.append(el("div", { class: "stat" }, el("div", { class: "n" }, fmt(n)), el("div", { class: "l" }, l)));
+
+      // Alliances
+      const alliances = document.getElementById("alliances");
+      for (const a of d.allianceResults) {
+        if (a.total === 0 && a.gapVotes === 0) continue;
+        const cls = ALLIANCE_CLASS[a.alliance] || "";
+        alliances.append(el("div", { class: `alliance ${cls}` },
+          el("div", { class: "name" }, a.alliance),
+          el("div", { class: "total" }, fmt(a.total)),
+          el("div", { class: "total-l" }, `Leading in ${a.leading} · Won ${a.won}`),
+          el("div", { class: "stats" },
+            el("div", {},
+              el("div", { class: "k" }, "Cushion (ahead by)"),
+              el("div", { class: "v cushion" }, fmt(a.cushionVotes) + " v"),
+              el("div", { class: "sub" }, `${a.vulnerableUnder1k} seat${a.vulnerableUnder1k === 1 ? "" : "s"} <1k vulnerable`),
+            ),
+            el("div", {},
+              el("div", { class: "k" }, "Gap (behind by)"),
+              el("div", { class: "v gap" }, fmt(a.gapVotes) + " v"),
+              el("div", { class: "sub" }, `${a.flippableUnder1k} <1k · ${a.flippableUnder5k} <5k flippable`),
+            ),
+          ),
+          el("div", { class: "parties" }, a.parties.join(", ") || "—"),
+        ));
+      }
+
+      // Parties
+      const partyToAlliance = {};
+      for (const a of d.allianceResults)
+        for (const p of a.parties) partyToAlliance[p] = a.alliance;
+
+      const partiesBody = document.getElementById("parties");
+      for (const p of d.partyResults) {
+        const alliance = partyToAlliance[p.party] || "—";
+        const cls = ALLIANCE_CLASS[alliance] || "";
+        partiesBody.append(el("tr", {},
+          el("td", {}, p.party),
+          el("td", {}, el("span", { class: `pill ${cls}` }, alliance)),
+          el("td", { class: "num" }, fmt(p.won)),
+          el("td", { class: "num" }, fmt(p.leading)),
+          el("td", { class: "num" }, fmt(p.total)),
+        ));
+      }
+
+      // Margins
+      const margins = document.getElementById("margins");
+      const maxC = Math.max(...d.marginBuckets.map(b => b.count), 1);
+      for (const b of d.marginBuckets) {
+        const pct = (b.count / maxC) * 100;
+        margins.append(el("div", { class: "bar-row" },
+          el("div", { class: "label" }, b.label),
+          el("div", { class: "track" }, el("div", { class: "fill", style: `width:${pct}%` })),
+          el("div", { class: "count" }, fmt(b.count)),
+        ));
+      }
+
+      // Closest
+      const closestBody = document.getElementById("closest");
+      for (const r of d.closestContests) {
+        closestBody.append(el("tr", {},
+          el("td", {}, `${r.constituency} (${r.constNo})`),
+          el("td", {}, `${r.leadingCandidate} — ${r.leadingParty}`),
+          el("td", {}, `${r.trailingCandidate} — ${r.trailingParty}`),
+          el("td", { class: "num" }, fmt(r.margin)),
+          el("td", { class: "num" }, r.round),
+        ));
+      }
+    }
+
+    async function loadHighlights() {
+      const container = document.getElementById("highlights");
+      let h;
+      try {
+        const res = await fetch("./highlights.json", { cache: "no-store" });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        h = await res.json();
+      } catch {
+        container.parentElement.previousElementSibling.style.display = "none";
+        container.style.display = "none";
+        return;
+      }
+      const vipCard = el("div", { class: "hcard" }, el("h3", {}, "VIP Contests"));
+      for (const v of h.vipContests || [])
+        vipCard.append(el("div", { class: "vip" },
+          el("div", { class: "who" }, `${v.candidate} (${v.party})`),
+          el("div", { class: "where" }, v.constituency),
+          v.note ? el("div", { class: "note" }, v.note) : null,
+        ));
+      const trivCard = el("div", { class: "hcard" }, el("h3", {}, "Trivia"));
+      const ul = el("ul", { class: "trivia" });
+      for (const t of h.trivia || []) ul.append(el("li", {}, t));
+      trivCard.append(ul);
+      container.append(vipCard, trivCard);
+    }
+
+    Promise.all([load(), loadHighlights()]).catch(e => {
+      document.body.innerHTML = `<pre style="color:#ff6b6b;padding:20px">Failed to load: ${e.message}</pre>`;
+    });
+  </script>
+</body>
+</html>

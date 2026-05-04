@@ -1,0 +1,28 @@
+{
+  "_comment": "Hand-curated trivia / VIP watchlist. Edit freely — insights.ts does NOT regenerate this file.",
+  "vipContests": [
+    {
+      "constituency": "KOLATHUR",
+      "candidate": "M. K. Stalin",
+      "party": "DMK",
+      "note": "Sitting CM, contesting from Kolathur"
+    },
+    {
+      "constituency": "VIKRAVANDI",
+      "candidate": "Vijay (TVK chief)",
+      "party": "TVK",
+      "note": "TVK founder's debut electoral contest"
+    },
+    {
+      "constituency": "EDAPPADI",
+      "candidate": "Edappadi K. Palaniswami",
+      "party": "AIADMK",
+      "note": "AIADMK CM candidate"
+    }
+  ],
+  "trivia": [
+    "TVK is contesting its first ever assembly election in 2026.",
+    "DMDK switched alliances from AIADMK (2021) to DMK-led SPA in 2026.",
+    "PMK (Anbumani faction) joined AIADMK+ on 7 January 2026."
+  ]
+}
