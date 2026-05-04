@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T16:50:09.089Z",
+  "generatedAt": "2026-05-04T16:52:09.149Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
@@ -113,7 +113,7 @@
       "won": 98,
       "leading": 9,
       "total": 107,
-      "cushionVotes": 2441444,
+      "cushionVotes": 2441389,
       "gapVotes": 785514,
       "flippableUnder1k": 7,
       "flippableUnder5k": 29,
@@ -134,7 +134,7 @@
       "leading": 4,
       "total": 74,
       "cushionVotes": 679683,
-      "gapVotes": 2254552,
+      "gapVotes": 2254497,
       "flippableUnder1k": 5,
       "flippableUnder5k": 14,
       "vulnerableUnder1k": 5
@@ -429,8 +429,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "KARTHIKDHANDAPANI",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 35610,
-      "round": "38/40",
+      "margin": 35555,
+      "round": "39/40",
       "status": "Result in Progress"
     }
   ],
@@ -448,14 +448,14 @@
       "couldLose": 4,
       "couldGain": 5,
       "loseVotes": 7924,
-      "gainVotes": 50197,
+      "gainVotes": 50142,
       "net": 1
     },
     {
       "alliance": "TVK",
       "couldLose": 7,
       "couldGain": 4,
-      "loseVotes": 70124,
+      "loseVotes": 70069,
       "gainVotes": 5216,
       "net": -3
     }
@@ -755,8 +755,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "KARTHIKDHANDAPANI",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 35610,
-      "round": "38/40",
+      "margin": 35555,
+      "round": "39/40",
       "status": "Result in Progress"
     },
     "CHENGAM": {
@@ -3027,7 +3027,7 @@
     }
   },
   "countingProgress": {
-    "roundsDone": 5594,
+    "roundsDone": 5595,
     "roundsTotal": 5600,
     "pct": 99.9,
     "constituenciesComplete": 230
