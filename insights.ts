@@ -190,6 +190,22 @@ const closest = records
 const statusCounts: Record<string, number> = {};
 for (const r of records) statusCounts[r["Status"]] = (statusCounts[r["Status"]] ?? 0) + 1;
 
+// Full contest lookup keyed by uppercased constituency name (for VIP cards, etc.)
+const contests: Record<string, any> = {};
+for (const r of records) {
+  contests[r["Constituency"].toUpperCase()] = {
+    constituency: r["Constituency"],
+    constNo: r["Const. No."],
+    leadingCandidate: r["Leading Candidate"],
+    leadingParty: r["Leading Party"],
+    trailingCandidate: r["Trailing Candidate"],
+    trailingParty: r["Trailing Party"],
+    margin: parseInt(r["Margin"] || "0", 10),
+    round: `${r["Current Round"]}/${r["Total Rounds"]}`,
+    status: r["Status"],
+  };
+}
+
 const insights = {
   generatedAt: new Date().toISOString(),
   state: records[0]?.["State"] ?? "",
@@ -202,6 +218,7 @@ const insights = {
   allianceResults,
   marginBuckets,
   closestContests: closest,
+  contests,
 };
 
 await Bun.write("docs/insights.json", JSON.stringify(insights, null, 2));

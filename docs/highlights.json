@@ -1,28 +1,58 @@
 {
-  "_comment": "Hand-curated trivia / VIP watchlist. Edit freely — insights.ts does NOT regenerate this file.",
+  "_comment": "Hand-curated VIPs + trivia. Live status is pulled from insights.json by constituency.",
   "vipContests": [
+    {
+      "constituency": "PERAMBUR",
+      "candidate": "C. Joseph Vijay",
+      "party": "TVK",
+      "role": "TVK Founder · Actor-turned-politician",
+      "news": "Vijay is contesting from two seats simultaneously — Perambur and Tiruchirappalli East. His debut electoral test as TVK leads the state."
+    },
+    {
+      "constituency": "TIRUCHIRAPPALLI (EAST)",
+      "candidate": "C. Joseph Vijay",
+      "party": "TVK",
+      "role": "TVK Founder · Second seat",
+      "news": "Vijay's second contest. Strong TVK push in the central TN belt where AIADMK was traditionally dominant."
+    },
     {
       "constituency": "KOLATHUR",
       "candidate": "M. K. Stalin",
       "party": "DMK",
-      "note": "Sitting CM, contesting from Kolathur"
+      "role": "Chief Minister of Tamil Nadu",
+      "news": "Three-term sitting MLA from Kolathur. A loss here would be a stunning upset for the incumbent CM."
     },
     {
-      "constituency": "VIKRAVANDI",
-      "candidate": "Vijay (TVK chief)",
-      "party": "TVK",
-      "note": "TVK founder's debut electoral contest"
+      "constituency": "CHEPAUK-THIRUVALLIKENI",
+      "candidate": "Udhayanidhi Stalin",
+      "party": "DMK",
+      "role": "Deputy Chief Minister · Stalin's son",
+      "news": "First-time Deputy CM contesting his second assembly election from Chepauk."
     },
     {
       "constituency": "EDAPPADI",
       "candidate": "Edappadi K. Palaniswami",
       "party": "AIADMK",
-      "note": "AIADMK CM candidate"
+      "role": "AIADMK General Secretary · Former CM",
+      "news": "AIADMK's chief ministerial candidate. Edappadi has been his stronghold since 2011."
+    },
+    {
+      "constituency": "DHARMAPURI",
+      "candidate": "Sowmiya Anbumani",
+      "party": "PMK",
+      "role": "PMK · Anbumani Ramadoss's wife",
+      "news": "Anbumani-led PMK joined the AIADMK alliance on 7 January 2026 after a long courtship."
     }
   ],
   "trivia": [
-    "TVK is contesting its first ever assembly election in 2026.",
-    "DMDK switched alliances from AIADMK (2021) to DMK-led SPA in 2026.",
-    "PMK (Anbumani faction) joined AIADMK+ on 7 January 2026."
+    "TVK is contesting its first ever assembly election — and is leading 107 of 234 seats so far.",
+    "Vijay (TVK) is contesting from TWO constituencies — Perambur and Tiruchirappalli East — and leading both.",
+    "CM M. K. Stalin is currently trailing in his own seat, Kolathur, by ~7,700 votes.",
+    "DMDK switched alliances from AIADMK (2021) to the DMK-led INDIA front in 2026.",
+    "PMK (Anbumani faction) joined AIADMK+ on 7 January 2026.",
+    "AMMK (T.T.V. Dhinakaran) joined the AIADMK alliance on 21 January 2026.",
+    "22 contests across Tamil Nadu are being decided by margins under 1,000 votes.",
+    "BJP is leading 3 seats — its highest-ever assembly tally in Tamil Nadu.",
+    "234 constituencies, 118 needed for majority — the leader is still short of that threshold."
   ]
 }
