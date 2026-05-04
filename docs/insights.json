@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-04T16:34:14.684Z",
+  "generatedAt": "2026-05-04T16:36:12.751Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
-    "declared": 212,
-    "inProgress": 22
+    "declared": 213,
+    "inProgress": 21
   },
   "partyResults": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "party": "Dravida Munnetra Kazhagam",
-      "won": 54,
-      "leading": 6,
+      "won": 55,
+      "leading": 5,
       "leadingUnder1k": 4,
       "trailingUnder1k": 4,
       "total": 60
@@ -114,7 +114,7 @@
       "leading": 11,
       "total": 107,
       "cushionVotes": 2441760,
-      "gapVotes": 786632,
+      "gapVotes": 786667,
       "flippableUnder1k": 7,
       "flippableUnder5k": 29,
       "vulnerableUnder1k": 4
@@ -130,8 +130,8 @@
         "Indian Union Muslim League",
         "Viduthalai Chiruthaigal Katchi"
       ],
-      "won": 68,
-      "leading": 6,
+      "won": 69,
+      "leading": 5,
       "total": 74,
       "cushionVotes": 680769,
       "gapVotes": 2254868,
@@ -150,7 +150,7 @@
       "won": 48,
       "leading": 5,
       "total": 53,
-      "cushionVotes": 803776,
+      "cushionVotes": 803811,
       "gapVotes": 786695,
       "flippableUnder1k": 3,
       "flippableUnder5k": 19,
@@ -302,17 +302,6 @@
       "status": "Result in Progress"
     },
     {
-      "constituency": "KULITHALAI",
-      "constNo": "137",
-      "leadingCandidate": "SURIYANUR. A. CHANDRAN",
-      "leadingParty": "Dravida Munnetra Kazhagam",
-      "trailingCandidate": "G.BALASUBRAMANI",
-      "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 579,
-      "round": "21/21",
-      "status": "Result in Progress"
-    },
-    {
       "constituency": "POLUR",
       "constNo": "66",
       "leadingCandidate": "ABISHEK. R",
@@ -330,8 +319,8 @@
       "leadingParty": "Pattali Makkal Katchi",
       "trailingCandidate": "VIJAI VADIVEL A",
       "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 875,
-      "round": "22/23",
+      "margin": 910,
+      "round": "23/23",
       "status": "Result in Progress"
     },
     {
@@ -432,35 +421,46 @@
       "margin": 11039,
       "round": "18/18",
       "status": "Result in Progress"
+    },
+    {
+      "constituency": "GINGEE",
+      "constNo": "70",
+      "leadingCandidate": "GANESHKUMAR A",
+      "leadingParty": "Pattali Makkal Katchi",
+      "trailingCandidate": "GINGEE MASTHAN K S",
+      "trailingParty": "Dravida Munnetra Kazhagam",
+      "margin": 12645,
+      "round": "24/24",
+      "status": "Result in Progress"
     }
   ],
   "closestSummary": [
     {
       "alliance": "TVK",
       "couldLose": 5,
-      "couldGain": 7,
+      "couldGain": 6,
       "loseVotes": 19645,
-      "gainVotes": 14329,
-      "net": 2
-    },
-    {
-      "alliance": "AIADMK-led NDA",
-      "couldLose": 4,
-      "couldGain": 5,
-      "loseVotes": 3262,
-      "gainVotes": 23144,
+      "gainVotes": 13785,
       "net": 1
     },
     {
+      "alliance": "AIADMK-led NDA",
+      "couldLose": 5,
+      "couldGain": 5,
+      "loseVotes": 15942,
+      "gainVotes": 23144,
+      "net": 0
+    },
+    {
       "alliance": "DMK-led INDIA Alliance",
-      "couldLose": 6,
-      "couldGain": 3,
-      "loseVotes": 16720,
-      "gainVotes": 2154,
-      "net": -3
+      "couldLose": 5,
+      "couldGain": 4,
+      "loseVotes": 16141,
+      "gainVotes": 14799,
+      "net": -1
     }
   ],
-  "razorActiveCount": 6,
+  "razorActiveCount": 5,
   "contests": {
     "ALANDUR": {
       "constituency": "ALANDUR",
@@ -1329,7 +1329,7 @@
       "trailingParty": "Tamilaga Vettri Kazhagam",
       "margin": 579,
       "round": "21/21",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "KUMARAPALAYAM": {
       "constituency": "KUMARAPALAYAM",
@@ -2922,8 +2922,8 @@
       "leadingParty": "Pattali Makkal Katchi",
       "trailingCandidate": "VIJAI VADIVEL A",
       "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 875,
-      "round": "22/23",
+      "margin": 910,
+      "round": "23/23",
       "status": "Result in Progress"
     },
     "VILATHIKULAM": {
@@ -3027,10 +3027,10 @@
     }
   },
   "countingProgress": {
-    "roundsDone": 5587,
+    "roundsDone": 5588,
     "roundsTotal": 5600,
     "pct": 99.8,
-    "constituenciesComplete": 227
+    "constituenciesComplete": 228
   },
   "superlatives": {
     "biggestMargin": {
