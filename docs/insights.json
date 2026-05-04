@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-04T16:36:12.751Z",
+  "generatedAt": "2026-05-04T16:38:09.879Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
-    "declared": 213,
-    "inProgress": 21
+    "declared": 214,
+    "inProgress": 20
   },
   "partyResults": [
     {
@@ -17,8 +17,8 @@
     },
     {
       "party": "Dravida Munnetra Kazhagam",
-      "won": 55,
-      "leading": 5,
+      "won": 56,
+      "leading": 4,
       "leadingUnder1k": 4,
       "trailingUnder1k": 4,
       "total": 60
@@ -114,7 +114,7 @@
       "leading": 11,
       "total": 107,
       "cushionVotes": 2441760,
-      "gapVotes": 786667,
+      "gapVotes": 786229,
       "flippableUnder1k": 7,
       "flippableUnder5k": 29,
       "vulnerableUnder1k": 4
@@ -130,10 +130,10 @@
         "Indian Union Muslim League",
         "Viduthalai Chiruthaigal Katchi"
       ],
-      "won": 69,
-      "leading": 5,
+      "won": 70,
+      "leading": 4,
       "total": 74,
-      "cushionVotes": 680769,
+      "cushionVotes": 680331,
       "gapVotes": 2254868,
       "flippableUnder1k": 5,
       "flippableUnder5k": 14,
@@ -357,6 +357,17 @@
       "status": "Result in Progress"
     },
     {
+      "constituency": "TIRUVANNAMALAI",
+      "constNo": "63",
+      "leadingCandidate": "VELU. E.V",
+      "leadingParty": "Dravida Munnetra Kazhagam",
+      "trailingCandidate": "ARUL ARUMUGAM",
+      "trailingParty": "Tamilaga Vettri Kazhagam",
+      "margin": 3103,
+      "round": "22/23",
+      "status": "Result in Progress"
+    },
+    {
       "constituency": "PERAVURANI",
       "constNo": "177",
       "leadingCandidate": "ASHOKKUMAR. N",
@@ -390,28 +401,6 @@
       "status": "Result in Progress"
     },
     {
-      "constituency": "TIRUVANNAMALAI",
-      "constNo": "63",
-      "leadingCandidate": "VELU. E.V",
-      "leadingParty": "Dravida Munnetra Kazhagam",
-      "trailingCandidate": "ARUL ARUMUGAM",
-      "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 3541,
-      "round": "21/23",
-      "status": "Result in Progress"
-    },
-    {
-      "constituency": "AMBUR",
-      "constNo": "48",
-      "leadingCandidate": "VILWANATHAN. A.C.",
-      "leadingParty": "Dravida Munnetra Kazhagam",
-      "trailingCandidate": "IMTHIYAZ PANDARATTUDU ABDU",
-      "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 7131,
-      "round": "24/24",
-      "status": "Result in Progress"
-    },
-    {
       "constituency": "GANDHARVAKOTTAI",
       "constNo": "178",
       "leadingCandidate": "N. SUBRAMANIAN",
@@ -432,31 +421,42 @@
       "margin": 12645,
       "round": "24/24",
       "status": "Result in Progress"
+    },
+    {
+      "constituency": "SIVAGANGA",
+      "constNo": "186",
+      "leadingCandidate": "KULANTHAI RANI A",
+      "leadingParty": "Tamilaga Vettri Kazhagam",
+      "trailingCandidate": "SENTHILNATHAN PR",
+      "trailingParty": "All India Anna Dravida Munnetra Kazhagam",
+      "margin": 15081,
+      "round": "31/31",
+      "status": "Result in Progress"
     }
   ],
   "closestSummary": [
     {
-      "alliance": "TVK",
+      "alliance": "AIADMK-led NDA",
       "couldLose": 5,
       "couldGain": 6,
-      "loseVotes": 19645,
-      "gainVotes": 13785,
+      "loseVotes": 15942,
+      "gainVotes": 38225,
       "net": 1
     },
     {
-      "alliance": "AIADMK-led NDA",
-      "couldLose": 5,
-      "couldGain": 5,
-      "loseVotes": 15942,
-      "gainVotes": 23144,
+      "alliance": "DMK-led INDIA Alliance",
+      "couldLose": 4,
+      "couldGain": 4,
+      "loseVotes": 8572,
+      "gainVotes": 14799,
       "net": 0
     },
     {
-      "alliance": "DMK-led INDIA Alliance",
-      "couldLose": 5,
-      "couldGain": 4,
-      "loseVotes": 16141,
-      "gainVotes": 14799,
+      "alliance": "TVK",
+      "couldLose": 6,
+      "couldGain": 5,
+      "loseVotes": 34726,
+      "gainVotes": 6216,
       "net": -1
     }
   ],
@@ -526,7 +526,7 @@
       "trailingParty": "Tamilaga Vettri Kazhagam",
       "margin": 7131,
       "round": "24/24",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "ANAIKATTU": {
       "constituency": "ANAIKATTU",
@@ -2713,8 +2713,8 @@
       "leadingParty": "Dravida Munnetra Kazhagam",
       "trailingCandidate": "ARUL ARUMUGAM",
       "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 3541,
-      "round": "21/23",
+      "margin": 3103,
+      "round": "22/23",
       "status": "Result in Progress"
     },
     "TITTAKUDI": {
@@ -3027,7 +3027,7 @@
     }
   },
   "countingProgress": {
-    "roundsDone": 5588,
+    "roundsDone": 5589,
     "roundsTotal": 5600,
     "pct": 99.8,
     "constituenciesComplete": 228
