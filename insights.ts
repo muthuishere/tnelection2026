@@ -159,15 +159,24 @@ const allianceResults = [...allianceMap.values()]
   .filter(a => a.total > 0 || a.gapVotes > 0)
   .sort((a, b) => b.total - a.total);
 
-// Margin buckets
-const buckets = MARGIN_BUCKETS.map(b => ({ label: b.label, max: b.max, count: 0 }));
+// Margin buckets — track per-alliance breakdown for tooltip
+const buckets = MARGIN_BUCKETS.map(b => ({
+  label: b.label, max: b.max, count: 0,
+  byAlliance: {} as Record<string, number>,
+  byParty: {} as Record<string, number>,
+}));
 for (const r of records) {
   const m = parseInt(r["Margin"] || "0", 10);
   if (!Number.isFinite(m)) continue;
   const bucket = buckets.find(b => m < b.max)!;
   bucket.count++;
+  const alliance = allianceOf(r["Leading Party"]);
+  bucket.byAlliance[alliance] = (bucket.byAlliance[alliance] ?? 0) + 1;
+  bucket.byParty[r["Leading Party"]] = (bucket.byParty[r["Leading Party"]] ?? 0) + 1;
 }
-const marginBuckets = buckets.map(({ label, count }) => ({ label, count }));
+const marginBuckets = buckets.map(({ label, count, byAlliance, byParty }) => ({
+  label, count, byAlliance, byParty,
+}));
 
 // Closest contests
 const closest = records
@@ -189,6 +198,22 @@ const closest = records
 // Status counts
 const statusCounts: Record<string, number> = {};
 for (const r of records) statusCounts[r["Status"]] = (statusCounts[r["Status"]] ?? 0) + 1;
+
+// Counting progress
+let roundsDone = 0, roundsTotal = 0, constituenciesComplete = 0;
+for (const r of records) {
+  const cur = parseInt(r["Current Round"] || "0", 10);
+  const tot = parseInt(r["Total Rounds"] || "0", 10);
+  if (Number.isFinite(cur)) roundsDone += cur;
+  if (Number.isFinite(tot)) roundsTotal += tot;
+  if (cur > 0 && cur === tot) constituenciesComplete++;
+}
+const countingProgress = {
+  roundsDone,
+  roundsTotal,
+  pct: roundsTotal ? Math.round((roundsDone / roundsTotal) * 1000) / 10 : 0,
+  constituenciesComplete,
+};
 
 // Full contest lookup keyed by uppercased constituency name (for VIP cards, etc.)
 const contests: Record<string, any> = {};
@@ -219,6 +244,7 @@ const insights = {
   marginBuckets,
   closestContests: closest,
   contests,
+  countingProgress,
 };
 
 await Bun.write("docs/insights.json", JSON.stringify(insights, null, 2));

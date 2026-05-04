@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T10:47:31.563Z",
+  "generatedAt": "2026-05-04T10:55:01.656Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
@@ -172,27 +172,105 @@
   "marginBuckets": [
     {
       "label": "< 1,000",
-      "count": 22
+      "count": 22,
+      "byAlliance": {
+        "TVK": 6,
+        "DMK-led INDIA Alliance": 8,
+        "AIADMK-led NDA": 8
+      },
+      "byParty": {
+        "Tamilaga Vettri Kazhagam": 6,
+        "Dravida Munnetra Kazhagam": 5,
+        "All India Anna Dravida Munnetra Kazhagam": 6,
+        "Indian National Congress": 1,
+        "Communist Party of India (Marxist)": 1,
+        "Bharatiya Janata Party": 1,
+        "Communist Party of India": 1,
+        "Pattali Makkal Katchi": 1
+      }
     },
     {
       "label": "1,000 – 5,000",
-      "count": 62
+      "count": 62,
+      "byAlliance": {
+        "DMK-led INDIA Alliance": 27,
+        "AIADMK-led NDA": 10,
+        "TVK": 25
+      },
+      "byParty": {
+        "Dravida Munnetra Kazhagam": 21,
+        "All India Anna Dravida Munnetra Kazhagam": 8,
+        "Tamilaga Vettri Kazhagam": 25,
+        "Indian National Congress": 2,
+        "Amma Makkal Munnettra Kazagam": 1,
+        "Communist Party of India": 1,
+        "Viduthalai Chiruthaigal Katchi": 1,
+        "Bharatiya Janata Party": 1,
+        "Indian Union Muslim League": 1,
+        "Desiya Murpokku Dravida Kazhagam": 1
+      }
     },
     {
       "label": "5,000 – 10,000",
-      "count": 43
+      "count": 43,
+      "byAlliance": {
+        "DMK-led INDIA Alliance": 18,
+        "AIADMK-led NDA": 12,
+        "TVK": 13
+      },
+      "byParty": {
+        "Dravida Munnetra Kazhagam": 16,
+        "All India Anna Dravida Munnetra Kazhagam": 11,
+        "Tamilaga Vettri Kazhagam": 13,
+        "Pattali Makkal Katchi": 1,
+        "Indian National Congress": 1,
+        "Indian Union Muslim League": 1
+      }
     },
     {
       "label": "10,000 – 25,000",
-      "count": 77
+      "count": 77,
+      "byAlliance": {
+        "TVK": 43,
+        "AIADMK-led NDA": 17,
+        "DMK-led INDIA Alliance": 17
+      },
+      "byParty": {
+        "Tamilaga Vettri Kazhagam": 43,
+        "All India Anna Dravida Munnetra Kazhagam": 15,
+        "Dravida Munnetra Kazhagam": 13,
+        "Pattali Makkal Katchi": 2,
+        "Viduthalai Chiruthaigal Katchi": 1,
+        "Communist Party of India (Marxist)": 1,
+        "Communist Party of India": 1,
+        "Indian National Congress": 1
+      }
     },
     {
       "label": "25,000 – 50,000",
-      "count": 27
+      "count": 27,
+      "byAlliance": {
+        "TVK": 19,
+        "AIADMK-led NDA": 6,
+        "DMK-led INDIA Alliance": 2
+      },
+      "byParty": {
+        "Tamilaga Vettri Kazhagam": 19,
+        "All India Anna Dravida Munnetra Kazhagam": 6,
+        "Dravida Munnetra Kazhagam": 2
+      }
     },
     {
       "label": "50,000+",
-      "count": 3
+      "count": 3,
+      "byAlliance": {
+        "AIADMK-led NDA": 1,
+        "TVK": 2
+      },
+      "byParty": {
+        "All India Anna Dravida Munnetra Kazhagam": 1,
+        "Tamilaga Vettri Kazhagam": 2
+      }
     }
   ],
   "closestContests": [
@@ -2926,5 +3004,11 @@
       "round": "14/24",
       "status": "Result in Progress"
     }
+  },
+  "countingProgress": {
+    "roundsDone": 3875,
+    "roundsTotal": 5414,
+    "pct": 71.6,
+    "constituenciesComplete": 18
   }
 }

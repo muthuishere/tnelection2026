@@ -17,12 +17,13 @@
       --text: #f4f4f6;
       --muted: #7a7a85;
       --dim: #4a4a55;
-      --tvk: #ff3d8a;
-      --tvk-soft: rgba(255, 61, 138, 0.12);
-      --dmk: #ff4444;
-      --dmk-soft: rgba(255, 68, 68, 0.12);
-      --aiadmk: #00d27a;
-      --aiadmk-soft: rgba(0, 210, 122, 0.12);
+      --tvk: #ff7a00;
+      --tvk-soft: rgba(255, 122, 0, 0.14);
+      --tvk-grad: linear-gradient(135deg, #ffc83d 0%, #ff7a00 50%, #e63946 100%);
+      --dmk: #e63946;
+      --dmk-soft: rgba(230, 57, 70, 0.14);
+      --aiadmk: #2da44e;
+      --aiadmk-soft: rgba(45, 164, 78, 0.14);
       --other: #6b6b75;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -55,6 +56,19 @@
     .hero .label { font-size: 18px; color: var(--muted); margin-top: 18px; letter-spacing: 0.05em; }
     .hero .threshold { margin-top: 36px; font-size: 14px; color: var(--muted); }
     .hero .threshold strong { color: var(--text); font-weight: 500; }
+
+    /* Counting progress (top-right of topbar) */
+    .topbar-right { display: flex; align-items: center; gap: 24px; }
+    .counting-mini { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; min-width: 220px; }
+    .counting-mini .cm-row { display: flex; align-items: baseline; gap: 8px; font-size: 12px; color: var(--muted); letter-spacing: 0.04em; }
+    .counting-mini .cm-row strong { color: var(--text); font-weight: 600; font-variant-numeric: tabular-nums; font-size: 13px; }
+    .counting-mini .cm-row .pct { color: var(--tvk); font-weight: 700; font-size: 14px; font-variant-numeric: tabular-nums; }
+    .counting-mini .cm-track { width: 100%; height: 4px; background: var(--panel); border-radius: 2px; overflow: hidden; }
+    .counting-mini .cm-fill { height: 100%; background: var(--tvk-grad); border-radius: 2px; transition: width 1s cubic-bezier(0.16, 1, 0.3, 1); }
+    @media (max-width: 600px) {
+      .topbar-right { flex-direction: column; align-items: flex-end; gap: 6px; }
+      .counting-mini { min-width: 160px; }
+    }
 
     /* Race bar */
     .race { margin: 60px auto 0; max-width: 900px; }
@@ -139,12 +153,49 @@
 
     /* Margins */
     .margins { background: var(--panel); border-radius: 14px; padding: 28px; border: 1px solid var(--line); }
+    .marg-legend { display: flex; gap: 18px; margin-bottom: 18px; padding-bottom: 14px; border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+    .marg-legend .item { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); letter-spacing: 0.04em; }
+    .marg-legend .sw { width: 12px; height: 12px; border-radius: 3px; }
+    .marg-legend .sw.tvk { background: var(--tvk); }
+    .marg-legend .sw.dmk { background: var(--dmk); }
+    .marg-legend .sw.aiadmk { background: var(--aiadmk); }
+    .marg-legend .sw.other { background: var(--other); }
     .marg-row { display: grid; grid-template-columns: 160px 1fr 60px; align-items: center; gap: 16px; padding: 10px 0; }
     .marg-row .l { color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; }
-    .marg-row .track { background: var(--bg-2); height: 22px; border-radius: 4px; overflow: hidden; }
-    .marg-row .fill { height: 100%; background: linear-gradient(90deg, var(--tvk), #b837ff); border-radius: 4px; transition: width 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+    .marg-row .track-wrap { width: 100%; }
+    .marg-row .track {
+      display: flex; height: 24px; border-radius: 5px; overflow: hidden;
+      background: var(--bg-2);
+    }
+    .marg-row .seg {
+      height: 100%; min-width: 2px;
+      transition: width 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.2s, transform 0.2s;
+      cursor: default; position: relative;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px; font-weight: 700; color: rgba(255,255,255,0.95);
+    }
+    .marg-row .seg.tvk { background: var(--tvk-grad); }
+    .marg-row .seg.dmk { background: var(--dmk); }
+    .marg-row .seg.aiadmk { background: var(--aiadmk); }
+    .marg-row .seg.other { background: var(--other); }
+    .marg-row .seg:hover { filter: brightness(1.15); transform: scaleY(1.1); }
     .marg-row .c { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; font-size: 16px; }
-    .marg-row.razor .fill { background: linear-gradient(90deg, #ff4444, #ff8c00); }
+    /* Custom tooltip for margin segments */
+    .marg-row .seg[data-tip]:hover::after {
+      content: attr(data-tip);
+      position: absolute; bottom: calc(100% + 8px); left: 50%; transform: translateX(-50%);
+      background: var(--panel-2); color: var(--text);
+      padding: 10px 14px; border-radius: 6px;
+      border: 1px solid var(--line);
+      font-size: 12px; font-weight: 500; white-space: pre;
+      pointer-events: none; z-index: 10;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+    }
+    .marg-row .seg[data-tip]:hover::before {
+      content: ''; position: absolute; bottom: calc(100% + 2px); left: 50%; transform: translateX(-50%);
+      border: 6px solid transparent; border-top-color: var(--panel-2);
+      pointer-events: none; z-index: 10;
+    }
 
     /* Closest */
     .close-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px; }
@@ -234,7 +285,10 @@
   <div class="wrap">
     <div class="topbar">
       <div class="brand" id="brand">Tamil Nadu · 2026</div>
-      <div class="live"><span class="dot"></span><span id="updated">—</span></div>
+      <div class="topbar-right">
+        <div class="counting-mini" id="counting-mini"></div>
+        <div class="live"><span class="dot"></span><span id="updated">—</span></div>
+      </div>
     </div>
 
     <section class="hero" id="hero"></section>
@@ -425,13 +479,49 @@
     function renderMargins(d) {
       const wrap = document.getElementById("margins");
       wrap.innerHTML = "";
+
+      // Legend across the top
+      const legend = el("div", { class: "marg-legend" });
+      [["tvk", "TVK"], ["dmk", "DMK-led INDIA Alliance"], ["aiadmk", "AIADMK-led NDA"], ["other", "Others"]]
+        .forEach(([cls, label]) => legend.append(
+          el("div", { class: "item" },
+            el("span", { class: `sw ${cls}` }),
+            label,
+          )));
+      wrap.append(legend);
+
+      const allianceKey = (a) => a === "TVK" ? "tvk"
+        : a === "DMK-led INDIA Alliance" ? "dmk"
+        : a === "AIADMK-led NDA" ? "aiadmk"
+        : "other";
+      const orderedAlliances = ["TVK", "DMK-led INDIA Alliance", "AIADMK-led NDA", "Others / Unaligned"];
       const max = Math.max(...d.marginBuckets.map(b => b.count), 1);
+
       for (const b of d.marginBuckets) {
-        const pct = (b.count / max) * 100;
-        const razor = b.label.startsWith("<");
-        const row = el("div", { class: `marg-row ${razor ? "razor" : ""}` },
+        const widthPct = (b.count / max) * 100;
+        const track = el("div", { class: "track", style: `width:${widthPct}%` });
+        // build stacked segments inside the track, proportional to within-bucket share
+        for (const a of orderedAlliances) {
+          const n = b.byAlliance[a] || 0;
+          if (!n) continue;
+          const segPct = (n / b.count) * 100;
+          const tipParts = [`${a}: ${n} seat${n === 1 ? "" : "s"}`];
+          // top 3 parties for this alliance in this bucket
+          const partiesIn = Object.entries(b.byParty)
+            .filter(([p]) => orderedAlliances.includes(a) ? true : true)
+            .sort((x, y) => y[1] - x[1]);
+          // (we'll show party-level breakdown in tip — just show all parties in bucket)
+          const seg = el("div", {
+            class: `seg ${allianceKey(a)}`,
+            style: `width:${segPct}%`,
+            "data-tip": `${a}\n${n} of ${b.count} (${Math.round(segPct)}%)`,
+          });
+          if (segPct > 12) seg.textContent = String(n);
+          track.append(seg);
+        }
+        const row = el("div", { class: "marg-row" },
           el("div", { class: "l" }, b.label),
-          el("div", { class: "track" }, el("div", { class: "fill", style: `width:${pct}%` })),
+          el("div", { class: "track-wrap" }, track),
           el("div", { class: "c" }, fmt(b.count)),
         );
         wrap.append(row);
@@ -476,6 +566,25 @@
       document.getElementById("updated").textContent = new Date(d.generatedAt).toLocaleString("en-IN", {
         hour: "numeric", minute: "2-digit", day: "numeric", month: "short",
       });
+
+      // Counting progress (top-right)
+      const cp = d.countingProgress;
+      if (cp) {
+        const mini = document.getElementById("counting-mini");
+        mini.innerHTML = "";
+        const remaining = Math.max(0, cp.roundsTotal - cp.roundsDone);
+        mini.append(
+          el("div", { class: "cm-row" },
+            el("span", {}, "Counting"),
+            el("strong", {}, `${fmt(cp.roundsDone)} / ${fmt(cp.roundsTotal)} rounds`),
+            el("span", { class: "pct" }, `${cp.pct}%`),
+          ),
+          el("div", { class: "cm-track" }, el("div", { class: "cm-fill", style: `width:${cp.pct}%` })),
+          el("div", { class: "cm-row" },
+            el("span", {}, `${fmt(remaining)} rounds left · ${fmt(cp.constituenciesComplete)} of 234 declared`),
+          ),
+        );
+      }
 
       renderHero(d);
       renderRace(d);
