@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T16:40:10.301Z",
+  "generatedAt": "2026-05-04T16:42:10.375Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
@@ -113,7 +113,7 @@
       "won": 96,
       "leading": 11,
       "total": 107,
-      "cushionVotes": 2441548,
+      "cushionVotes": 2441504,
       "gapVotes": 786229,
       "flippableUnder1k": 7,
       "flippableUnder5k": 29,
@@ -134,7 +134,7 @@
       "leading": 4,
       "total": 74,
       "cushionVotes": 680331,
-      "gapVotes": 2254656,
+      "gapVotes": 2254612,
       "flippableUnder1k": 5,
       "flippableUnder5k": 14,
       "vulnerableUnder1k": 5
@@ -755,8 +755,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "KARTHIKDHANDAPANI",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 35714,
-      "round": "36/40",
+      "margin": 35670,
+      "round": "37/40",
       "status": "Result in Progress"
     },
     "CHENGAM": {
@@ -3027,7 +3027,7 @@
     }
   },
   "countingProgress": {
-    "roundsDone": 5590,
+    "roundsDone": 5591,
     "roundsTotal": 5600,
     "pct": 99.8,
     "constituenciesComplete": 228
