@@ -1,24 +1,24 @@
 {
-  "generatedAt": "2026-05-04T15:52:12.188Z",
+  "generatedAt": "2026-05-04T15:54:18.139Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
-    "declared": 197,
-    "inProgress": 37
+    "declared": 199,
+    "inProgress": 35
   },
   "partyResults": [
     {
       "party": "Tamilaga Vettri Kazhagam",
-      "won": 93,
-      "leading": 14,
+      "won": 94,
+      "leading": 13,
       "leadingUnder1k": 3,
       "trailingUnder1k": 6,
       "total": 107
     },
     {
       "party": "Dravida Munnetra Kazhagam",
-      "won": 47,
-      "leading": 13,
+      "won": 48,
+      "leading": 12,
       "leadingUnder1k": 3,
       "trailingUnder1k": 4,
       "total": 60
@@ -110,8 +110,8 @@
       "parties": [
         "Tamilaga Vettri Kazhagam"
       ],
-      "won": 93,
-      "leading": 14,
+      "won": 94,
+      "leading": 13,
       "total": 107,
       "cushionVotes": 2441817,
       "gapVotes": 789530,
@@ -130,8 +130,8 @@
         "Indian Union Muslim League",
         "Viduthalai Chiruthaigal Katchi"
       ],
-      "won": 59,
-      "leading": 15,
+      "won": 60,
+      "leading": 14,
       "total": 74,
       "cushionVotes": 682897,
       "gapVotes": 2254804,
@@ -471,7 +471,7 @@
       "trailingParty": "Dravida Munnetra Kazhagam",
       "margin": 29609,
       "round": "31/31",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "ALANGUDI": {
       "constituency": "ALANGUDI",
@@ -2088,7 +2088,7 @@
       "trailingParty": "Tamilaga Vettri Kazhagam",
       "margin": 4862,
       "round": "25/25",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "ROYAPURAM": {
       "constituency": "ROYAPURAM",
