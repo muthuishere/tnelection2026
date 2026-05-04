@@ -41,7 +41,9 @@
     /* Topbar */
     .topbar { display: flex; justify-content: space-between; align-items: center; padding-bottom: 28px; border-bottom: 1px solid var(--line); }
     .brand { font-size: 13px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
-    .live { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: var(--muted); }
+    .live { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; font-size: 13px; color: var(--muted); }
+    .live .live-row { display: inline-flex; align-items: center; gap: 8px; }
+    .live .cadence { font-size: 11px; color: var(--dim); letter-spacing: 0.04em; }
     .live .dot { width: 8px; height: 8px; border-radius: 50%; background: #ff3d3d; box-shadow: 0 0 0 0 rgba(255, 61, 61, 0.6); animation: pulse 1.8s infinite; }
     @keyframes pulse { 0%{box-shadow:0 0 0 0 rgba(255,61,61,.5)} 70%{box-shadow:0 0 0 10px rgba(255,61,61,0)} 100%{box-shadow:0 0 0 0 rgba(255,61,61,0)} }
 
@@ -391,7 +393,10 @@
       <div class="brand" id="brand">Tamil Nadu · 2026</div>
       <div class="topbar-right">
         <div class="counting-mini" id="counting-mini"></div>
-        <div class="live"><span class="dot"></span><span id="updated">—</span></div>
+        <div class="live">
+          <div class="live-row"><span class="dot"></span><span id="updated">—</span></div>
+          <div class="cadence">auto-refresh every 10 min</div>
+        </div>
       </div>
     </div>
 
