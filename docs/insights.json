@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T14:58:08.922Z",
+  "generatedAt": "2026-05-04T15:00:11.866Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
@@ -113,8 +113,8 @@
       "won": 77,
       "leading": 30,
       "total": 107,
-      "cushionVotes": 2429038,
-      "gapVotes": 786272,
+      "cushionVotes": 2429615,
+      "gapVotes": 785665,
       "flippableUnder1k": 6,
       "flippableUnder5k": 28,
       "vulnerableUnder1k": 6
@@ -133,8 +133,8 @@
       "won": 49,
       "leading": 25,
       "total": 74,
-      "cushionVotes": 681267,
-      "gapVotes": 2244904,
+      "cushionVotes": 680719,
+      "gapVotes": 2245481,
       "flippableUnder1k": 5,
       "flippableUnder5k": 14,
       "vulnerableUnder1k": 4
@@ -150,7 +150,7 @@
       "won": 35,
       "leading": 18,
       "total": 53,
-      "cushionVotes": 802314,
+      "cushionVotes": 802255,
       "gapVotes": 783333,
       "flippableUnder1k": 4,
       "flippableUnder5k": 20,
@@ -525,8 +525,8 @@
       "leadingParty": "Dravida Munnetra Kazhagam",
       "trailingCandidate": "IMTHIYAZ PANDARATTUDU ABDU",
       "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 7875,
-      "round": "21/22",
+      "margin": 7327,
+      "round": "22/22",
       "status": "Result in Progress"
     },
     "ANAIKATTU": {
@@ -2692,8 +2692,8 @@
       "leadingParty": "All India Anna Dravida Munnetra Kazhagam",
       "trailingCandidate": "M.SATHYA KUMAR",
       "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 6116,
-      "round": "25/27",
+      "margin": 6057,
+      "round": "26/27",
       "status": "Result in Progress"
     },
     "TIRUVADANAI": {
@@ -3028,10 +3028,10 @@
     }
   },
   "countingProgress": {
-    "roundsDone": 5490,
-    "roundsTotal": 5579,
+    "roundsDone": 5493,
+    "roundsTotal": 5580,
     "pct": 98.4,
-    "constituenciesComplete": 196
+    "constituenciesComplete": 197
   },
   "superlatives": {
     "biggestMargin": {
