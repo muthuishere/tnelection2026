@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T11:05:00.580Z",
+  "generatedAt": "2026-05-04T11:06:55.263Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
@@ -113,8 +113,8 @@
       "won": 3,
       "leading": 105,
       "total": 108,
-      "cushionVotes": 1827897,
-      "gapVotes": 631048,
+      "cushionVotes": 1827572,
+      "gapVotes": 631850,
       "flippableUnder1k": 3,
       "flippableUnder5k": 30,
       "vulnerableUnder1k": 4
@@ -133,8 +133,8 @@
       "won": 7,
       "leading": 65,
       "total": 72,
-      "cushionVotes": 563149,
-      "gapVotes": 1770419,
+      "cushionVotes": 563951,
+      "gapVotes": 1770368,
       "flippableUnder1k": 7,
       "flippableUnder5k": 22,
       "vulnerableUnder1k": 4
@@ -150,8 +150,8 @@
       "won": 0,
       "leading": 54,
       "total": 54,
-      "cushionVotes": 682299,
-      "gapVotes": 579259,
+      "cushionVotes": 682331,
+      "gapVotes": 579017,
       "flippableUnder1k": 3,
       "flippableUnder5k": 27,
       "vulnerableUnder1k": 5
@@ -306,17 +306,6 @@
       "status": "Result in Progress"
     },
     {
-      "constituency": "METTUR",
-      "constNo": "85",
-      "leadingCandidate": "VENKATACHALAM. G",
-      "leadingParty": "All India Anna Dravida Munnetra Kazhagam",
-      "trailingCandidate": "MIDHUN CHAKRAVARTHY. M",
-      "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 328,
-      "round": "14/24",
-      "status": "Result in Progress"
-    },
-    {
       "constituency": "THALLI",
       "constNo": "56",
       "leadingCandidate": "DR.NAGESH KUMAR. C",
@@ -325,6 +314,17 @@
       "trailingParty": "Communist Party of India",
       "margin": 354,
       "round": "16/24",
+      "status": "Result in Progress"
+    },
+    {
+      "constituency": "METTUR",
+      "constNo": "85",
+      "leadingCandidate": "VENKATACHALAM. G",
+      "leadingParty": "All India Anna Dravida Munnetra Kazhagam",
+      "trailingCandidate": "MIDHUN CHAKRAVARTHY. M",
+      "trailingParty": "Dravida Munnetra Kazhagam",
+      "margin": 360,
+      "round": "15/24",
       "status": "Result in Progress"
     },
     {
@@ -1557,8 +1557,8 @@
       "leadingParty": "All India Anna Dravida Munnetra Kazhagam",
       "trailingCandidate": "MIDHUN CHAKRAVARTHY. M",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 328,
-      "round": "14/24",
+      "margin": 360,
+      "round": "15/24",
       "status": "Result in Progress"
     },
     "MODAKKURICHI": {
@@ -1568,7 +1568,7 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "S.KIRTHIKA",
       "trailingParty": "Bharatiya Janata Party",
-      "margin": 2132,
+      "margin": 1890,
       "round": "19/21",
       "status": "Result in Progress"
     },
@@ -1590,8 +1590,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "N.S.KARUNAIRAAJA",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 17525,
-      "round": "20/21",
+      "margin": 17442,
+      "round": "21/21",
       "status": "Result in Progress"
     },
     "MYLAPORE": {
@@ -2943,8 +2943,8 @@
       "leadingParty": "Dravida Munnetra Kazhagam",
       "trailingCandidate": "MOHANRAJ N",
       "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 2054,
-      "round": "19/24",
+      "margin": 2856,
+      "round": "20/24",
       "status": "Result in Progress"
     },
     "VIRALIMALAI": {
@@ -3004,9 +3004,9 @@
     }
   },
   "countingProgress": {
-    "roundsDone": 4065,
+    "roundsDone": 4068,
     "roundsTotal": 5427,
-    "pct": 74.9,
-    "constituenciesComplete": 23
+    "pct": 75,
+    "constituenciesComplete": 24
   }
 }
