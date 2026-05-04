@@ -65,17 +65,30 @@ function parseCsv(text: string): Record<string, string>[] {
 const csvText = await Bun.file("results.csv").text();
 const records = parseCsv(csvText);
 
-// Party aggregates
-const partyMap = new Map<string, { party: string; won: number; leading: number }>();
+// Party aggregates — including knife-edge (<1k margin) leads and trails
+type PartyAgg = { party: string; won: number; leading: number; leadingUnder1k: number; trailingUnder1k: number };
+const partyMap = new Map<string, PartyAgg>();
+const ensureParty = (name: string): PartyAgg => {
+  if (!partyMap.has(name))
+    partyMap.set(name, { party: name, won: 0, leading: 0, leadingUnder1k: 0, trailingUnder1k: 0 });
+  return partyMap.get(name)!;
+};
 for (const r of records) {
-  const party = r["Leading Party"];
-  if (!party) continue;
-  const entry = partyMap.get(party) ?? { party, won: 0, leading: 0 };
-  if (r["Status"] === "Result Declared") entry.won++;
-  else entry.leading++;
-  partyMap.set(party, entry);
+  const margin = parseInt(r["Margin"] || "0", 10);
+  const lead = r["Leading Party"];
+  const trail = r["Trailing Party"];
+  if (lead) {
+    const e = ensureParty(lead);
+    if (r["Status"] === "Result Declared") e.won++; else e.leading++;
+    if (margin < 1_000) e.leadingUnder1k++;
+  }
+  if (trail) {
+    const e = ensureParty(trail);
+    if (margin < 1_000) e.trailingUnder1k++;
+  }
 }
 const partyResults = [...partyMap.values()]
+  .filter(p => p.won + p.leading > 0)
   .map(p => ({ ...p, total: p.won + p.leading }))
   .sort((a, b) => b.total - a.total);
 

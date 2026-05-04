@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T10:24:12.495Z",
+  "generatedAt": "2026-05-04T10:29:16.451Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
@@ -11,72 +11,96 @@
       "party": "Tamilaga Vettri Kazhagam",
       "won": 1,
       "leading": 102,
+      "leadingUnder1k": 6,
+      "trailingUnder1k": 11,
       "total": 103
     },
     {
       "party": "Dravida Munnetra Kazhagam",
       "won": 3,
       "leading": 57,
+      "leadingUnder1k": 7,
+      "trailingUnder1k": 5,
       "total": 60
     },
     {
       "party": "All India Anna Dravida Munnetra Kazhagam",
       "won": 0,
       "leading": 50,
+      "leadingUnder1k": 6,
+      "trailingUnder1k": 3,
       "total": 50
     },
     {
       "party": "Indian National Congress",
       "won": 1,
       "leading": 4,
+      "leadingUnder1k": 1,
+      "trailingUnder1k": 1,
       "total": 5
     },
     {
       "party": "Pattali Makkal Katchi",
       "won": 0,
       "leading": 5,
+      "leadingUnder1k": 1,
+      "trailingUnder1k": 1,
       "total": 5
     },
     {
       "party": "Viduthalai Chiruthaigal Katchi",
       "won": 0,
       "leading": 2,
-      "total": 2
-    },
-    {
-      "party": "Indian Union Muslim League",
-      "won": 0,
-      "leading": 2,
-      "total": 2
-    },
-    {
-      "party": "Communist Party of India",
-      "won": 0,
-      "leading": 2,
+      "leadingUnder1k": 0,
+      "trailingUnder1k": 0,
       "total": 2
     },
     {
       "party": "Bharatiya Janata Party",
       "won": 0,
       "leading": 2,
+      "leadingUnder1k": 1,
+      "trailingUnder1k": 0,
       "total": 2
     },
     {
-      "party": "Amma Makkal Munnettra Kazagam",
+      "party": "Indian Union Muslim League",
+      "won": 0,
+      "leading": 2,
+      "leadingUnder1k": 0,
+      "trailingUnder1k": 0,
+      "total": 2
+    },
+    {
+      "party": "Communist Party of India",
+      "won": 0,
+      "leading": 2,
+      "leadingUnder1k": 0,
+      "trailingUnder1k": 1,
+      "total": 2
+    },
+    {
+      "party": "Desiya Murpokku Dravida Kazhagam",
       "won": 0,
       "leading": 1,
+      "leadingUnder1k": 0,
+      "trailingUnder1k": 0,
       "total": 1
     },
     {
       "party": "Communist Party of India (Marxist)",
       "won": 0,
       "leading": 1,
+      "leadingUnder1k": 0,
+      "trailingUnder1k": 0,
       "total": 1
     },
     {
-      "party": "Desiya Murpokku Dravida Kazhagam",
+      "party": "Amma Makkal Munnettra Kazagam",
       "won": 0,
       "leading": 1,
+      "leadingUnder1k": 0,
+      "trailingUnder1k": 0,
       "total": 1
     }
   ],

@@ -132,6 +132,10 @@
     .ptable tr.tvk { --accent-color: var(--tvk); }
     .ptable tr.dmk { --accent-color: var(--dmk); }
     .ptable tr.aiadmk { --accent-color: var(--aiadmk); }
+    .ptable th.razor { color: #ff8c00; }
+    .ptable td.razor-cell { color: var(--dim); font-weight: 500; }
+    .ptable td.razor-cell.hot { color: #ff5544; font-weight: 600; }
+    .ptable td.razor-cell.warm { color: #ffb84d; font-weight: 600; }
 
     /* Margins */
     .margins { background: var(--panel); border-radius: 14px; padding: 28px; border: 1px solid var(--line); }
@@ -211,6 +215,8 @@
           <th>Alliance</th>
           <th class="num">Won</th>
           <th class="num">Leading</th>
+          <th class="num razor" title="Leading by under 1,000 votes — could lose">Razor leads</th>
+          <th class="num razor" title="Trailing by under 1,000 votes — could flip">Almost won</th>
           <th class="num">Total</th>
         </tr>
       </thead>
@@ -356,6 +362,8 @@
         const alliance = partyToAlliance[p.party] || "—";
         const cls = ALLIANCE_CLASS[alliance] || "other";
         const widthPct = (p.total / maxTotal) * 80;
+        const razorLead = p.leadingUnder1k || 0;
+        const almostWon = p.trailingUnder1k || 0;
         tbody.append(el("tr", { class: cls },
           el("td", { class: "party" },
             el("span", { class: `badge ${cls}` }),
@@ -364,6 +372,8 @@
           el("td", {}, alliance),
           el("td", { class: "num" }, fmt(p.won)),
           el("td", { class: "num" }, fmt(p.leading)),
+          el("td", { class: `num razor-cell ${razorLead > 0 ? "hot" : ""}` }, razorLead ? fmt(razorLead) : "—"),
+          el("td", { class: `num razor-cell ${almostWon > 0 ? "warm" : ""}` }, almostWon ? fmt(almostWon) : "—"),
           el("td", { class: "num" },
             el("span", { class: "totalbar", style: `width:${widthPct}px` }),
             fmt(p.total),
