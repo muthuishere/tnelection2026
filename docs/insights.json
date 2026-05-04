@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-04T14:44:09.924Z",
+  "generatedAt": "2026-05-04T14:46:10.946Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
-    "declared": 153,
-    "inProgress": 81
+    "declared": 154,
+    "inProgress": 80
   },
   "partyResults": [
     {
@@ -25,8 +25,8 @@
     },
     {
       "party": "All India Anna Dravida Munnetra Kazhagam",
-      "won": 29,
-      "leading": 18,
+      "won": 30,
+      "leading": 17,
       "leadingUnder1k": 3,
       "trailingUnder1k": 3,
       "total": 47
@@ -113,7 +113,7 @@
       "won": 73,
       "leading": 33,
       "total": 106,
-      "cushionVotes": 2425858,
+      "cushionVotes": 2425774,
       "gapVotes": 784199,
       "flippableUnder1k": 7,
       "flippableUnder5k": 29,
@@ -133,8 +133,8 @@
       "won": 47,
       "leading": 27,
       "total": 74,
-      "cushionVotes": 680668,
-      "gapVotes": 2241808,
+      "cushionVotes": 681488,
+      "gapVotes": 2241724,
       "flippableUnder1k": 5,
       "flippableUnder5k": 14,
       "vulnerableUnder1k": 4
@@ -147,11 +147,11 @@
         "Bharatiya Janata Party",
         "Pattali Makkal Katchi"
       ],
-      "won": 33,
-      "leading": 21,
+      "won": 34,
+      "leading": 20,
       "total": 54,
       "cushionVotes": 800195,
-      "gapVotes": 782604,
+      "gapVotes": 783424,
       "flippableUnder1k": 3,
       "flippableUnder5k": 19,
       "vulnerableUnder1k": 6
@@ -1823,7 +1823,7 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "D.MURUGESAN",
       "trailingParty": "Desiya Murpokku Dravida Kazhagam",
-      "margin": 54055,
+      "margin": 53971,
       "round": "33/35",
       "status": "Result in Progress"
     },
@@ -1957,7 +1957,7 @@
       "trailingParty": "Dravida Munnetra Kazhagam",
       "margin": 9693,
       "round": "22/22",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "POLLACHI": {
       "constituency": "POLLACHI",
@@ -1999,8 +1999,8 @@
       "leadingParty": "Dravida Munnetra Kazhagam",
       "trailingCandidate": "PAVUNRAJ. S",
       "trailingParty": "All India Anna Dravida Munnetra Kazhagam",
-      "margin": 8013,
-      "round": "23/25",
+      "margin": 8833,
+      "round": "24/25",
       "status": "Result in Progress"
     },
     "POONAMALLEE": {
@@ -3028,9 +3028,9 @@
     }
   },
   "countingProgress": {
-    "roundsDone": 5468,
+    "roundsDone": 5469,
     "roundsTotal": 5572,
-    "pct": 98.1,
+    "pct": 98.2,
     "constituenciesComplete": 188
   },
   "superlatives": {
