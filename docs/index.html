@@ -213,7 +213,57 @@
     .close-card .side.right { text-align: right; }
     .close-card .vs { color: var(--dim); font-size: 11px; letter-spacing: 0.15em; }
 
-    /* Highlights */
+    /* VIP grid (Option B redesign) */
+    .vip-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    @media (max-width: 760px) { .vip-grid { grid-template-columns: 1fr; } }
+    .vip-card {
+      background: var(--panel); border: 1px solid var(--line); border-radius: 14px;
+      padding: 28px 30px; position: relative;
+      transition: border-color 0.25s, transform 0.25s;
+    }
+    .vip-card.tvk { border-left: 4px solid var(--tvk); }
+    .vip-card.dmk { border-left: 4px solid var(--dmk); }
+    .vip-card.aiadmk { border-left: 4px solid var(--aiadmk); }
+    .vip-card.other { border-left: 4px solid var(--other); }
+    .vip-card:hover { transform: translateY(-2px); border-color: var(--line); }
+    .vip-card .vname { font-family: 'Fraunces', serif; font-size: 28px; font-weight: 600; line-height: 1.1; letter-spacing: -0.02em; }
+    .vip-card .vrole { color: var(--muted); font-size: 13px; margin-top: 8px; line-height: 1.5; }
+    .vip-card .vverdict {
+      display: inline-flex; align-items: baseline; gap: 10px;
+      margin-top: 18px; padding: 10px 16px; border-radius: 8px;
+      font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums;
+    }
+    .vip-card .vverdict .vlabel { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; opacity: 0.85; font-weight: 700; }
+    .vip-card .vverdict .vat { color: inherit; opacity: 0.65; font-size: 12px; font-weight: 400; margin-left: 6px; letter-spacing: 0.02em; }
+    .vip-card .vverdict.lead { background: rgba(45, 164, 78, 0.15); color: #5dd498; }
+    .vip-card .vverdict.trail { background: rgba(230, 57, 70, 0.15); color: #ff8a92; }
+    .vip-card .vverdict.won { background: rgba(45, 164, 78, 0.22); color: #6be8a3; font-weight: 800; }
+    .vip-card .vverdict.lost { background: rgba(230, 57, 70, 0.22); color: #ff8a92; font-weight: 800; }
+    .vip-card .vquote {
+      font-family: 'Fraunces', serif; font-style: italic;
+      font-size: 16px; line-height: 1.55; color: #d6d6dd;
+      margin-top: 22px; padding: 16px 0 0 18px;
+      border-left: 2px solid var(--line); position: relative;
+    }
+    .vip-card .vquote::before {
+      content: '"'; position: absolute; left: -2px; top: -8px;
+      font-size: 48px; color: var(--tvk); line-height: 1;
+      font-family: 'Fraunces', serif;
+    }
+    .vip-card .vquote .vsource { display: block; margin-top: 8px; font-size: 11px; color: var(--muted); font-style: normal; letter-spacing: 0.04em; text-transform: uppercase; }
+    .vip-toggle {
+      grid-column: 1 / -1;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 14px 22px; margin-top: 4px;
+      background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+      color: var(--muted); font-size: 13px; font-weight: 500; letter-spacing: 0.04em;
+      cursor: pointer; transition: color 0.2s, border-color 0.2s, background 0.2s;
+    }
+    .vip-toggle:hover { color: var(--text); border-color: var(--tvk); background: var(--bg-2); }
+    .vip-toggle .arrow { transition: transform 0.3s; }
+    .vip-toggle.open .arrow { transform: rotate(180deg); }
+
+    /* Old highlights CSS kept for backward compat (unused) */
     .highlights { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
     @media (max-width: 720px) { .highlights { grid-template-columns: 1fr; } }
     .hcard { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 28px; }
@@ -301,6 +351,9 @@
     <div class="sec-head"><h2>How the alliances stand</h2><span class="sub">Cushion = votes ahead in seats led · Gap = votes needed to flip seats trailing</span></div>
     <section class="stories" id="stories"></section>
 
+    <div class="sec-head"><h2>The day's faces</h2><span class="sub">VIP contests · live status from results.csv</span></div>
+    <section class="vip-grid" id="vip-grid"></section>
+
     <div class="sec-head"><h2>Party-wise</h2><span class="sub">Sorted by total seats (won + leading)</span></div>
     <table class="ptable">
       <thead>
@@ -322,9 +375,6 @@
 
     <div class="sec-head"><h2>Razor's edge</h2><span class="sub">15 closest contests where every vote counts</span></div>
     <section class="close-grid" id="closest"></section>
-
-    <div class="sec-head"><h2>Highlights</h2><span class="sub">Hand-curated from highlights.json</span></div>
-    <section class="highlights" id="highlights"></section>
 
     <footer>Data · results.eci.gov.in · ResultAcGenMay2026</footer>
   </div>
@@ -594,14 +644,36 @@
       renderClosest(d);
     }
 
-    async function loadHighlights() {
-      const container = document.getElementById("highlights");
-      let vipsData, contests = {}, liveNews = [];
+    const PARTY_TO_ALLIANCE_KEY = {
+      "Tamilaga Vettri Kazhagam": "tvk", "TVK": "tvk",
+      "Dravida Munnetra Kazhagam": "dmk", "DMK": "dmk",
+      "Indian National Congress": "dmk", "INC": "dmk",
+      "Viduthalai Chiruthaigal Katchi": "dmk", "VCK": "dmk",
+      "Communist Party of India": "dmk", "CPI": "dmk",
+      "Communist Party of India (Marxist)": "dmk", "CPI(M)": "dmk",
+      "Indian Union Muslim League": "dmk", "IUML": "dmk",
+      "Desiya Murpokku Dravida Kazhagam": "dmk", "DMDK": "dmk",
+      "Marumalarchi Dravida Munnetra Kazhagam": "dmk", "MDMK": "dmk",
+      "All India Anna Dravida Munnetra Kazhagam": "aiadmk", "AIADMK": "aiadmk", "ADMK": "aiadmk",
+      "Bharatiya Janata Party": "aiadmk", "BJP": "aiadmk",
+      "Pattali Makkal Katchi": "aiadmk", "PMK": "aiadmk",
+      "Amma Makkal Munnettra Kazagam": "aiadmk", "AMMK": "aiadmk",
+    };
+    function partyClass(party) {
+      if (!party) return "other";
+      // try direct, then strip parenthetical
+      return PARTY_TO_ALLIANCE_KEY[party]
+        || PARTY_TO_ALLIANCE_KEY[party.split("(")[0].trim()]
+        || "other";
+    }
+
+    async function renderVips() {
+      const container = document.getElementById("vip-grid");
+      let vipsData, contests = {};
       try {
-        const [vRes, iRes, nRes] = await Promise.all([
+        const [vRes, iRes] = await Promise.all([
           fetch("./vips.json", { cache: "no-store" }),
           fetch("./insights.json", { cache: "no-store" }),
-          fetch("./live_news.json", { cache: "no-store" }).catch(() => null),
         ]);
         if (!vRes.ok) throw new Error(`HTTP ${vRes.status}`);
         vipsData = await vRes.json();
@@ -609,21 +681,17 @@
           const i = await iRes.json();
           contests = i.contests || {};
         }
-        if (nRes && nRes.ok) {
-          const n = await nRes.json();
-          liveNews = n.items || [];
-        }
-      } catch (e) {
-        container.parentElement.querySelector(".sec-head:has(+ #highlights)")?.remove();
+      } catch {
+        container.previousElementSibling?.remove();
         container.remove();
         return;
       }
 
-      function liveStatusFor(v) {
+      function verdictFor(v) {
         const constKey = v.constituency.split("(")[0].trim().toUpperCase();
         const c = contests[constKey];
-        if (!c) return el("div", { class: "live" },
-          el("span", { class: "label" }, "Status"),
+        if (!c) return el("div", { class: "vverdict" },
+          el("span", { class: "vlabel" }, "Status"),
           el("span", {}, "—"));
         const norm = (s) => s.toUpperCase().replace(/[.,()\s]/g, "");
         const vipNorm = norm(v.name.split("(")[0]);
@@ -633,109 +701,62 @@
         const leadMatch = leadNorm.includes(tail(vipNorm)) || vipNorm.includes(tail(leadNorm));
         const trailMatch = trailNorm.includes(tail(vipNorm)) || vipNorm.includes(tail(trailNorm));
         const isWon = c.status === "Result Declared";
-        let cls = "", label = "Margin", value = `${fmt(c.margin)} votes`;
-        if (leadMatch) {
-          cls = isWon ? "won" : "lead";
-          label = isWon ? "Won by" : "Leading by";
-        } else if (trailMatch) {
-          cls = "trail";
-          label = isWon ? "Lost by" : "Trailing by";
-        }
-        return el("div", { class: `live ${cls}` },
-          el("span", { class: "label" }, label),
-          el("span", {}, value),
-          el("span", { class: "at" }, `${c.constituency} · R ${c.round}`),
+        let cls = "", label = "Margin";
+        if (leadMatch) { cls = isWon ? "won" : "lead"; label = isWon ? "Won by" : "Leading by"; }
+        else if (trailMatch) { cls = isWon ? "lost" : "trail"; label = isWon ? "Lost by" : "Trailing by"; }
+        return el("div", { class: `vverdict ${cls}` },
+          el("span", { class: "vlabel" }, label),
+          el("span", {}, `${fmt(c.margin)} votes`),
+          el("span", { class: "vat" }, `${c.constituency} · R ${c.round}`),
         );
       }
 
-      const vipCard = el("div", { class: "hcard" }, el("h3", {}, `VIP contests · ${(vipsData.vips || []).length}`));
-      for (const v of vipsData.vips || []) {
-        const head = el("div", { class: "vip-head" },
-          el("div", {},
-            el("div", { class: "who" }, v.name),
-            el("div", { class: "role" }, v.famous_for || `${v.constituency} · ${v.party}`),
-            liveStatusFor(v),
-          ),
-          el("div", { class: "toggle" }, "▶"),
+      function makeCard(v) {
+        const cls = partyClass(v.party);
+        const card = el("div", { class: `vip-card ${cls}` },
+          el("div", { class: "vname" }, v.name),
+          el("div", { class: "vrole" }, v.famous_for || `${v.constituency} · ${v.party}`),
+          verdictFor(v),
         );
-        const details = el("div", { class: "details" });
-        if (v.recent_news_2025_2026?.length) {
-          const block = el("div", { class: "det-block news" }, el("h4", {}, "Recent"));
-          const ul = el("ul", {});
-          for (const n of v.recent_news_2025_2026) ul.append(el("li", {}, n));
-          block.append(ul); details.append(block);
+        const quote = (v.famous_quotes || [])[0];
+        if (quote) {
+          card.append(el("div", { class: "vquote" },
+            quote,
+            el("span", { class: "vsource" }, "— in their own words"),
+          ));
         }
-        if (v.trivia?.length) {
-          const block = el("div", { class: "det-block" }, el("h4", {}, "Trivia"));
-          const ul = el("ul", {});
-          for (const t of v.trivia) ul.append(el("li", {}, t));
-          block.append(ul); details.append(block);
-        }
-        if (v.famous_quotes?.length) {
-          const block = el("div", { class: "det-block quotes" }, el("h4", {}, "In their words"));
-          const ul = el("ul", {});
-          for (const q of v.famous_quotes) ul.append(el("li", {}, `"${q}"`));
-          block.append(ul); details.append(block);
-        }
-        const card = el("div", { class: "vip" }, head, details);
-        head.addEventListener("click", () => card.classList.toggle("open"));
-        vipCard.append(card);
+        return card;
       }
 
-      // Trivia ticker = live news (newest first) + scattered VIP trivia
-      const trivCard = el("div", { class: "hcard" }, el("h3", {}, "Worth knowing"));
-      const triviaPool = [];
-      for (const n of liveNews) triviaPool.push({ text: n.text || n, source: "live", time: n.time });
-      const allVipTrivia = (vipsData.vips || []).flatMap(v => (v.trivia || []).map(t => `${v.name.split("(")[0].trim()}: ${t}`));
-      // shuffle vip trivia
-      for (let k = allVipTrivia.length - 1; k > 0; k--) {
-        const j = Math.floor(Math.random() * (k + 1));
-        [allVipTrivia[k], allVipTrivia[j]] = [allVipTrivia[j], allVipTrivia[k]];
-      }
-      for (const t of allVipTrivia.slice(0, 12)) triviaPool.push({ text: t });
+      const vips = vipsData.vips || [];
+      const featured = vips.slice(0, 6);
+      const rest = vips.slice(6);
 
-      const stage = el("div", { class: "trivia-stage" });
-      const items = triviaPool.map((t, i) => el("div", { class: `trivia-item${i === 0 ? " active" : ""}` }, t.text));
-      items.forEach(i => stage.append(i));
-      const dots = el("div", { class: "trivia-dots" });
-      const dotEls = items.map((_, i) => el("span", { class: i === 0 ? "active" : "" }));
-      dotEls.forEach(d => dots.append(d));
-      const progress = el("div", { class: "trivia-progress" }, el("div", { class: "bar run" }));
-      const meta = el("div", { class: "trivia-meta" }, dots, progress);
-      trivCard.append(stage, meta);
-      container.append(vipCard, trivCard);
+      for (const v of featured) container.append(makeCard(v));
 
-      // rotate trivia
-      if (items.length > 1) {
-        let idx = 0;
-        const cycle = () => {
-          items[idx].classList.remove("active");
-          dotEls[idx].classList.remove("active");
-          idx = (idx + 1) % items.length;
-          items[idx].classList.add("active");
-          dotEls[idx].classList.add("active");
-          const bar = progress.querySelector(".bar");
-          bar.classList.remove("run");
-          void bar.offsetWidth; // restart animation
-          bar.classList.add("run");
-        };
-        let timer = setInterval(cycle, 6000);
-        // click a dot to jump
-        dotEls.forEach((d, i) => d.addEventListener("click", () => {
-          clearInterval(timer);
-          items.forEach(it => it.classList.remove("active"));
-          dotEls.forEach(dd => dd.classList.remove("active"));
-          idx = i;
-          items[idx].classList.add("active");
-          dotEls[idx].classList.add("active");
-          const bar = progress.querySelector(".bar");
-          bar.classList.remove("run"); void bar.offsetWidth; bar.classList.add("run");
-          timer = setInterval(cycle, 6000);
-        }));
+      if (rest.length) {
+        const restCards = rest.map(makeCard);
+        const toggle = el("div", { class: "vip-toggle" },
+          el("span", { class: "label" }, `Show all ${vips.length} VIPs`),
+          el("span", { class: "arrow" }, "▼"),
+        );
+        let open = false;
+        toggle.addEventListener("click", () => {
+          open = !open;
+          toggle.classList.toggle("open", open);
+          toggle.querySelector(".label").textContent = open
+            ? `Show only top 6` : `Show all ${vips.length} VIPs`;
+          if (open) {
+            for (const c of restCards) container.insertBefore(c, toggle);
+          } else {
+            for (const c of restCards) c.remove();
+          }
+        });
+        container.append(toggle);
       }
     }
 
-    Promise.all([load(), loadHighlights()]).catch(e => {
+    Promise.all([load(), renderVips()]).catch(e => {
       document.body.innerHTML = `<pre style="color:#ff6b6b;padding:20px;font-family:monospace">Failed to load: ${e.message}</pre>`;
     });
   </script>
