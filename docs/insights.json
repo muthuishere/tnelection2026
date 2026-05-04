@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-05-04T15:30:10.258Z",
+  "generatedAt": "2026-05-04T15:32:09.739Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
-    "declared": 179,
-    "inProgress": 55
+    "declared": 181,
+    "inProgress": 53
   },
   "partyResults": [
     {
       "party": "Tamilaga Vettri Kazhagam",
-      "won": 85,
-      "leading": 22,
+      "won": 87,
+      "leading": 20,
       "leadingUnder1k": 4,
       "trailingUnder1k": 6,
       "total": 107
@@ -110,10 +110,10 @@
       "parties": [
         "Tamilaga Vettri Kazhagam"
       ],
-      "won": 85,
-      "leading": 22,
+      "won": 87,
+      "leading": 20,
       "total": 107,
-      "cushionVotes": 2438549,
+      "cushionVotes": 2438845,
       "gapVotes": 788247,
       "flippableUnder1k": 6,
       "flippableUnder5k": 29,
@@ -134,7 +134,7 @@
       "leading": 18,
       "total": 74,
       "cushionVotes": 681946,
-      "gapVotes": 2254826,
+      "gapVotes": 2255122,
       "flippableUnder1k": 4,
       "flippableUnder5k": 14,
       "vulnerableUnder1k": 4
@@ -1571,7 +1571,7 @@
       "trailingParty": "Dravida Munnetra Kazhagam",
       "margin": 7768,
       "round": "27/27",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "METTUR": {
       "constituency": "METTUR",
@@ -2319,7 +2319,7 @@
       "trailingParty": "Communist Party of India",
       "margin": 8581,
       "round": "24/24",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "SULUR": {
       "constituency": "SULUR",
@@ -2603,8 +2603,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "S. INIGO IRUDAYARAJ",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 26844,
-      "round": "24/28",
+      "margin": 27140,
+      "round": "25/28",
       "status": "Result in Progress"
     },
     "TIRUCHIRAPPALLI (WEST)": {
@@ -3027,7 +3027,7 @@
     }
   },
   "countingProgress": {
-    "roundsDone": 5544,
+    "roundsDone": 5545,
     "roundsTotal": 5587,
     "pct": 99.2,
     "constituenciesComplete": 216
