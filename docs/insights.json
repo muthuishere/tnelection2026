@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-05-04T17:16:10.525Z",
+  "generatedAt": "2026-05-04T17:18:11.408Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
-    "declared": 226,
-    "inProgress": 8
+    "declared": 227,
+    "inProgress": 7
   },
   "partyResults": [
     {
       "party": "Tamilaga Vettri Kazhagam",
-      "won": 103,
-      "leading": 4,
+      "won": 104,
+      "leading": 3,
       "leadingUnder1k": 4,
       "trailingUnder1k": 7,
       "total": 107
@@ -110,8 +110,8 @@
       "parties": [
         "Tamilaga Vettri Kazhagam"
       ],
-      "won": 103,
-      "leading": 4,
+      "won": 104,
+      "leading": 3,
       "total": 107,
       "cushionVotes": 2441592,
       "gapVotes": 785514,
@@ -335,17 +335,6 @@
       "status": "Result in Progress"
     },
     {
-      "constituency": "CHENGALPATTU",
-      "constNo": "32",
-      "leadingCandidate": "S. THIYAGARAJAN",
-      "leadingParty": "Tamilaga Vettri Kazhagam",
-      "trailingCandidate": "KARTHIKDHANDAPANI",
-      "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 35641,
-      "round": "40/40",
-      "status": "Result in Progress"
-    },
-    {
       "constituency": "SHOZHINGANALLUR",
       "constNo": "27",
       "leadingCandidate": "ECR P SARAVANAN",
@@ -361,18 +350,18 @@
     {
       "alliance": "DMK-led INDIA Alliance",
       "couldLose": 2,
-      "couldGain": 4,
+      "couldGain": 3,
       "loseVotes": 2485,
-      "gainVotes": 133843,
-      "net": 2
+      "gainVotes": 98202,
+      "net": 1
     },
     {
       "alliance": "TVK",
-      "couldLose": 4,
+      "couldLose": 3,
       "couldGain": 3,
-      "loseVotes": 136792,
+      "loseVotes": 101151,
       "gainVotes": 3395,
-      "net": -1
+      "net": 0
     },
     {
       "alliance": "AIADMK-led NDA",
@@ -680,7 +669,7 @@
       "trailingParty": "Dravida Munnetra Kazhagam",
       "margin": 35641,
       "round": "40/40",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "CHENGAM": {
       "constituency": "CHENGAM",
