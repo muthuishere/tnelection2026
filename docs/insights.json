@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T12:26:09.221Z",
+  "generatedAt": "2026-05-04T12:28:16.221Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
@@ -113,8 +113,8 @@
       "won": 22,
       "leading": 87,
       "total": 109,
-      "cushionVotes": 2159981,
-      "gapVotes": 750136,
+      "cushionVotes": 2165724,
+      "gapVotes": 759608,
       "flippableUnder1k": 3,
       "flippableUnder5k": 27,
       "vulnerableUnder1k": 6
@@ -133,8 +133,8 @@
       "won": 10,
       "leading": 64,
       "total": 74,
-      "cushionVotes": 640393,
-      "gapVotes": 1978683,
+      "cushionVotes": 640548,
+      "gapVotes": 1984122,
       "flippableUnder1k": 6,
       "flippableUnder5k": 13,
       "vulnerableUnder1k": 6
@@ -150,8 +150,8 @@
       "won": 5,
       "leading": 46,
       "total": 51,
-      "cushionVotes": 748338,
-      "gapVotes": 721783,
+      "cushionVotes": 748525,
+      "gapVotes": 712957,
       "flippableUnder1k": 7,
       "flippableUnder5k": 25,
       "vulnerableUnder1k": 4
@@ -525,8 +525,8 @@
       "leadingParty": "Dravida Munnetra Kazhagam",
       "trailingCandidate": "IMTHIYAZ PANDARATTUDU ABDU",
       "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 13617,
-      "round": "16/22",
+      "margin": 12411,
+      "round": "17/22",
       "status": "Result in Progress"
     },
     "ANAIKATTU": {
@@ -545,10 +545,10 @@
       "constNo": "198",
       "leadingCandidate": "MAHARAJAN.A",
       "leadingParty": "Dravida Munnetra Kazhagam",
-      "trailingCandidate": "LOGIRAJAN.A",
-      "trailingParty": "All India Anna Dravida Munnetra Kazhagam",
-      "margin": 9027,
-      "round": "22/25",
+      "trailingCandidate": "PANDI.V",
+      "trailingParty": "Tamilaga Vettri Kazhagam",
+      "margin": 9158,
+      "round": "23/25",
       "status": "Result in Progress"
     },
     "ANNA NAGAR": {
@@ -569,7 +569,7 @@
       "leadingParty": "All India Anna Dravida Munnetra Kazhagam",
       "trailingCandidate": "SIVABALAN.M",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 1363,
+      "margin": 1260,
       "round": "20/20",
       "status": "Result in Progress"
     },
@@ -712,8 +712,8 @@
       "leadingParty": "All India Anna Dravida Munnetra Kazhagam",
       "trailingCandidate": "BALAKRISHNAN",
       "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 6991,
-      "round": "20/22",
+      "margin": 7281,
+      "round": "21/22",
       "status": "Result in Progress"
     },
     "BHAVANISAGAR": {
@@ -822,8 +822,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "DURAI. SENTHAMIL SELVAN B.E",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 14238,
-      "round": "17/25",
+      "margin": 15247,
+      "round": "18/25",
       "status": "Result in Progress"
     },
     "COIMBATORE (SOUTH)": {
@@ -921,8 +921,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "J. JOHN EBENEZER",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 35804,
-      "round": "13/18",
+      "margin": 39106,
+      "round": "14/18",
       "status": "Result in Progress"
     },
     "EDAPPADI": {
@@ -1031,8 +1031,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "K.B.PRADAP",
       "trailingParty": "Desiya Murpokku Dravida Kazhagam",
-      "margin": 7114,
-      "round": "21/23",
+      "margin": 8345,
+      "round": "22/23",
       "status": "Result in Progress"
     },
     "GUMMIDIPOONDI": {
@@ -1042,8 +1042,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "SUDHAKAR.V",
       "trailingParty": "All India Anna Dravida Munnetra Kazhagam",
-      "margin": 27275,
-      "round": "22/25",
+      "margin": 27476,
+      "round": "23/25",
       "status": "Result in Progress"
     },
     "HARBOUR": {
@@ -1053,8 +1053,8 @@
       "leadingParty": "Dravida Munnetra Kazhagam",
       "trailingCandidate": "SINORA P S ASHOK",
       "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 10520,
-      "round": "13/14",
+      "margin": 11750,
+      "round": "14/14",
       "status": "Result in Progress"
     },
     "HARUR": {
@@ -3028,10 +3028,10 @@
     }
   },
   "countingProgress": {
-    "roundsDone": 4802,
+    "roundsDone": 4810,
     "roundsTotal": 5462,
-    "pct": 87.9,
-    "constituenciesComplete": 73
+    "pct": 88.1,
+    "constituenciesComplete": 74
   },
   "superlatives": {
     "biggestMargin": {
