@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T17:04:16.679Z",
+  "generatedAt": "2026-05-04T17:06:11.968Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
@@ -113,7 +113,7 @@
       "won": 103,
       "leading": 4,
       "total": 107,
-      "cushionVotes": 2441182,
+      "cushionVotes": 2441592,
       "gapVotes": 785514,
       "flippableUnder1k": 7,
       "flippableUnder5k": 29,
@@ -134,7 +134,7 @@
       "leading": 4,
       "total": 74,
       "cushionVotes": 679683,
-      "gapVotes": 2254290,
+      "gapVotes": 2254700,
       "flippableUnder1k": 5,
       "flippableUnder5k": 14,
       "vulnerableUnder1k": 5
@@ -396,7 +396,7 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "S. ARAVIND RAMESH",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 96370,
+      "margin": 96780,
       "round": "33/33",
       "status": "Result in Progress"
     }
@@ -407,14 +407,14 @@
       "couldLose": 4,
       "couldGain": 5,
       "loseVotes": 7924,
-      "gainVotes": 146078,
+      "gainVotes": 146488,
       "net": 1
     },
     {
       "alliance": "TVK",
       "couldLose": 4,
       "couldGain": 4,
-      "loseVotes": 136382,
+      "loseVotes": 136792,
       "gainVotes": 5216,
       "net": 0
     },
@@ -2196,7 +2196,7 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "S. ARAVIND RAMESH",
       "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 96370,
+      "margin": 96780,
       "round": "33/33",
       "status": "Result in Progress"
     },
