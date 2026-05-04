@@ -198,8 +198,32 @@
     }
 
     /* Closest */
+    .razor-intro {
+      max-width: 740px; margin: 0 auto 28px; text-align: center;
+      font-family: 'Fraunces', serif; font-size: 19px; line-height: 1.55; color: #d6d6dd; letter-spacing: -0.005em;
+    }
+    .razor-intro .razor-big { font-size: 26px; font-weight: 600; color: var(--text); }
+    .razor-intro em { font-style: normal; color: var(--tvk); font-weight: 600; }
+    .razor-intro .razor-sub { font-size: 14px; color: var(--muted); margin-top: 12px; font-family: 'Inter Tight', sans-serif; letter-spacing: 0.02em; }
+    .swing-band { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 18px; }
+    .swing-card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; border-top: 3px solid var(--other); }
+    .swing-card.tvk { border-top-color: var(--tvk); }
+    .swing-card.dmk { border-top-color: var(--dmk); }
+    .swing-card.aiadmk { border-top-color: var(--aiadmk); }
+    .swing-card .name { font-weight: 600; font-size: 13px; letter-spacing: 0.04em; }
+    .swing-card .net { font-family: 'Fraunces', serif; font-size: 32px; font-weight: 600; line-height: 1; margin-top: 8px; }
+    .swing-card .net.up { color: #5dd498; }
+    .swing-card .net.down { color: #ff7070; }
+    .swing-card .net.flat { color: var(--muted); }
+    .swing-card .gl { display: flex; gap: 12px; margin-top: 8px; font-size: 12px; color: var(--muted); }
+    .swing-card .gl .g { color: #5dd498; font-weight: 600; }
+    .swing-card .gl .l { color: #ff8a92; font-weight: 600; }
+    .swing-card .votes { color: var(--dim); font-size: 11px; margin-top: 6px; letter-spacing: 0.04em; }
     .close-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 14px; }
-    .close-card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 20px; transition: border-color 0.2s; }
+    .close-card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 20px; transition: border-color 0.2s; border-left: 3px solid var(--other); }
+    .close-card.tvk { border-left-color: var(--tvk); }
+    .close-card.dmk { border-left-color: var(--dmk); }
+    .close-card.aiadmk { border-left-color: var(--aiadmk); }
     .close-card:hover { border-color: var(--dim); }
     .close-card .head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 14px; }
     .close-card .const { font-weight: 600; font-size: 16px; }
@@ -216,6 +240,36 @@
     /* VIP grid (Option B redesign) */
     .vip-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
     @media (max-width: 760px) { .vip-grid { grid-template-columns: 1fr; } }
+    .super-card {
+      grid-column: 1 / -1;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+      background: var(--panel); border: 1px solid var(--line); border-radius: 14px; overflow: hidden;
+    }
+    @media (max-width: 760px) { .super-card { grid-template-columns: 1fr; } }
+    .super-card .super {
+      padding: 24px 28px; position: relative;
+    }
+    .super-card .super.biggest {
+      background: linear-gradient(135deg, rgba(45, 164, 78, 0.08), transparent);
+      border-right: 1px solid var(--line);
+    }
+    @media (max-width: 760px) {
+      .super-card .super.biggest { border-right: none; border-bottom: 1px solid var(--line); }
+    }
+    .super-card .super.tightest {
+      background: linear-gradient(135deg, rgba(255, 122, 0, 0.08), transparent);
+    }
+    .super-card .stag { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; }
+    .super-card .stag.biggest { color: #5dd498; }
+    .super-card .stag.tightest { color: var(--tvk); }
+    .super-card .smargin { font-family: 'Fraunces', serif; font-size: 44px; font-weight: 600; line-height: 1; margin-top: 10px; letter-spacing: -0.03em; }
+    .super-card .smargin.biggest { color: #5dd498; }
+    .super-card .smargin.tightest { color: var(--tvk); }
+    .super-card .smargin .vu { font-family: 'Inter Tight', sans-serif; font-size: 14px; color: var(--muted); font-weight: 500; margin-left: 8px; letter-spacing: 0.04em; text-transform: uppercase; }
+    .super-card .swhom { font-size: 15px; font-weight: 600; margin-top: 14px; }
+    .super-card .sparty { color: var(--muted); font-size: 12px; margin-top: 3px; letter-spacing: 0.04em; }
+    .super-card .swhere { font-size: 13px; color: var(--muted); margin-top: 8px; }
+    .super-card .svs { color: var(--dim); font-size: 11px; margin-top: 6px; letter-spacing: 0.04em; text-transform: uppercase; }
     .vip-card {
       background: var(--panel); border: 1px solid var(--line); border-radius: 14px;
       padding: 28px 30px; position: relative;
@@ -581,8 +635,48 @@
     function renderClosest(d) {
       const grid = document.getElementById("closest");
       grid.innerHTML = "";
+
+      // Intro — the story
+      const sub1k = d.marginBuckets?.find(b => b.label.startsWith("<"))?.count ?? 0;
+      const intro = el("div", { class: "razor-intro" },
+        el("div", { class: "razor-big" }, `Of ${TOTAL_SEATS} seats, ${sub1k} are within 1,000 votes.`),
+        el("div", {}, "A single counting round can flip any of them. Below: how much each alliance could gain or lose across the 15 tightest contests right now."),
+      );
+      grid.parentElement.insertBefore(intro, grid);
+      // make sure we don't duplicate intro on re-render
+      while (intro.previousElementSibling?.classList?.contains("razor-intro")) intro.previousElementSibling.remove();
+
+      // Swing band
+      const swing = el("div", { class: "swing-band" });
+      for (const a of d.closestSummary || []) {
+        if (a.alliance === "Others / Unaligned") continue;
+        const cls = a.alliance === "TVK" ? "tvk"
+          : a.alliance === "DMK-led INDIA Alliance" ? "dmk"
+          : a.alliance === "AIADMK-led NDA" ? "aiadmk"
+          : "other";
+        const netCls = a.net > 0 ? "up" : a.net < 0 ? "down" : "flat";
+        const sign = a.net > 0 ? "+" : "";
+        swing.append(el("div", { class: `swing-card ${cls}` },
+          el("div", { class: "name" }, a.alliance),
+          el("div", { class: `net ${netCls}` }, `${sign}${a.net}`),
+          el("div", { class: "gl" },
+            el("span", { class: "g" }, `↑ ${a.couldGain} gain`),
+            el("span", { class: "l" }, `↓ ${a.couldLose} lose`),
+          ),
+          el("div", { class: "votes" }, `${fmt(a.gainVotes)} v upside · ${fmt(a.loseVotes)} v exposure`),
+        ));
+      }
+      grid.parentElement.insertBefore(swing, grid);
+      while (swing.previousElementSibling?.classList?.contains("swing-band")) swing.previousElementSibling.remove();
+
+      // Cards
+      const allianceClsForParty = (party) => {
+        const k = partyClass(party);
+        return ["tvk", "dmk", "aiadmk"].includes(k) ? k : "other";
+      };
       for (const r of d.closestContests) {
-        grid.append(el("div", { class: "close-card" },
+        const cls = allianceClsForParty(r.leadingParty);
+        grid.append(el("div", { class: `close-card ${cls}` },
           el("div", { class: "head" },
             el("div", {},
               el("div", { class: "const" }, r.constituency),
@@ -726,6 +820,40 @@
           ));
         }
         return card;
+      }
+
+      // Pull superlatives from insights for the trivia banner
+      let supers = null;
+      try {
+        const iRes2 = await fetch("./insights.json", { cache: "no-store" });
+        if (iRes2.ok) supers = (await iRes2.json()).superlatives;
+      } catch {}
+
+      if (supers?.biggestMargin || supers?.smallestMargin) {
+        const card = el("div", { class: "super-card" });
+        if (supers.biggestMargin) {
+          const b = supers.biggestMargin;
+          card.append(el("div", { class: "super biggest" },
+            el("div", { class: "stag biggest" }, "Biggest lead right now"),
+            el("div", { class: "smargin biggest" }, fmt(b.margin), el("span", { class: "vu" }, "votes")),
+            el("div", { class: "swhom" }, b.leadingCandidate),
+            el("div", { class: "sparty" }, b.leadingParty),
+            el("div", { class: "swhere" }, `${b.constituency} · Round ${b.round}`),
+            el("div", { class: "svs" }, `vs ${b.trailingCandidate} (${b.trailingParty})`),
+          ));
+        }
+        if (supers.smallestMargin) {
+          const s = supers.smallestMargin;
+          card.append(el("div", { class: "super tightest" },
+            el("div", { class: "stag tightest" }, "Tightest race on the board"),
+            el("div", { class: "smargin tightest" }, fmt(s.margin), el("span", { class: "vu" }, "votes")),
+            el("div", { class: "swhom" }, s.leadingCandidate),
+            el("div", { class: "sparty" }, s.leadingParty),
+            el("div", { class: "swhere" }, `${s.constituency} · Round ${s.round}`),
+            el("div", { class: "svs" }, `vs ${s.trailingCandidate} (${s.trailingParty})`),
+          ));
+        }
+        container.append(card);
       }
 
       const vips = vipsData.vips || [];

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T11:06:55.263Z",
+  "generatedAt": "2026-05-04T11:12:21.847Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
@@ -436,6 +436,32 @@
       "margin": 1075,
       "round": "11/23",
       "status": "Result in Progress"
+    }
+  ],
+  "closestSummary": [
+    {
+      "alliance": "DMK-led INDIA Alliance",
+      "couldLose": 5,
+      "couldGain": 7,
+      "loseVotes": 2739,
+      "gainVotes": 3374,
+      "net": 2
+    },
+    {
+      "alliance": "TVK",
+      "couldLose": 4,
+      "couldGain": 5,
+      "loseVotes": 1965,
+      "gainVotes": 3027,
+      "net": 1
+    },
+    {
+      "alliance": "AIADMK-led NDA",
+      "couldLose": 6,
+      "couldGain": 3,
+      "loseVotes": 3487,
+      "gainVotes": 1790,
+      "net": -3
     }
   ],
   "contests": {
@@ -3008,5 +3034,29 @@
     "roundsTotal": 5427,
     "pct": 75,
     "constituenciesComplete": 24
+  },
+  "superlatives": {
+    "biggestMargin": {
+      "constituency": "MADAVARAM",
+      "constNo": "9",
+      "leadingCandidate": "M.L.VIJAYPRABHU",
+      "leadingParty": "Tamilaga Vettri Kazhagam",
+      "trailingCandidate": "S.SUDHARSANAM",
+      "trailingParty": "Dravida Munnetra Kazhagam",
+      "margin": 94985,
+      "round": "19/19",
+      "status": "Result in Progress"
+    },
+    "smallestMargin": {
+      "constituency": "KUMBAKONAM",
+      "constNo": "171",
+      "leadingCandidate": "ANBALAGAN G",
+      "leadingParty": "Dravida Munnetra Kazhagam",
+      "trailingCandidate": "VINOTH",
+      "trailingParty": "Tamilaga Vettri Kazhagam",
+      "margin": 86,
+      "round": "19/22",
+      "status": "Result in Progress"
+    }
   }
 }

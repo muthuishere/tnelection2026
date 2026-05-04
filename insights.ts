@@ -195,9 +195,47 @@ const closest = records
   .sort((a, b) => a.margin - b.margin)
   .slice(0, 15);
 
+// Razor swing summary — across the 15 closest contests
+const closestSummary = (() => {
+  const acc: Record<string, { couldLose: number; couldGain: number; loseVotes: number; gainVotes: number }> = {};
+  const ensure = (name: string) => acc[name] ||= { couldLose: 0, couldGain: 0, loseVotes: 0, gainVotes: 0 };
+  for (const r of closest) {
+    const lead = allianceOf(r.leadingParty);
+    const trail = allianceOf(r.trailingParty);
+    const e1 = ensure(lead);
+    e1.couldLose++; e1.loseVotes += r.margin;
+    if (trail !== lead) {
+      const e2 = ensure(trail);
+      e2.couldGain++; e2.gainVotes += r.margin;
+    }
+  }
+  return Object.entries(acc)
+    .map(([alliance, v]) => ({ alliance, ...v, net: v.couldGain - v.couldLose }))
+    .sort((a, b) => b.net - a.net);
+})();
+
 // Status counts
 const statusCounts: Record<string, number> = {};
 for (const r of records) statusCounts[r["Status"]] = (statusCounts[r["Status"]] ?? 0) + 1;
+
+// Superlatives: biggest and smallest winning margins right now
+const sortedByMargin = [...records]
+  .map(r => ({
+    constituency: r["Constituency"],
+    constNo: r["Const. No."],
+    leadingCandidate: r["Leading Candidate"],
+    leadingParty: r["Leading Party"],
+    trailingCandidate: r["Trailing Candidate"],
+    trailingParty: r["Trailing Party"],
+    margin: parseInt(r["Margin"] || "0", 10),
+    round: `${r["Current Round"]}/${r["Total Rounds"]}`,
+    status: r["Status"],
+  }))
+  .filter(r => Number.isFinite(r.margin) && r.margin > 0);
+const superlatives = {
+  biggestMargin: sortedByMargin.slice().sort((a, b) => b.margin - a.margin)[0],
+  smallestMargin: sortedByMargin.slice().sort((a, b) => a.margin - b.margin)[0],
+};
 
 // Counting progress
 let roundsDone = 0, roundsTotal = 0, constituenciesComplete = 0;
@@ -243,8 +281,10 @@ const insights = {
   allianceResults,
   marginBuckets,
   closestContests: closest,
+  closestSummary,
   contests,
   countingProgress,
+  superlatives,
 };
 
 await Bun.write("docs/insights.json", JSON.stringify(insights, null, 2));
