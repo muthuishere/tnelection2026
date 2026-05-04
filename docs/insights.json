@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-04T18:20:10.467Z",
+  "generatedAt": "2026-05-04T18:22:08.400Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
-    "declared": 231,
-    "inProgress": 3
+    "declared": 232,
+    "inProgress": 2
   },
   "partyResults": [
     {
@@ -25,8 +25,8 @@
     },
     {
       "party": "All India Anna Dravida Munnetra Kazhagam",
-      "won": 46,
-      "leading": 1,
+      "won": 47,
+      "leading": 0,
       "leadingUnder1k": 4,
       "trailingUnder1k": 3,
       "total": 47
@@ -147,8 +147,8 @@
         "Bharatiya Janata Party",
         "Pattali Makkal Katchi"
       ],
-      "won": 52,
-      "leading": 1,
+      "won": 53,
+      "leading": 0,
       "total": 53,
       "cushionVotes": 803744,
       "gapVotes": 789218,
@@ -280,17 +280,6 @@
       "status": "Result in Progress"
     },
     {
-      "constituency": "KANNIYAKUMARI",
-      "constNo": "229",
-      "leadingCandidate": "THALAVAI SUNDARAM. N",
-      "leadingParty": "All India Anna Dravida Munnetra Kazhagam",
-      "trailingCandidate": "MAHESH.R",
-      "trailingParty": "Dravida Munnetra Kazhagam",
-      "margin": 214,
-      "round": "34/34",
-      "status": "Result in Progress"
-    },
-    {
       "constituency": "SHOZHINGANALLUR",
       "constNo": "27",
       "leadingCandidate": "ECR P SARAVANAN",
@@ -306,10 +295,10 @@
     {
       "alliance": "DMK-led INDIA Alliance",
       "couldLose": 1,
-      "couldGain": 2,
+      "couldGain": 1,
       "loseVotes": 30,
-      "gainVotes": 96994,
-      "net": 1
+      "gainVotes": 96780,
+      "net": 0
     },
     {
       "alliance": "TVK",
@@ -318,17 +307,9 @@
       "loseVotes": 96780,
       "gainVotes": 30,
       "net": 0
-    },
-    {
-      "alliance": "AIADMK-led NDA",
-      "couldLose": 1,
-      "couldGain": 0,
-      "loseVotes": 214,
-      "gainVotes": 0,
-      "net": -1
     }
   ],
-  "razorActiveCount": 2,
+  "razorActiveCount": 1,
   "contests": {
     "ALANDUR": {
       "constituency": "ALANDUR",
@@ -1032,7 +1013,7 @@
       "trailingParty": "Dravida Munnetra Kazhagam",
       "margin": 214,
       "round": "34/34",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "KARAIKUDI": {
       "constituency": "KARAIKUDI",
