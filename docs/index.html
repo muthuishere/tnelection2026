@@ -641,11 +641,12 @@
       const grid = document.getElementById("closest");
       grid.innerHTML = "";
 
-      // Intro — the story
-      const sub1k = d.marginBuckets?.find(b => b.label.startsWith("<"))?.count ?? 0;
+      // Intro — the story (in-progress only; declared results can't flip)
+      const inProgress = d.totals?.inProgress ?? 0;
+      const razorActive = d.razorActiveCount ?? 0;
       const intro = el("div", { class: "razor-intro" },
-        el("div", { class: "razor-big" }, `Of ${TOTAL_SEATS} seats, ${sub1k} are within 1,000 votes.`),
-        el("div", {}, "A single counting round can flip any of them. Below: how much each alliance could gain or lose across the 15 tightest contests right now."),
+        el("div", { class: "razor-big" }, `${razorActive} of ${inProgress} active races are within 1,000 votes.`),
+        el("div", {}, "A single counting round can flip any of them. Below: how much each alliance could gain or lose across the 15 tightest still-open contests."),
       );
       grid.parentElement.insertBefore(intro, grid);
       // make sure we don't duplicate intro on re-render

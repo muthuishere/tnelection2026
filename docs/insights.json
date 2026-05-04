@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T11:24:09.870Z",
+  "generatedAt": "2026-05-04T11:26:53.347Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
@@ -403,17 +403,6 @@
       "status": "Result in Progress"
     },
     {
-      "constituency": "SRIVAIKUNTAM",
-      "constNo": "216",
-      "leadingCandidate": "SARAVANAN. G",
-      "leadingParty": "Tamilaga Vettri Kazhagam",
-      "trailingCandidate": "SHANMUGANATHAN. S. P",
-      "trailingParty": "All India Anna Dravida Munnetra Kazhagam",
-      "margin": 1186,
-      "round": "21/21",
-      "status": "Result Declared"
-    },
-    {
       "constituency": "SRIVILLIPUTHUR",
       "constNo": "203",
       "leadingCandidate": "KARTHIK.A",
@@ -434,23 +423,34 @@
       "margin": 1217,
       "round": "16/20",
       "status": "Result in Progress"
+    },
+    {
+      "constituency": "UDHAGAMANDALAM",
+      "constNo": "108",
+      "leadingCandidate": "BHOJARAJAN.M",
+      "leadingParty": "Bharatiya Janata Party",
+      "trailingCandidate": "IBRAHIM.R",
+      "trailingParty": "Tamilaga Vettri Kazhagam",
+      "margin": 1231,
+      "round": "19/21",
+      "status": "Result in Progress"
     }
   ],
   "closestSummary": [
     {
-      "alliance": "AIADMK-led NDA",
-      "couldLose": 3,
-      "couldGain": 5,
-      "loseVotes": 2232,
-      "gainVotes": 3482,
+      "alliance": "TVK",
+      "couldLose": 4,
+      "couldGain": 6,
+      "loseVotes": 3045,
+      "gainVotes": 5334,
       "net": 2
     },
     {
-      "alliance": "TVK",
-      "couldLose": 5,
-      "couldGain": 5,
-      "loseVotes": 4231,
-      "gainVotes": 4103,
+      "alliance": "AIADMK-led NDA",
+      "couldLose": 4,
+      "couldGain": 4,
+      "loseVotes": 3463,
+      "gainVotes": 2296,
       "net": 0
     },
     {
@@ -462,6 +462,7 @@
       "net": -2
     }
   ],
+  "razorActiveCount": 9,
   "contests": {
     "ALANDUR": {
       "constituency": "ALANDUR",

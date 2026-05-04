@@ -178,7 +178,7 @@ const marginBuckets = buckets.map(({ label, count, byAlliance, byParty }) => ({
   label, count, byAlliance, byParty,
 }));
 
-// Closest contests
+// Closest contests — only in-progress races (declared results can't flip)
 const closest = records
   .map(r => ({
     constituency: r["Constituency"],
@@ -191,9 +191,15 @@ const closest = records
     round: `${r["Current Round"]}/${r["Total Rounds"]}`,
     status: r["Status"],
   }))
-  .filter(r => Number.isFinite(r.margin))
+  .filter(r => r.status !== "Result Declared" && Number.isFinite(r.margin) && r.margin > 0)
   .sort((a, b) => a.margin - b.margin)
   .slice(0, 15);
+
+// In-progress races within 1,000 votes — these are the actually-flippable seats
+const razorActiveCount = records.filter(r => {
+  const m = parseInt(r["Margin"] || "0", 10);
+  return r["Status"] !== "Result Declared" && Number.isFinite(m) && m > 0 && m < 1_000;
+}).length;
 
 // Razor swing summary — across the 15 closest contests
 const closestSummary = (() => {
@@ -282,6 +288,7 @@ const insights = {
   marginBuckets,
   closestContests: closest,
   closestSummary,
+  razorActiveCount,
   contests,
   countingProgress,
   superlatives,
