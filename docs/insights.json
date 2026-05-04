@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-04T17:18:11.408Z",
+  "generatedAt": "2026-05-04T17:20:09.386Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
-    "declared": 227,
-    "inProgress": 7
+    "declared": 228,
+    "inProgress": 6
   },
   "partyResults": [
     {
@@ -41,8 +41,8 @@
     },
     {
       "party": "Pattali Makkal Katchi",
-      "won": 3,
-      "leading": 1,
+      "won": 4,
+      "leading": 0,
       "leadingUnder1k": 1,
       "trailingUnder1k": 0,
       "total": 4
@@ -147,8 +147,8 @@
         "Bharatiya Janata Party",
         "Pattali Makkal Katchi"
       ],
-      "won": 51,
-      "leading": 2,
+      "won": 52,
+      "leading": 1,
       "total": 53,
       "cushionVotes": 803744,
       "gapVotes": 786695,
@@ -291,17 +291,6 @@
       "status": "Result in Progress"
     },
     {
-      "constituency": "VIKRAVANDI",
-      "constNo": "75",
-      "leadingCandidate": "SIVAKUMAR C",
-      "leadingParty": "Pattali Makkal Katchi",
-      "trailingCandidate": "VIJAI VADIVEL A",
-      "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 910,
-      "round": "23/23",
-      "status": "Result in Progress"
-    },
-    {
       "constituency": "MANAMADURAI",
       "constNo": "187",
       "leadingCandidate": "ELANGOVAN.D",
@@ -356,23 +345,23 @@
       "net": 1
     },
     {
-      "alliance": "TVK",
-      "couldLose": 3,
-      "couldGain": 3,
-      "loseVotes": 101151,
-      "gainVotes": 3395,
+      "alliance": "AIADMK-led NDA",
+      "couldLose": 1,
+      "couldGain": 1,
+      "loseVotes": 214,
+      "gainVotes": 3163,
       "net": 0
     },
     {
-      "alliance": "AIADMK-led NDA",
-      "couldLose": 2,
-      "couldGain": 1,
-      "loseVotes": 1124,
-      "gainVotes": 3163,
+      "alliance": "TVK",
+      "couldLose": 3,
+      "couldGain": 2,
+      "loseVotes": 101151,
+      "gainVotes": 2485,
       "net": -1
     }
   ],
-  "razorActiveCount": 3,
+  "razorActiveCount": 2,
   "contests": {
     "ALANDUR": {
       "constituency": "ALANDUR",
@@ -2836,7 +2825,7 @@
       "trailingParty": "Tamilaga Vettri Kazhagam",
       "margin": 910,
       "round": "23/23",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "VILATHIKULAM": {
       "constituency": "VILATHIKULAM",
