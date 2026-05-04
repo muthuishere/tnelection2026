@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-05-04T16:54:18.540Z",
+  "generatedAt": "2026-05-04T16:56:09.790Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
-    "declared": 219,
-    "inProgress": 15
+    "declared": 220,
+    "inProgress": 14
   },
   "partyResults": [
     {
       "party": "Tamilaga Vettri Kazhagam",
-      "won": 100,
-      "leading": 7,
+      "won": 101,
+      "leading": 6,
       "leadingUnder1k": 4,
       "trailingUnder1k": 7,
       "total": 107
@@ -110,8 +110,8 @@
       "parties": [
         "Tamilaga Vettri Kazhagam"
       ],
-      "won": 100,
-      "leading": 7,
+      "won": 101,
+      "leading": 6,
       "total": 107,
       "cushionVotes": 2441182,
       "gapVotes": 785514,
@@ -379,17 +379,6 @@
       "status": "Result in Progress"
     },
     {
-      "constituency": "KRISHNARAYAPURAM",
-      "constNo": "136",
-      "leadingCandidate": "SATHYA. M",
-      "leadingParty": "Tamilaga Vettri Kazhagam",
-      "trailingCandidate": "DR. DHIVYA. S",
-      "trailingParty": "All India Anna Dravida Munnetra Kazhagam",
-      "margin": 3503,
-      "round": "21/21",
-      "status": "Result in Progress"
-    },
-    {
       "constituency": "GINGEE",
       "constNo": "70",
       "leadingCandidate": "GANESHKUMAR A",
@@ -446,18 +435,18 @@
     {
       "alliance": "AIADMK-led NDA",
       "couldLose": 4,
-      "couldGain": 5,
+      "couldGain": 4,
       "loseVotes": 15590,
-      "gainVotes": 27186,
-      "net": 1
+      "gainVotes": 23683,
+      "net": 0
     },
     {
       "alliance": "TVK",
-      "couldLose": 7,
+      "couldLose": 6,
       "couldGain": 4,
-      "loseVotes": 155193,
+      "loseVotes": 151690,
       "gainVotes": 5216,
-      "net": -3
+      "net": -2
     }
   ],
   "razorActiveCount": 4,
@@ -1318,7 +1307,7 @@
       "trailingParty": "All India Anna Dravida Munnetra Kazhagam",
       "margin": 3503,
       "round": "21/21",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "KULITHALAI": {
       "constituency": "KULITHALAI",
