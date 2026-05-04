@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T16:28:09.976Z",
+  "generatedAt": "2026-05-04T16:30:18.568Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
@@ -114,7 +114,7 @@
       "leading": 11,
       "total": 107,
       "cushionVotes": 2441829,
-      "gapVotes": 786870,
+      "gapVotes": 786729,
       "flippableUnder1k": 7,
       "flippableUnder5k": 29,
       "vulnerableUnder1k": 4
@@ -133,7 +133,7 @@
       "won": 68,
       "leading": 6,
       "total": 74,
-      "cushionVotes": 681007,
+      "cushionVotes": 680866,
       "gapVotes": 2254937,
       "flippableUnder1k": 5,
       "flippableUnder5k": 14,
@@ -418,8 +418,8 @@
       "leadingParty": "Dravida Munnetra Kazhagam",
       "trailingCandidate": "IMTHIYAZ PANDARATTUDU ABDU",
       "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 7272,
-      "round": "23/24",
+      "margin": 7131,
+      "round": "24/24",
       "status": "Result in Progress"
     },
     {
@@ -440,7 +440,7 @@
       "couldLose": 5,
       "couldGain": 7,
       "loseVotes": 19714,
-      "gainVotes": 14567,
+      "gainVotes": 14426,
       "net": 2
     },
     {
@@ -455,7 +455,7 @@
       "alliance": "DMK-led INDIA Alliance",
       "couldLose": 6,
       "couldGain": 3,
-      "loseVotes": 16958,
+      "loseVotes": 16817,
       "gainVotes": 2223,
       "net": -3
     }
@@ -524,8 +524,8 @@
       "leadingParty": "Dravida Munnetra Kazhagam",
       "trailingCandidate": "IMTHIYAZ PANDARATTUDU ABDU",
       "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 7272,
-      "round": "23/24",
+      "margin": 7131,
+      "round": "24/24",
       "status": "Result in Progress"
     },
     "ANAIKATTU": {
@@ -3027,10 +3027,10 @@
     }
   },
   "countingProgress": {
-    "roundsDone": 5585,
+    "roundsDone": 5586,
     "roundsTotal": 5600,
-    "pct": 99.7,
-    "constituenciesComplete": 226
+    "pct": 99.8,
+    "constituenciesComplete": 227
   },
   "superlatives": {
     "biggestMargin": {
