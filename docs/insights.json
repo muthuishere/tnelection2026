@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-04T16:38:09.879Z",
+  "generatedAt": "2026-05-04T16:40:10.301Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
@@ -113,7 +113,7 @@
       "won": 96,
       "leading": 11,
       "total": 107,
-      "cushionVotes": 2441760,
+      "cushionVotes": 2441548,
       "gapVotes": 786229,
       "flippableUnder1k": 7,
       "flippableUnder5k": 29,
@@ -134,7 +134,7 @@
       "leading": 4,
       "total": 74,
       "cushionVotes": 680331,
-      "gapVotes": 2254868,
+      "gapVotes": 2254656,
       "flippableUnder1k": 5,
       "flippableUnder5k": 14,
       "vulnerableUnder1k": 5
@@ -308,8 +308,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "SARAVANAN. P",
       "trailingParty": "Desiya Murpokku Dravida Kazhagam",
-      "margin": 732,
-      "round": "20/22",
+      "margin": 520,
+      "round": "21/22",
       "status": "Result in Progress"
     },
     {
@@ -448,14 +448,14 @@
       "couldLose": 4,
       "couldGain": 4,
       "loseVotes": 8572,
-      "gainVotes": 14799,
+      "gainVotes": 14587,
       "net": 0
     },
     {
       "alliance": "TVK",
       "couldLose": 6,
       "couldGain": 5,
-      "loseVotes": 34726,
+      "loseVotes": 34514,
       "gainVotes": 6216,
       "net": -1
     }
@@ -1976,8 +1976,8 @@
       "leadingParty": "Tamilaga Vettri Kazhagam",
       "trailingCandidate": "SARAVANAN. P",
       "trailingParty": "Desiya Murpokku Dravida Kazhagam",
-      "margin": 732,
-      "round": "20/22",
+      "margin": 520,
+      "round": "21/22",
       "status": "Result in Progress"
     },
     "PONNERI": {
@@ -3027,7 +3027,7 @@
     }
   },
   "countingProgress": {
-    "roundsDone": 5589,
+    "roundsDone": 5590,
     "roundsTotal": 5600,
     "pct": 99.8,
     "constituenciesComplete": 228
