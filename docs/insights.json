@@ -1,24 +1,24 @@
 {
-  "generatedAt": "2026-05-04T15:56:12.649Z",
+  "generatedAt": "2026-05-04T15:58:13.747Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
-    "declared": 200,
-    "inProgress": 34
+    "declared": 202,
+    "inProgress": 32
   },
   "partyResults": [
     {
       "party": "Tamilaga Vettri Kazhagam",
-      "won": 94,
-      "leading": 13,
+      "won": 95,
+      "leading": 12,
       "leadingUnder1k": 3,
       "trailingUnder1k": 6,
       "total": 107
     },
     {
       "party": "Dravida Munnetra Kazhagam",
-      "won": 48,
-      "leading": 12,
+      "won": 49,
+      "leading": 11,
       "leadingUnder1k": 3,
       "trailingUnder1k": 4,
       "total": 60
@@ -110,8 +110,8 @@
       "parties": [
         "Tamilaga Vettri Kazhagam"
       ],
-      "won": 94,
-      "leading": 13,
+      "won": 95,
+      "leading": 12,
       "total": 107,
       "cushionVotes": 2442060,
       "gapVotes": 789530,
@@ -130,8 +130,8 @@
         "Indian Union Muslim League",
         "Viduthalai Chiruthaigal Katchi"
       ],
-      "won": 61,
-      "leading": 13,
+      "won": 62,
+      "leading": 12,
       "total": 74,
       "cushionVotes": 682823,
       "gapVotes": 2255073,
@@ -998,7 +998,7 @@
       "trailingCandidate": "GINGEE MASTHAN K S",
       "trailingParty": "Dravida Munnetra Kazhagam",
       "margin": 12415,
-      "round": "23/23",
+      "round": "23/24",
       "status": "Result in Progress"
     },
     "GOBICHETTIPALAYAM": {
@@ -2451,7 +2451,7 @@
       "trailingParty": "Tamilaga Vettri Kazhagam",
       "margin": 8555,
       "round": "25/25",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "THIRUVALLUR": {
       "constituency": "THIRUVALLUR",
@@ -2605,7 +2605,7 @@
       "trailingParty": "Dravida Munnetra Kazhagam",
       "margin": 27416,
       "round": "28/28",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "TIRUCHIRAPPALLI (WEST)": {
       "constituency": "TIRUCHIRAPPALLI (WEST)",
@@ -3028,9 +3028,9 @@
   },
   "countingProgress": {
     "roundsDone": 5574,
-    "roundsTotal": 5593,
-    "pct": 99.7,
-    "constituenciesComplete": 226
+    "roundsTotal": 5594,
+    "pct": 99.6,
+    "constituenciesComplete": 225
   },
   "superlatives": {
     "biggestMargin": {
