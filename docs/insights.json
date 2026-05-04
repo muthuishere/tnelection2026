@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-05-04T16:12:10.827Z",
+  "generatedAt": "2026-05-04T16:14:09.362Z",
   "state": "Tamil Nadu",
   "totals": {
     "constituencies": 234,
-    "declared": 207,
-    "inProgress": 27
+    "declared": 208,
+    "inProgress": 26
   },
   "partyResults": [
     {
       "party": "Tamilaga Vettri Kazhagam",
-      "won": 95,
-      "leading": 12,
+      "won": 96,
+      "leading": 11,
       "leadingUnder1k": 4,
       "trailingUnder1k": 7,
       "total": 107
@@ -110,11 +110,11 @@
       "parties": [
         "Tamilaga Vettri Kazhagam"
       ],
-      "won": 95,
-      "leading": 12,
+      "won": 96,
+      "leading": 11,
       "total": 107,
       "cushionVotes": 2441883,
-      "gapVotes": 788149,
+      "gapVotes": 787081,
       "flippableUnder1k": 7,
       "flippableUnder5k": 29,
       "vulnerableUnder1k": 4
@@ -150,7 +150,7 @@
       "won": 47,
       "leading": 6,
       "total": 53,
-      "cushionVotes": 804563,
+      "cushionVotes": 803495,
       "gapVotes": 786695,
       "flippableUnder1k": 3,
       "flippableUnder5k": 19,
@@ -766,8 +766,8 @@
       "leadingParty": "All India Anna Dravida Munnetra Kazhagam",
       "trailingCandidate": "K BHARATHIDHASAN",
       "trailingParty": "Tamilaga Vettri Kazhagam",
-      "margin": 14346,
-      "round": "24/25",
+      "margin": 13278,
+      "round": "25/25",
       "status": "Result in Progress"
     },
     "CHEPAUK-THIRUVALLIKENI": {
@@ -2418,7 +2418,7 @@
       "trailingParty": "Dravida Munnetra Kazhagam",
       "margin": 41553,
       "round": "27/27",
-      "status": "Result in Progress"
+      "status": "Result Declared"
     },
     "THIRUPORUR": {
       "constituency": "THIRUPORUR",
@@ -3027,10 +3027,10 @@
     }
   },
   "countingProgress": {
-    "roundsDone": 5580,
+    "roundsDone": 5581,
     "roundsTotal": 5600,
-    "pct": 99.6,
-    "constituenciesComplete": 225
+    "pct": 99.7,
+    "constituenciesComplete": 226
   },
   "superlatives": {
     "biggestMargin": {
